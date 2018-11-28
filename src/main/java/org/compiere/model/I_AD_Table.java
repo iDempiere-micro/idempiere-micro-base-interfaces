@@ -81,7 +81,7 @@ public interface I_AD_Table {
   /** Get Window. Data entry or display window */
   public int getAD_Window_ID();
 
-  //public I_AD_Window getAD_Window() throws RuntimeException;
+  // public I_AD_Window getAD_Window() throws RuntimeException;
 
   /** Column name CopyColumnsFromTable */
   public static final String COLUMNNAME_CopyColumnsFromTable = "CopyColumnsFromTable";
