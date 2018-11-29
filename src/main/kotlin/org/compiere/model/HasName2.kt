@@ -12,5 +12,5 @@ interface HasName2 {
     /** Name.
      * Alphanumeric identifier of the entity
      */
-    var Name: String
+    var name2: String
 }
