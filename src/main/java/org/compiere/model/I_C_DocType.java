@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_DocType {
 
   /** TableName=C_DocType */
-  public static final String Table_Name = "C_DocType";
+  String Table_Name = "C_DocType";
 
   /** AD_Table_ID=217 */
-  public static final int Table_ID = 217;
+  int Table_ID = 217;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,377 +26,377 @@ public interface I_C_DocType {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+  int getOrgId();
 
   /** Column name AD_PrintFormat_ID */
-  public static final String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
+  String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
 
   /** Set Print Format. Data Print Format */
-  public void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
+  void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
 
   /** Get Print Format. Data Print Format */
-  public int getAD_PrintFormat_ID();
+  int getAD_PrintFormat_ID();
 
   /** Column name C_DocTypeDifference_ID */
-  public static final String COLUMNNAME_C_DocTypeDifference_ID = "C_DocTypeDifference_ID";
+  String COLUMNNAME_C_DocTypeDifference_ID = "C_DocTypeDifference_ID";
 
   /** Set Difference Document. Document type for generating in dispute Shipments */
-  public void setC_DocTypeDifference_ID(int C_DocTypeDifference_ID);
+  void setC_DocTypeDifference_ID(int C_DocTypeDifference_ID);
 
   /** Get Difference Document. Document type for generating in dispute Shipments */
-  public int getC_DocTypeDifference_ID();
+  int getC_DocTypeDifference_ID();
 
-  public I_C_DocType getC_DocTypeDifference() throws RuntimeException;
+  I_C_DocType getC_DocTypeDifference() throws RuntimeException;
 
   /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
 
   /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+  void setC_DocType_ID(int C_DocType_ID);
 
   /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+  int getC_DocType_ID();
 
   /** Column name C_DocTypeInvoice_ID */
-  public static final String COLUMNNAME_C_DocTypeInvoice_ID = "C_DocTypeInvoice_ID";
+  String COLUMNNAME_C_DocTypeInvoice_ID = "C_DocTypeInvoice_ID";
 
   /**
    * Set Document Type for Invoice. Document type used for invoices generated from this sales
    * document
    */
-  public void setC_DocTypeInvoice_ID(int C_DocTypeInvoice_ID);
+  void setC_DocTypeInvoice_ID(int C_DocTypeInvoice_ID);
 
   /**
    * Get Document Type for Invoice. Document type used for invoices generated from this sales
    * document
    */
-  public int getC_DocTypeInvoice_ID();
+  int getC_DocTypeInvoice_ID();
 
-  public I_C_DocType getC_DocTypeInvoice() throws RuntimeException;
+  I_C_DocType getC_DocTypeInvoice() throws RuntimeException;
 
   /** Column name C_DocTypeProforma_ID */
-  public static final String COLUMNNAME_C_DocTypeProforma_ID = "C_DocTypeProforma_ID";
+  String COLUMNNAME_C_DocTypeProforma_ID = "C_DocTypeProforma_ID";
 
   /**
    * Set Document Type for ProForma. Document type used for pro forma invoices generated from this
    * sales document
    */
-  public void setC_DocTypeProforma_ID(int C_DocTypeProforma_ID);
+  void setC_DocTypeProforma_ID(int C_DocTypeProforma_ID);
 
   /**
    * Get Document Type for ProForma. Document type used for pro forma invoices generated from this
    * sales document
    */
-  public int getC_DocTypeProforma_ID();
+  int getC_DocTypeProforma_ID();
 
-  public I_C_DocType getC_DocTypeProforma() throws RuntimeException;
+  I_C_DocType getC_DocTypeProforma() throws RuntimeException;
 
   /** Column name C_DocTypeShipment_ID */
-  public static final String COLUMNNAME_C_DocTypeShipment_ID = "C_DocTypeShipment_ID";
+  String COLUMNNAME_C_DocTypeShipment_ID = "C_DocTypeShipment_ID";
 
   /**
    * Set Document Type for Shipment. Document type used for shipments generated from this sales
    * document
    */
-  public void setC_DocTypeShipment_ID(int C_DocTypeShipment_ID);
+  void setC_DocTypeShipment_ID(int C_DocTypeShipment_ID);
 
   /**
    * Get Document Type for Shipment. Document type used for shipments generated from this sales
    * document
    */
-  public int getC_DocTypeShipment_ID();
+  int getC_DocTypeShipment_ID();
 
-  public I_C_DocType getC_DocTypeShipment() throws RuntimeException;
+  I_C_DocType getC_DocTypeShipment() throws RuntimeException;
 
   /** Column name C_DocType_UU */
-  public static final String COLUMNNAME_C_DocType_UU = "C_DocType_UU";
+  String COLUMNNAME_C_DocType_UU = "C_DocType_UU";
 
   /** Set C_DocType_UU */
-  public void setC_DocType_UU(String C_DocType_UU);
+  void setC_DocType_UU(String C_DocType_UU);
 
   /** Get C_DocType_UU */
-  public String getC_DocType_UU();
+  String getC_DocType_UU();
 
   /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  String COLUMNNAME_Created = "Created";
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+  Timestamp getCreated();
 
   /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  String COLUMNNAME_CreatedBy = "CreatedBy";
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
+  int getCreatedBy();
 
   /** Column name DefiniteSequence_ID */
-  public static final String COLUMNNAME_DefiniteSequence_ID = "DefiniteSequence_ID";
+  String COLUMNNAME_DefiniteSequence_ID = "DefiniteSequence_ID";
 
   /** Set Definite Sequence */
-  public void setDefiniteSequence_ID(int DefiniteSequence_ID);
+  void setDefiniteSequence_ID(int DefiniteSequence_ID);
 
   /** Get Definite Sequence */
-  public int getDefiniteSequence_ID();
+  int getDefiniteSequence_ID();
 
-  public I_AD_Sequence getDefiniteSequence() throws RuntimeException;
+  I_AD_Sequence getDefiniteSequence() throws RuntimeException;
 
   /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+  String COLUMNNAME_Description = "Description";
 
   /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  void setDescription(String Description);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
   /** Column name DocBaseType */
-  public static final String COLUMNNAME_DocBaseType = "DocBaseType";
+  String COLUMNNAME_DocBaseType = "DocBaseType";
 
   /** Set Document BaseType. Logical type of document */
-  public void setDocBaseType(String DocBaseType);
+  void setDocBaseType(String DocBaseType);
 
   /** Get Document BaseType. Logical type of document */
-  public String getDocBaseType();
+  String getDocBaseType();
 
   /** Column name DocNoSequence_ID */
-  public static final String COLUMNNAME_DocNoSequence_ID = "DocNoSequence_ID";
+  String COLUMNNAME_DocNoSequence_ID = "DocNoSequence_ID";
 
   /** Set Document Sequence. Document sequence determines the numbering of documents */
-  public void setDocNoSequence_ID(int DocNoSequence_ID);
+  void setDocNoSequence_ID(int DocNoSequence_ID);
 
   /** Get Document Sequence. Document sequence determines the numbering of documents */
-  public int getDocNoSequence_ID();
+  int getDocNoSequence_ID();
 
-  public I_AD_Sequence getDocNoSequence() throws RuntimeException;
+  I_AD_Sequence getDocNoSequence() throws RuntimeException;
 
   /** Column name DocSubTypeInv */
-  public static final String COLUMNNAME_DocSubTypeInv = "DocSubTypeInv";
+  String COLUMNNAME_DocSubTypeInv = "DocSubTypeInv";
 
   /** Set Inv Sub Type. Inventory Sub Type */
-  public void setDocSubTypeInv(String DocSubTypeInv);
+  void setDocSubTypeInv(String DocSubTypeInv);
 
   /** Get Inv Sub Type. Inventory Sub Type */
-  public String getDocSubTypeInv();
+  String getDocSubTypeInv();
 
   /** Column name DocSubTypeSO */
-  public static final String COLUMNNAME_DocSubTypeSO = "DocSubTypeSO";
+  String COLUMNNAME_DocSubTypeSO = "DocSubTypeSO";
 
   /** Set SO Sub Type. Sales Order Sub Type */
-  public void setDocSubTypeSO(String DocSubTypeSO);
+  void setDocSubTypeSO(String DocSubTypeSO);
 
   /** Get SO Sub Type. Sales Order Sub Type */
-  public String getDocSubTypeSO();
+  String getDocSubTypeSO();
 
   /** Column name DocumentCopies */
-  public static final String COLUMNNAME_DocumentCopies = "DocumentCopies";
+  String COLUMNNAME_DocumentCopies = "DocumentCopies";
 
   /** Set Document Copies. Number of copies to be printed */
-  public void setDocumentCopies(int DocumentCopies);
+  void setDocumentCopies(int DocumentCopies);
 
   /** Get Document Copies. Number of copies to be printed */
-  public int getDocumentCopies();
+  int getDocumentCopies();
 
   /** Column name DocumentNote */
-  public static final String COLUMNNAME_DocumentNote = "DocumentNote";
+  String COLUMNNAME_DocumentNote = "DocumentNote";
 
   /** Set Document Note. Additional information for a Document */
-  public void setDocumentNote(String DocumentNote);
+  void setDocumentNote(String DocumentNote);
 
   /** Get Document Note. Additional information for a Document */
-  public String getDocumentNote();
+  String getDocumentNote();
 
   /** Column name GL_Category_ID */
-  public static final String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
+  String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
 
   /** Set GL Category. General Ledger Category */
-  public void setGL_Category_ID(int GL_Category_ID);
+  void setGL_Category_ID(int GL_Category_ID);
 
   /** Get GL Category. General Ledger Category */
-  public int getGL_Category_ID();
+  int getGL_Category_ID();
 
   /** Column name HasCharges */
-  public static final String COLUMNNAME_HasCharges = "HasCharges";
+  String COLUMNNAME_HasCharges = "HasCharges";
 
   /** Set Charges. Charges can be added to the document */
-  public void setHasCharges(boolean HasCharges);
+  void setHasCharges(boolean HasCharges);
 
   /** Get Charges. Charges can be added to the document */
-  public boolean isHasCharges();
+  boolean isHasCharges();
 
   /** Column name HasProforma */
-  public static final String COLUMNNAME_HasProforma = "HasProforma";
+  String COLUMNNAME_HasProforma = "HasProforma";
 
   /** Set Pro forma Invoice. Indicates if Pro Forma Invoices can be generated from this document */
-  public void setHasProforma(boolean HasProforma);
+  void setHasProforma(boolean HasProforma);
 
   /** Get Pro forma Invoice. Indicates if Pro Forma Invoices can be generated from this document */
-  public boolean isHasProforma();
+  boolean isHasProforma();
 
   /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  String COLUMNNAME_IsActive = "IsActive";
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
+  boolean isActive();
 
   /** Column name IsChargeOrProductMandatory */
-  public static final String COLUMNNAME_IsChargeOrProductMandatory = "IsChargeOrProductMandatory";
+  String COLUMNNAME_IsChargeOrProductMandatory = "IsChargeOrProductMandatory";
 
   /** Set Mandatory Charge or Product */
-  public void setIsChargeOrProductMandatory(boolean IsChargeOrProductMandatory);
+  void setIsChargeOrProductMandatory(boolean IsChargeOrProductMandatory);
 
   /** Get Mandatory Charge or Product */
-  public boolean isChargeOrProductMandatory();
+  boolean isChargeOrProductMandatory();
 
   /** Column name IsCreateCounter */
-  public static final String COLUMNNAME_IsCreateCounter = "IsCreateCounter";
+  String COLUMNNAME_IsCreateCounter = "IsCreateCounter";
 
   /** Set Create Counter Document. Create Counter Document */
-  public void setIsCreateCounter(boolean IsCreateCounter);
+  void setIsCreateCounter(boolean IsCreateCounter);
 
   /** Get Create Counter Document. Create Counter Document */
-  public boolean isCreateCounter();
+  boolean isCreateCounter();
 
   /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  String COLUMNNAME_IsDefault = "IsDefault";
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
+  boolean isDefault();
 
   /** Column name IsDefaultCounterDoc */
-  public static final String COLUMNNAME_IsDefaultCounterDoc = "IsDefaultCounterDoc";
+  String COLUMNNAME_IsDefaultCounterDoc = "IsDefaultCounterDoc";
 
   /** Set Default Counter Document. The document type is the default counter document type */
-  public void setIsDefaultCounterDoc(boolean IsDefaultCounterDoc);
+  void setIsDefaultCounterDoc(boolean IsDefaultCounterDoc);
 
   /** Get Default Counter Document. The document type is the default counter document type */
-  public boolean isDefaultCounterDoc();
+  boolean isDefaultCounterDoc();
 
   /** Column name IsDocNoControlled */
-  public static final String COLUMNNAME_IsDocNoControlled = "IsDocNoControlled";
+  String COLUMNNAME_IsDocNoControlled = "IsDocNoControlled";
 
   /** Set Document is Number Controlled. The document has a document sequence */
-  public void setIsDocNoControlled(boolean IsDocNoControlled);
+  void setIsDocNoControlled(boolean IsDocNoControlled);
 
   /** Get Document is Number Controlled. The document has a document sequence */
-  public boolean isDocNoControlled();
+  boolean isDocNoControlled();
 
   /** Column name IsIndexed */
-  public static final String COLUMNNAME_IsIndexed = "IsIndexed";
+  String COLUMNNAME_IsIndexed = "IsIndexed";
 
   /** Set Indexed. Index the document for the internal search engine */
-  public void setIsIndexed(boolean IsIndexed);
+  void setIsIndexed(boolean IsIndexed);
 
   /** Get Indexed. Index the document for the internal search engine */
-  public boolean isIndexed();
+  boolean isIndexed();
 
   /** Column name IsInTransit */
-  public static final String COLUMNNAME_IsInTransit = "IsInTransit";
+  String COLUMNNAME_IsInTransit = "IsInTransit";
 
   /** Set In Transit. Movement is in transit */
-  public void setIsInTransit(boolean IsInTransit);
+  void setIsInTransit(boolean IsInTransit);
 
   /** Get In Transit. Movement is in transit */
-  public boolean isInTransit();
+  boolean isInTransit();
 
   /** Column name IsOverwriteDateOnComplete */
-  public static final String COLUMNNAME_IsOverwriteDateOnComplete = "IsOverwriteDateOnComplete";
+  String COLUMNNAME_IsOverwriteDateOnComplete = "IsOverwriteDateOnComplete";
 
   /** Set Overwrite Date on Complete */
-  public void setIsOverwriteDateOnComplete(boolean IsOverwriteDateOnComplete);
+  void setIsOverwriteDateOnComplete(boolean IsOverwriteDateOnComplete);
 
   /** Get Overwrite Date on Complete */
-  public boolean isOverwriteDateOnComplete();
+  boolean isOverwriteDateOnComplete();
 
   /** Column name IsOverwriteSeqOnComplete */
-  public static final String COLUMNNAME_IsOverwriteSeqOnComplete = "IsOverwriteSeqOnComplete";
+  String COLUMNNAME_IsOverwriteSeqOnComplete = "IsOverwriteSeqOnComplete";
 
   /** Set Overwrite Sequence on Complete */
-  public void setIsOverwriteSeqOnComplete(boolean IsOverwriteSeqOnComplete);
+  void setIsOverwriteSeqOnComplete(boolean IsOverwriteSeqOnComplete);
 
   /** Get Overwrite Sequence on Complete */
-  public boolean isOverwriteSeqOnComplete();
+  boolean isOverwriteSeqOnComplete();
 
   /** Column name IsPickQAConfirm */
-  public static final String COLUMNNAME_IsPickQAConfirm = "IsPickQAConfirm";
+  String COLUMNNAME_IsPickQAConfirm = "IsPickQAConfirm";
 
   /** Set Pick/QA Confirmation. Require Pick or QA Confirmation before processing */
-  public void setIsPickQAConfirm(boolean IsPickQAConfirm);
+  void setIsPickQAConfirm(boolean IsPickQAConfirm);
 
   /** Get Pick/QA Confirmation. Require Pick or QA Confirmation before processing */
-  public boolean isPickQAConfirm();
+  boolean isPickQAConfirm();
 
   /** Column name IsPrepareSplitDocument */
-  public static final String COLUMNNAME_IsPrepareSplitDocument = "IsPrepareSplitDocument";
+  String COLUMNNAME_IsPrepareSplitDocument = "IsPrepareSplitDocument";
 
   /** Set Prepare Split Document. Prepare generated split shipment/receipt document */
-  public void setIsPrepareSplitDocument(boolean IsPrepareSplitDocument);
+  void setIsPrepareSplitDocument(boolean IsPrepareSplitDocument);
 
   /** Get Prepare Split Document. Prepare generated split shipment/receipt document */
-  public boolean isPrepareSplitDocument();
+  boolean isPrepareSplitDocument();
 
   /** Column name IsShipConfirm */
-  public static final String COLUMNNAME_IsShipConfirm = "IsShipConfirm";
+  String COLUMNNAME_IsShipConfirm = "IsShipConfirm";
 
   /** Set Ship/Receipt Confirmation. Require Ship or Receipt Confirmation before processing */
-  public void setIsShipConfirm(boolean IsShipConfirm);
+  void setIsShipConfirm(boolean IsShipConfirm);
 
   /** Get Ship/Receipt Confirmation. Require Ship or Receipt Confirmation before processing */
-  public boolean isShipConfirm();
+  boolean isShipConfirm();
 
   /** Column name IsSOTrx */
-  public static final String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  String COLUMNNAME_IsSOTrx = "IsSOTrx";
 
   /** Set Sales Transaction. This is a Sales Transaction */
-  public void setIsSOTrx(boolean IsSOTrx);
+  void setIsSOTrx(boolean IsSOTrx);
 
   /** Get Sales Transaction. This is a Sales Transaction */
-  public boolean isSOTrx();
+  boolean isSOTrx();
 
   /** Column name IsSplitWhenDifference */
-  public static final String COLUMNNAME_IsSplitWhenDifference = "IsSplitWhenDifference";
+  String COLUMNNAME_IsSplitWhenDifference = "IsSplitWhenDifference";
 
   /** Set Split when Difference. Split document when there is a difference */
-  public void setIsSplitWhenDifference(boolean IsSplitWhenDifference);
+  void setIsSplitWhenDifference(boolean IsSplitWhenDifference);
 
   /** Get Split when Difference. Split document when there is a difference */
-  public boolean isSplitWhenDifference();
+  boolean isSplitWhenDifference();
 
   /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  void setName(String Name);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
   /** Column name PrintName */
-  public static final String COLUMNNAME_PrintName = "PrintName";
+  String COLUMNNAME_PrintName = "PrintName";
 
   /** Set Print Text. The label text to be printed on a document or correspondence. */
-  public void setPrintName(String PrintName);
+  void setPrintName(String PrintName);
 
   /** Get Print Text. The label text to be printed on a document or correspondence. */
-  public String getPrintName();
+  String getPrintName();
 
   /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  String COLUMNNAME_Updated = "Updated";
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
+  Timestamp getUpdated();
 
   /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

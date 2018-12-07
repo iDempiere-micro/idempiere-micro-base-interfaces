@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_User_OrgAccess {
 
   /** TableName=AD_User_OrgAccess */
-  public static final String Table_Name = "AD_User_OrgAccess";
+  String Table_Name = "AD_User_OrgAccess";
 
   /** AD_Table_ID=769 */
-  public static final int Table_ID = 769;
+  int Table_ID = 769;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,71 +26,71 @@ public interface I_AD_User_OrgAccess {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+  int getOrgId();
 
   /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
 
   /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  void setAD_User_ID(int AD_User_ID);
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
   /** Column name AD_User_OrgAccess_UU */
-  public static final String COLUMNNAME_AD_User_OrgAccess_UU = "AD_User_OrgAccess_UU";
+  String COLUMNNAME_AD_User_OrgAccess_UU = "AD_User_OrgAccess_UU";
 
   /** Set AD_User_OrgAccess_UU */
-  public void setAD_User_OrgAccess_UU(String AD_User_OrgAccess_UU);
+  void setAD_User_OrgAccess_UU(String AD_User_OrgAccess_UU);
 
   /** Get AD_User_OrgAccess_UU */
-  public String getAD_User_OrgAccess_UU();
+  String getAD_User_OrgAccess_UU();
 
   /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  String COLUMNNAME_Created = "Created";
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+  Timestamp getCreated();
 
   /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  String COLUMNNAME_CreatedBy = "CreatedBy";
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
+  int getCreatedBy();
 
   /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  String COLUMNNAME_IsActive = "IsActive";
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
+  boolean isActive();
 
   /** Column name IsReadOnly */
-  public static final String COLUMNNAME_IsReadOnly = "IsReadOnly";
+  String COLUMNNAME_IsReadOnly = "IsReadOnly";
 
   /** Set Read Only. Field is read only */
-  public void setIsReadOnly(boolean IsReadOnly);
+  void setIsReadOnly(boolean IsReadOnly);
 
   /** Get Read Only. Field is read only */
-  public boolean isReadOnly();
+  boolean isReadOnly();
 
   /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  String COLUMNNAME_Updated = "Updated";
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
+  Timestamp getUpdated();
 
   /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

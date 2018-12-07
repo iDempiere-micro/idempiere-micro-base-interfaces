@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Sequence_No {
 
   /** TableName=AD_Sequence_No */
-  public static final String Table_Name = "AD_Sequence_No";
+  String Table_Name = "AD_Sequence_No";
 
   /** AD_Table_ID=122 */
-  public static final int Table_ID = 122;
+  int Table_ID = 122;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,82 +26,82 @@ public interface I_AD_Sequence_No {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+  int getOrgId();
 
   /** Column name AD_Sequence_ID */
-  public static final String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
+  String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
 
   /** Set Sequence. Document Sequence */
-  public void setAD_Sequence_ID(int AD_Sequence_ID);
+  void setAD_Sequence_ID(int AD_Sequence_ID);
 
   /** Get Sequence. Document Sequence */
-  public int getAD_Sequence_ID();
+  int getAD_Sequence_ID();
 
-  public I_AD_Sequence getAD_Sequence() throws RuntimeException;
+  I_AD_Sequence getAD_Sequence() throws RuntimeException;
 
   /** Column name AD_Sequence_No_UU */
-  public static final String COLUMNNAME_AD_Sequence_No_UU = "AD_Sequence_No_UU";
+  String COLUMNNAME_AD_Sequence_No_UU = "AD_Sequence_No_UU";
 
   /** Set AD_Sequence_No_UU */
-  public void setAD_Sequence_No_UU(String AD_Sequence_No_UU);
+  void setAD_Sequence_No_UU(String AD_Sequence_No_UU);
 
   /** Get AD_Sequence_No_UU */
-  public String getAD_Sequence_No_UU();
+  String getAD_Sequence_No_UU();
 
   /** Column name CalendarYearMonth */
-  public static final String COLUMNNAME_CalendarYearMonth = "CalendarYearMonth";
+  String COLUMNNAME_CalendarYearMonth = "CalendarYearMonth";
 
   /** Set YearMonth. YYYYMM */
-  public void setCalendarYearMonth(String CalendarYearMonth);
+  void setCalendarYearMonth(String CalendarYearMonth);
 
   /** Get YearMonth. YYYYMM */
-  public String getCalendarYearMonth();
+  String getCalendarYearMonth();
 
   /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  String COLUMNNAME_Created = "Created";
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+  Timestamp getCreated();
 
   /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  String COLUMNNAME_CreatedBy = "CreatedBy";
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
+  int getCreatedBy();
 
   /** Column name CurrentNext */
-  public static final String COLUMNNAME_CurrentNext = "CurrentNext";
+  String COLUMNNAME_CurrentNext = "CurrentNext";
 
   /** Set Current Next. The next number to be used */
-  public void setCurrentNext(int CurrentNext);
+  void setCurrentNext(int CurrentNext);
 
   /** Get Current Next. The next number to be used */
-  public int getCurrentNext();
+  int getCurrentNext();
 
   /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  String COLUMNNAME_IsActive = "IsActive";
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
+  boolean isActive();
 
   /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  String COLUMNNAME_Updated = "Updated";
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
+  Timestamp getUpdated();
 
   /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

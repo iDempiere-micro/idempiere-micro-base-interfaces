@@ -9,17 +9,17 @@ open class AdempiereException : RuntimeException {
 
     /** @param message
      */
-    constructor(message: String) : super(message) {}
+    constructor(message: String) : super(message)
 
     /** @param cause
      */
-    constructor(cause: Throwable) : super(cause) {}
+    constructor(cause: Throwable) : super(cause)
 
     /**
      * @param message
      * @param cause
      */
-    constructor(message: String, cause: Throwable) : super(message, cause) {}
+    constructor(message: String, cause: Throwable) : super(message, cause)
 
     override fun getLocalizedMessage(): String {
         val msg = super.getLocalizedMessage()

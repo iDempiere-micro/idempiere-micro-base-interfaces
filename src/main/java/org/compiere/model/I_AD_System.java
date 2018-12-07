@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_System {
 
   /** TableName=AD_System */
-  public static final String Table_Name = "AD_System";
+  String Table_Name = "AD_System";
 
   /** AD_Table_ID=531 */
-  public static final int Table_ID = 531;
+  int Table_ID = 531;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,372 +26,372 @@ public interface I_AD_System {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+  int getOrgId();
 
   /** Column name AD_System_ID */
-  public static final String COLUMNNAME_AD_System_ID = "AD_System_ID";
+  String COLUMNNAME_AD_System_ID = "AD_System_ID";
 
   /** Set System. System Definition */
-  public void setAD_System_ID(int AD_System_ID);
+  void setAD_System_ID(int AD_System_ID);
 
   /** Get System. System Definition */
-  public int getAD_System_ID();
+  int getAD_System_ID();
 
   /** Column name AD_System_UU */
-  public static final String COLUMNNAME_AD_System_UU = "AD_System_UU";
+  String COLUMNNAME_AD_System_UU = "AD_System_UU";
 
   /** Set AD_System_UU */
-  public void setAD_System_UU(String AD_System_UU);
+  void setAD_System_UU(String AD_System_UU);
 
   /** Get AD_System_UU */
-  public String getAD_System_UU();
+  String getAD_System_UU();
 
   /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  String COLUMNNAME_Created = "Created";
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+  Timestamp getCreated();
 
   /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  String COLUMNNAME_CreatedBy = "CreatedBy";
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
+  int getCreatedBy();
 
   /** Column name CustomPrefix */
-  public static final String COLUMNNAME_CustomPrefix = "CustomPrefix";
+  String COLUMNNAME_CustomPrefix = "CustomPrefix";
 
   /** Set Custom Prefix. Prefix for Custom entities */
-  public void setCustomPrefix(String CustomPrefix);
+  void setCustomPrefix(String CustomPrefix);
 
   /** Get Custom Prefix. Prefix for Custom entities */
-  public String getCustomPrefix();
+  String getCustomPrefix();
 
   /** Column name DBAddress */
-  public static final String COLUMNNAME_DBAddress = "DBAddress";
+  String COLUMNNAME_DBAddress = "DBAddress";
 
   /** Set DB Address. JDBC URL of the database server */
-  public void setDBAddress(String DBAddress);
+  void setDBAddress(String DBAddress);
 
   /** Get DB Address. JDBC URL of the database server */
-  public String getDBAddress();
+  String getDBAddress();
 
   /** Column name DBInstance */
-  public static final String COLUMNNAME_DBInstance = "DBInstance";
+  String COLUMNNAME_DBInstance = "DBInstance";
 
   /** Set Database Name. Database Name */
-  public void setDBInstance(String DBInstance);
+  void setDBInstance(String DBInstance);
 
   /** Get Database Name. Database Name */
-  public String getDBInstance();
+  String getDBInstance();
 
   /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+  String COLUMNNAME_Description = "Description";
 
   /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  void setDescription(String Description);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
   /** Column name EncryptionKey */
-  public static final String COLUMNNAME_EncryptionKey = "EncryptionKey";
+  String COLUMNNAME_EncryptionKey = "EncryptionKey";
 
   /** Set Encryption Class. Encryption Class used for securing data content */
-  public void setEncryptionKey(String EncryptionKey);
+  void setEncryptionKey(String EncryptionKey);
 
   /** Get Encryption Class. Encryption Class used for securing data content */
-  public String getEncryptionKey();
+  String getEncryptionKey();
 
   /** Column name IDRangeEnd */
-  public static final String COLUMNNAME_IDRangeEnd = "IDRangeEnd";
+  String COLUMNNAME_IDRangeEnd = "IDRangeEnd";
 
   /** Set ID Range End. End if the ID Range used */
-  public void setIDRangeEnd(BigDecimal IDRangeEnd);
+  void setIDRangeEnd(BigDecimal IDRangeEnd);
 
   /** Get ID Range End. End if the ID Range used */
-  public BigDecimal getIDRangeEnd();
+  BigDecimal getIDRangeEnd();
 
   /** Column name IDRangeStart */
-  public static final String COLUMNNAME_IDRangeStart = "IDRangeStart";
+  String COLUMNNAME_IDRangeStart = "IDRangeStart";
 
   /** Set ID Range Start. Start of the ID Range used */
-  public void setIDRangeStart(BigDecimal IDRangeStart);
+  void setIDRangeStart(BigDecimal IDRangeStart);
 
   /** Get ID Range Start. Start of the ID Range used */
-  public BigDecimal getIDRangeStart();
+  BigDecimal getIDRangeStart();
 
   /** Column name Info */
-  public static final String COLUMNNAME_Info = "Info";
+  String COLUMNNAME_Info = "Info";
 
   /** Set Info. Information */
-  public void setInfo(String Info);
+  void setInfo(String Info);
 
   /** Get Info. Information */
-  public String getInfo();
+  String getInfo();
 
   /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  String COLUMNNAME_IsActive = "IsActive";
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
+  boolean isActive();
 
   /** Column name IsAllowStatistics */
-  public static final String COLUMNNAME_IsAllowStatistics = "IsAllowStatistics";
+  String COLUMNNAME_IsAllowStatistics = "IsAllowStatistics";
 
   /** Set Maintain Statistics. Maintain general statistics */
-  public void setIsAllowStatistics(boolean IsAllowStatistics);
+  void setIsAllowStatistics(boolean IsAllowStatistics);
 
   /** Get Maintain Statistics. Maintain general statistics */
-  public boolean isAllowStatistics();
+  boolean isAllowStatistics();
 
   /** Column name IsAutoErrorReport */
-  public static final String COLUMNNAME_IsAutoErrorReport = "IsAutoErrorReport";
+  String COLUMNNAME_IsAutoErrorReport = "IsAutoErrorReport";
 
   /** Set Error Reporting. Automatically report Errors */
-  public void setIsAutoErrorReport(boolean IsAutoErrorReport);
+  void setIsAutoErrorReport(boolean IsAutoErrorReport);
 
   /** Get Error Reporting. Automatically report Errors */
-  public boolean isAutoErrorReport();
+  boolean isAutoErrorReport();
 
   /** Column name IsFailOnBuildDiffer */
-  public static final String COLUMNNAME_IsFailOnBuildDiffer = "IsFailOnBuildDiffer";
+  String COLUMNNAME_IsFailOnBuildDiffer = "IsFailOnBuildDiffer";
 
   /** Set Fail if Build Differ */
-  public void setIsFailOnBuildDiffer(boolean IsFailOnBuildDiffer);
+  void setIsFailOnBuildDiffer(boolean IsFailOnBuildDiffer);
 
   /** Get Fail if Build Differ */
-  public boolean isFailOnBuildDiffer();
+  boolean isFailOnBuildDiffer();
 
   /** Column name IsFailOnMissingModelValidator */
-  public static final String COLUMNNAME_IsFailOnMissingModelValidator =
+  String COLUMNNAME_IsFailOnMissingModelValidator =
       "IsFailOnMissingModelValidator";
 
   /** Set Fail on Missing Model Validator */
-  public void setIsFailOnMissingModelValidator(boolean IsFailOnMissingModelValidator);
+  void setIsFailOnMissingModelValidator(boolean IsFailOnMissingModelValidator);
 
   /** Get Fail on Missing Model Validator */
-  public boolean isFailOnMissingModelValidator();
+  boolean isFailOnMissingModelValidator();
 
   /** Column name IsJustMigrated */
-  public static final String COLUMNNAME_IsJustMigrated = "IsJustMigrated";
+  String COLUMNNAME_IsJustMigrated = "IsJustMigrated";
 
   /** Set Just Migrated. Value set by Migration for post-Migration tasks. */
-  public void setIsJustMigrated(boolean IsJustMigrated);
+  void setIsJustMigrated(boolean IsJustMigrated);
 
   /** Get Just Migrated. Value set by Migration for post-Migration tasks. */
-  public boolean isJustMigrated();
+  boolean isJustMigrated();
 
   /** Column name LastBuildInfo */
-  public static final String COLUMNNAME_LastBuildInfo = "LastBuildInfo";
+  String COLUMNNAME_LastBuildInfo = "LastBuildInfo";
 
   /** Set Last Build Info */
-  public void setLastBuildInfo(String LastBuildInfo);
+  void setLastBuildInfo(String LastBuildInfo);
 
   /** Get Last Build Info */
-  public String getLastBuildInfo();
+  String getLastBuildInfo();
 
   /** Column name LastMigrationScriptApplied */
-  public static final String COLUMNNAME_LastMigrationScriptApplied = "LastMigrationScriptApplied";
+  String COLUMNNAME_LastMigrationScriptApplied = "LastMigrationScriptApplied";
 
   /**
    * Set Last Migration Script Applied. Register of the filename for the last migration script
    * applied on this database
    */
-  public void setLastMigrationScriptApplied(String LastMigrationScriptApplied);
+  void setLastMigrationScriptApplied(String LastMigrationScriptApplied);
 
   /**
    * Get Last Migration Script Applied. Register of the filename for the last migration script
    * applied on this database
    */
-  public String getLastMigrationScriptApplied();
+  String getLastMigrationScriptApplied();
 
   /** Column name LDAPDomain */
-  public static final String COLUMNNAME_LDAPDomain = "LDAPDomain";
+  String COLUMNNAME_LDAPDomain = "LDAPDomain";
 
   /** Set LDAP Domain. Directory service domain name - e.g. idempiere.org */
-  public void setLDAPDomain(String LDAPDomain);
+  void setLDAPDomain(String LDAPDomain);
 
   /** Get LDAP Domain. Directory service domain name - e.g. idempiere.org */
-  public String getLDAPDomain();
+  String getLDAPDomain();
 
   /** Column name LDAPHost */
-  public static final String COLUMNNAME_LDAPHost = "LDAPHost";
+  String COLUMNNAME_LDAPHost = "LDAPHost";
 
   /** Set LDAP URL. Connection String to LDAP server starting with ldap:// */
-  public void setLDAPHost(String LDAPHost);
+  void setLDAPHost(String LDAPHost);
 
   /** Get LDAP URL. Connection String to LDAP server starting with ldap:// */
-  public String getLDAPHost();
+  String getLDAPHost();
 
   /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  void setName(String Name);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
   /** Column name NoProcessors */
-  public static final String COLUMNNAME_NoProcessors = "NoProcessors";
+  String COLUMNNAME_NoProcessors = "NoProcessors";
 
   /** Set Processors. Number of Database Processors */
-  public void setNoProcessors(int NoProcessors);
+  void setNoProcessors(int NoProcessors);
 
   /** Get Processors. Number of Database Processors */
-  public int getNoProcessors();
+  int getNoProcessors();
 
   /** Column name OldName */
-  public static final String COLUMNNAME_OldName = "OldName";
+  String COLUMNNAME_OldName = "OldName";
 
   /** Set Old Name */
-  public void setOldName(String OldName);
+  void setOldName(String OldName);
 
   /** Get Old Name */
-  public String getOldName();
+  String getOldName();
 
   /** Column name Password */
-  public static final String COLUMNNAME_Password = "Password";
+  String COLUMNNAME_Password = "Password";
 
   /** Set Password. Password of any length (case sensitive) */
-  public void setPassword(String Password);
+  void setPassword(String Password);
 
   /** Get Password. Password of any length (case sensitive) */
-  public String getPassword();
+  String getPassword();
 
   /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
+  String COLUMNNAME_Processing = "Processing";
 
   /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  void setProcessing(boolean Processing);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
   /** Column name ProfileInfo */
-  public static final String COLUMNNAME_ProfileInfo = "ProfileInfo";
+  String COLUMNNAME_ProfileInfo = "ProfileInfo";
 
   /** Set Profile. Information to help profiling the system for solving support issues */
-  public void setProfileInfo(String ProfileInfo);
+  void setProfileInfo(String ProfileInfo);
 
   /** Get Profile. Information to help profiling the system for solving support issues */
-  public String getProfileInfo();
+  String getProfileInfo();
 
   /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
+  String COLUMNNAME_Record_ID = "Record_ID";
 
   /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
+  void setRecord_ID(int Record_ID);
 
   /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
+  int getRecord_ID();
 
   /** Column name ReleaseNo */
-  public static final String COLUMNNAME_ReleaseNo = "ReleaseNo";
+  String COLUMNNAME_ReleaseNo = "ReleaseNo";
 
   /** Set Release No. Internal Release Number */
-  public void setReleaseNo(String ReleaseNo);
+  void setReleaseNo(String ReleaseNo);
 
   /** Get Release No. Internal Release Number */
-  public String getReleaseNo();
+  String getReleaseNo();
 
   /** Column name ReplicationType */
-  public static final String COLUMNNAME_ReplicationType = "ReplicationType";
+  String COLUMNNAME_ReplicationType = "ReplicationType";
 
   /** Set Replication Type. Type of Data Replication */
-  public void setReplicationType(String ReplicationType);
+  void setReplicationType(String ReplicationType);
 
   /** Get Replication Type. Type of Data Replication */
-  public String getReplicationType();
+  String getReplicationType();
 
   /** Column name StatisticsInfo */
-  public static final String COLUMNNAME_StatisticsInfo = "StatisticsInfo";
+  String COLUMNNAME_StatisticsInfo = "StatisticsInfo";
 
   /** Set Statistics. Information to help profiling the system for solving support issues */
-  public void setStatisticsInfo(String StatisticsInfo);
+  void setStatisticsInfo(String StatisticsInfo);
 
   /** Get Statistics. Information to help profiling the system for solving support issues */
-  public String getStatisticsInfo();
+  String getStatisticsInfo();
 
   /** Column name Summary */
-  public static final String COLUMNNAME_Summary = "Summary";
+  String COLUMNNAME_Summary = "Summary";
 
   /** Set Summary. Textual summary of this request */
-  public void setSummary(String Summary);
+  void setSummary(String Summary);
 
   /** Get Summary. Textual summary of this request */
-  public String getSummary();
+  String getSummary();
 
   /** Column name SupportEMail */
-  public static final String COLUMNNAME_SupportEMail = "SupportEMail";
+  String COLUMNNAME_SupportEMail = "SupportEMail";
 
   /** Set Support EMail. EMail address to send support information and updates to */
-  public void setSupportEMail(String SupportEMail);
+  void setSupportEMail(String SupportEMail);
 
   /** Get Support EMail. EMail address to send support information and updates to */
-  public String getSupportEMail();
+  String getSupportEMail();
 
   /** Column name SupportExpDate */
-  public static final String COLUMNNAME_SupportExpDate = "SupportExpDate";
+  String COLUMNNAME_SupportExpDate = "SupportExpDate";
 
   /** Set Support Expires. Date when the iDempiere support expires */
-  public void setSupportExpDate(Timestamp SupportExpDate);
+  void setSupportExpDate(Timestamp SupportExpDate);
 
   /** Get Support Expires. Date when the iDempiere support expires */
-  public Timestamp getSupportExpDate();
+  Timestamp getSupportExpDate();
 
   /** Column name SupportUnits */
-  public static final String COLUMNNAME_SupportUnits = "SupportUnits";
+  String COLUMNNAME_SupportUnits = "SupportUnits";
 
   /** Set Internal Users. Number of Internal Users for iDempiere Support */
-  public void setSupportUnits(int SupportUnits);
+  void setSupportUnits(int SupportUnits);
 
   /** Get Internal Users. Number of Internal Users for iDempiere Support */
-  public int getSupportUnits();
+  int getSupportUnits();
 
   /** Column name SystemStatus */
-  public static final String COLUMNNAME_SystemStatus = "SystemStatus";
+  String COLUMNNAME_SystemStatus = "SystemStatus";
 
   /** Set System Status. Status of the system - Support priority depends on system status */
-  public void setSystemStatus(String SystemStatus);
+  void setSystemStatus(String SystemStatus);
 
   /** Get System Status. Status of the system - Support priority depends on system status */
-  public String getSystemStatus();
+  String getSystemStatus();
 
   /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  String COLUMNNAME_Updated = "Updated";
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
+  Timestamp getUpdated();
 
   /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 
   /** Column name UserName */
-  public static final String COLUMNNAME_UserName = "UserName";
+  String COLUMNNAME_UserName = "UserName";
 
   /** Set User Name */
-  public void setUserName(String UserName);
+  void setUserName(String UserName);
 
   /** Get User Name */
-  public String getUserName();
+  String getUserName();
 
   /** Column name Version */
-  public static final String COLUMNNAME_Version = "Version";
+  String COLUMNNAME_Version = "Version";
 
   /** Set Version. Version of the table definition */
-  public void setVersion(String Version);
+  void setVersion(String Version);
 
   /** Get Version. Version of the table definition */
-  public String getVersion();
+  String getVersion();
 }

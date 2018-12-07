@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Element {
 
   /** TableName=C_Element */
-  public static final String Table_Name = "C_Element";
+  String Table_Name = "C_Element";
 
   /** AD_Table_ID=142 */
-  public static final int Table_ID = 142;
+  int Table_ID = 142;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,130 +26,130 @@ public interface I_C_Element {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+  int getOrgId();
 
   /** Column name AD_Tree_ID */
-  public static final String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
+  String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
 
   /** Set Tree. Identifies a Tree */
-  public void setAD_Tree_ID(int AD_Tree_ID);
+  void setAD_Tree_ID(int AD_Tree_ID);
 
   /** Get Tree. Identifies a Tree */
-  public int getAD_Tree_ID();
+  int getAD_Tree_ID();
 
-  public I_AD_Tree getAD_Tree() throws RuntimeException;
+  I_AD_Tree getAD_Tree() throws RuntimeException;
 
   /** Column name C_Element_ID */
-  public static final String COLUMNNAME_C_Element_ID = "C_Element_ID";
+  String COLUMNNAME_C_Element_ID = "C_Element_ID";
 
   /** Set Element. Accounting Element */
-  public void setC_Element_ID(int C_Element_ID);
+  void setC_Element_ID(int C_Element_ID);
 
   /** Get Element. Accounting Element */
-  public int getC_Element_ID();
+  int getC_Element_ID();
 
   /** Column name C_Element_UU */
-  public static final String COLUMNNAME_C_Element_UU = "C_Element_UU";
+  String COLUMNNAME_C_Element_UU = "C_Element_UU";
 
   /** Set C_Element_UU */
-  public void setC_Element_UU(String C_Element_UU);
+  void setC_Element_UU(String C_Element_UU);
 
   /** Get C_Element_UU */
-  public String getC_Element_UU();
+  String getC_Element_UU();
 
   /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  String COLUMNNAME_Created = "Created";
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+  Timestamp getCreated();
 
   /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  String COLUMNNAME_CreatedBy = "CreatedBy";
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
+  int getCreatedBy();
 
   /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+  String COLUMNNAME_Description = "Description";
 
   /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  void setDescription(String Description);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
   /** Column name ElementType */
-  public static final String COLUMNNAME_ElementType = "ElementType";
+  String COLUMNNAME_ElementType = "ElementType";
 
   /** Set Type. Element Type (account or user defined) */
-  public void setElementType(String ElementType);
+  void setElementType(String ElementType);
 
   /** Get Type. Element Type (account or user defined) */
-  public String getElementType();
+  String getElementType();
 
   /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  String COLUMNNAME_IsActive = "IsActive";
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
+  boolean isActive();
 
   /** Column name IsBalancing */
-  public static final String COLUMNNAME_IsBalancing = "IsBalancing";
+  String COLUMNNAME_IsBalancing = "IsBalancing";
 
   /** Set Balancing. All transactions within an element value must balance (e.g. cost centers) */
-  public void setIsBalancing(boolean IsBalancing);
+  void setIsBalancing(boolean IsBalancing);
 
   /** Get Balancing. All transactions within an element value must balance (e.g. cost centers) */
-  public boolean isBalancing();
+  boolean isBalancing();
 
   /** Column name IsNaturalAccount */
-  public static final String COLUMNNAME_IsNaturalAccount = "IsNaturalAccount";
+  String COLUMNNAME_IsNaturalAccount = "IsNaturalAccount";
 
   /** Set Natural Account. The primary natural account */
-  public void setIsNaturalAccount(boolean IsNaturalAccount);
+  void setIsNaturalAccount(boolean IsNaturalAccount);
 
   /** Get Natural Account. The primary natural account */
-  public boolean isNaturalAccount();
+  boolean isNaturalAccount();
 
   /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  void setName(String Name);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
   /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  String COLUMNNAME_Updated = "Updated";
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
+  Timestamp getUpdated();
 
   /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 
   /** Column name VFormat */
-  public static final String COLUMNNAME_VFormat = "VFormat";
+  String COLUMNNAME_VFormat = "VFormat";
 
   /**
    * Set Value Format. Format of the value; Can contain fixed format elements, Variables:
    * "_lLoOaAcCa09"
    */
-  public void setVFormat(String VFormat);
+  void setVFormat(String VFormat);
 
   /**
    * Get Value Format. Format of the value; Can contain fixed format elements, Variables:
    * "_lLoOaAcCa09"
    */
-  public String getVFormat();
+  String getVFormat();
 }

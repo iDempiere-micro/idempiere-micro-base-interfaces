@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_TreeNodeBP {
 
   /** TableName=AD_TreeNodeBP */
-  public static final String Table_Name = "AD_TreeNodeBP";
+  String Table_Name = "AD_TreeNodeBP";
 
   /** AD_Table_ID=451 */
-  public static final int Table_ID = 451;
+  int Table_ID = 451;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,91 +26,91 @@ public interface I_AD_TreeNodeBP {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+  int getOrgId();
 
   /** Column name AD_Tree_ID */
-  public static final String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
+  String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
 
   /** Set Tree. Identifies a Tree */
-  public void setAD_Tree_ID(int AD_Tree_ID);
+  void setAD_Tree_ID(int AD_Tree_ID);
 
   /** Get Tree. Identifies a Tree */
-  public int getAD_Tree_ID();
+  int getAD_Tree_ID();
 
-  public I_AD_Tree getAD_Tree() throws RuntimeException;
+  I_AD_Tree getAD_Tree() throws RuntimeException;
 
   /** Column name AD_TreeNodeBP_UU */
-  public static final String COLUMNNAME_AD_TreeNodeBP_UU = "AD_TreeNodeBP_UU";
+  String COLUMNNAME_AD_TreeNodeBP_UU = "AD_TreeNodeBP_UU";
 
   /** Set AD_TreeNodeBP_UU */
-  public void setAD_TreeNodeBP_UU(String AD_TreeNodeBP_UU);
+  void setAD_TreeNodeBP_UU(String AD_TreeNodeBP_UU);
 
   /** Get AD_TreeNodeBP_UU */
-  public String getAD_TreeNodeBP_UU();
+  String getAD_TreeNodeBP_UU();
 
   /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  String COLUMNNAME_Created = "Created";
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+  Timestamp getCreated();
 
   /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  String COLUMNNAME_CreatedBy = "CreatedBy";
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
+  int getCreatedBy();
 
   /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  String COLUMNNAME_IsActive = "IsActive";
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
+  boolean isActive();
 
   /** Column name Node_ID */
-  public static final String COLUMNNAME_Node_ID = "Node_ID";
+  String COLUMNNAME_Node_ID = "Node_ID";
 
   /** Set Node */
-  public void setNode_ID(int Node_ID);
+  void setNode_ID(int Node_ID);
 
   /** Get Node */
-  public int getNode_ID();
+  int getNode_ID();
 
   /** Column name Parent_ID */
-  public static final String COLUMNNAME_Parent_ID = "Parent_ID";
+  String COLUMNNAME_Parent_ID = "Parent_ID";
 
   /** Set Parent. Parent of Entity */
-  public void setParent_ID(int Parent_ID);
+  void setParent_ID(int Parent_ID);
 
   /** Get Parent. Parent of Entity */
-  public int getParent_ID();
+  int getParent_ID();
 
   /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
+  String COLUMNNAME_SeqNo = "SeqNo";
 
   /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  void setSeqNo(int SeqNo);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
   /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  String COLUMNNAME_Updated = "Updated";
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
+  Timestamp getUpdated();
 
   /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }
