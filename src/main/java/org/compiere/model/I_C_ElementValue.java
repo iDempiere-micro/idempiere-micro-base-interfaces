@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_ElementValue {
 
   /** TableName=C_ElementValue */
-  public static final String Table_Name = "C_ElementValue";
+  String Table_Name = "C_ElementValue";
 
   /** AD_Table_ID=188 */
-  public static final int Table_ID = 188;
+  int Table_ID = 188;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,262 +26,235 @@ public interface I_C_ElementValue {
   /** Load Meta Data */
 
   /** Column name AccountSign */
-  public static final String COLUMNNAME_AccountSign = "AccountSign";
-
-  /** Set Account Sign. Indicates the Natural Sign of the Account as a Debit or Credit */
-  public void setAccountSign(String AccountSign);
+  String COLUMNNAME_AccountSign = "AccountSign";
+  /** Column name AccountType */
+  String COLUMNNAME_AccountType = "AccountType";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BPartnerType */
+  String COLUMNNAME_BPartnerType = "BPartnerType";
+  /** Column name C_BankAccount_ID */
+  String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name C_Element_ID */
+  String COLUMNNAME_C_Element_ID = "C_Element_ID";
+  /** Column name C_ElementValue_ID */
+  String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
+  /** Column name C_ElementValue_UU */
+  String COLUMNNAME_C_ElementValue_UU = "C_ElementValue_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsBankAccount */
+  String COLUMNNAME_IsBankAccount = "IsBankAccount";
+  /** Column name IsDetailBPartner */
+  String COLUMNNAME_IsDetailBPartner = "IsDetailBPartner";
+  /** Column name IsDetailProduct */
+  String COLUMNNAME_IsDetailProduct = "IsDetailProduct";
+  /** Column name IsDocControlled */
+  String COLUMNNAME_IsDocControlled = "IsDocControlled";
+  /** Column name IsForeignCurrency */
+  String COLUMNNAME_IsForeignCurrency = "IsForeignCurrency";
+  /** Column name IsSummary */
+  String COLUMNNAME_IsSummary = "IsSummary";
+  /** Column name PostActual */
+  String COLUMNNAME_PostActual = "PostActual";
+  /** Column name PostBudget */
+  String COLUMNNAME_PostBudget = "PostBudget";
+  /** Column name PostEncumbrance */
+  String COLUMNNAME_PostEncumbrance = "PostEncumbrance";
+  /** Column name PostStatistical */
+  String COLUMNNAME_PostStatistical = "PostStatistical";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name ValidFrom */
+  String COLUMNNAME_ValidFrom = "ValidFrom";
+  /** Column name ValidTo */
+  String COLUMNNAME_ValidTo = "ValidTo";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Get Account Sign. Indicates the Natural Sign of the Account as a Debit or Credit */
-  public String getAccountSign();
+  String getAccountSign();
 
-  /** Column name AccountType */
-  public static final String COLUMNNAME_AccountType = "AccountType";
-
-  /** Set Account Type. Indicates the type of account */
-  public void setAccountType(String AccountType);
+  /** Set Account Sign. Indicates the Natural Sign of the Account as a Debit or Credit */
+  void setAccountSign(String AccountSign);
 
   /** Get Account Type. Indicates the type of account */
-  public String getAccountType();
+  String getAccountType();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Account Type. Indicates the type of account */
+  void setAccountType(String AccountType);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BPartnerType */
-  public static final String COLUMNNAME_BPartnerType = "BPartnerType";
-
-  /** Set Business Partner Type */
-  public void setBPartnerType(String BPartnerType);
+  int getOrgId();
 
   /** Get Business Partner Type */
-  public String getBPartnerType();
+  String getBPartnerType();
 
-  /** Column name C_BankAccount_ID */
-  public static final String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
-
-  /** Set Bank Account. Account at the Bank */
-  public void setC_BankAccount_ID(int C_BankAccount_ID);
+  /** Set Business Partner Type */
+  void setBPartnerType(String BPartnerType);
 
   /** Get Bank Account. Account at the Bank */
-  public int getC_BankAccount_ID();
+  int getC_BankAccount_ID();
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  /** Set Bank Account. Account at the Bank */
+  void setC_BankAccount_ID(int C_BankAccount_ID);
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  /** Column name C_Element_ID */
-  public static final String COLUMNNAME_C_Element_ID = "C_Element_ID";
-
-  /** Set Element. Accounting Element */
-  public void setC_Element_ID(int C_Element_ID);
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
   /** Get Element. Accounting Element */
-  public int getC_Element_ID();
+  int getC_Element_ID();
 
-  public I_C_Element getC_Element() throws RuntimeException;
+  /** Set Element. Accounting Element */
+  void setC_Element_ID(int C_Element_ID);
 
-  /** Column name C_ElementValue_ID */
-  public static final String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
-
-  /** Set Account Element. Account Element */
-  public void setC_ElementValue_ID(int C_ElementValue_ID);
+  I_C_Element getC_Element() throws RuntimeException;
 
   /** Get Account Element. Account Element */
-  public int getC_ElementValue_ID();
+  int getC_ElementValue_ID();
 
-  /** Column name C_ElementValue_UU */
-  public static final String COLUMNNAME_C_ElementValue_UU = "C_ElementValue_UU";
-
-  /** Set C_ElementValue_UU */
-  public void setC_ElementValue_UU(String C_ElementValue_UU);
+  /** Set Account Element. Account Element */
+  void setC_ElementValue_ID(int C_ElementValue_ID);
 
   /** Get C_ElementValue_UU */
-  public String getC_ElementValue_UU();
+  String getC_ElementValue_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_ElementValue_UU */
+  void setC_ElementValue_UU(String C_ElementValue_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsBankAccount */
-  public static final String COLUMNNAME_IsBankAccount = "IsBankAccount";
+  boolean isActive();
 
   /** Set Bank Account. Indicates if this is the Bank Account */
-  public void setIsBankAccount(boolean IsBankAccount);
+  void setIsBankAccount(boolean IsBankAccount);
 
   /** Get Bank Account. Indicates if this is the Bank Account */
-  public boolean isBankAccount();
-
-  /** Column name IsDetailBPartner */
-  public static final String COLUMNNAME_IsDetailBPartner = "IsDetailBPartner";
+  boolean isBankAccount();
 
   /** Set Manage Business Partners */
-  public void setIsDetailBPartner(boolean IsDetailBPartner);
+  void setIsDetailBPartner(boolean IsDetailBPartner);
 
   /** Get Manage Business Partners */
-  public boolean isDetailBPartner();
-
-  /** Column name IsDetailProduct */
-  public static final String COLUMNNAME_IsDetailProduct = "IsDetailProduct";
+  boolean isDetailBPartner();
 
   /** Set Manage Products */
-  public void setIsDetailProduct(boolean IsDetailProduct);
+  void setIsDetailProduct(boolean IsDetailProduct);
 
   /** Get Manage Products */
-  public boolean isDetailProduct();
-
-  /** Column name IsDocControlled */
-  public static final String COLUMNNAME_IsDocControlled = "IsDocControlled";
+  boolean isDetailProduct();
 
   /**
    * Set Document Controlled. Control account - If an account is controlled by a document, you
    * cannot post manually to it
    */
-  public void setIsDocControlled(boolean IsDocControlled);
+  void setIsDocControlled(boolean IsDocControlled);
 
   /**
    * Get Document Controlled. Control account - If an account is controlled by a document, you
    * cannot post manually to it
    */
-  public boolean isDocControlled();
-
-  /** Column name IsForeignCurrency */
-  public static final String COLUMNNAME_IsForeignCurrency = "IsForeignCurrency";
+  boolean isDocControlled();
 
   /**
    * Set Foreign Currency Account. Balances in foreign currency accounts are held in the nominated
    * currency
    */
-  public void setIsForeignCurrency(boolean IsForeignCurrency);
+  void setIsForeignCurrency(boolean IsForeignCurrency);
 
   /**
    * Get Foreign Currency Account. Balances in foreign currency accounts are held in the nominated
    * currency
    */
-  public boolean isForeignCurrency();
-
-  /** Column name IsSummary */
-  public static final String COLUMNNAME_IsSummary = "IsSummary";
+  boolean isForeignCurrency();
 
   /** Set Summary Level. This is a summary entity */
-  public void setIsSummary(boolean IsSummary);
+  void setIsSummary(boolean IsSummary);
 
   /** Get Summary Level. This is a summary entity */
-  public boolean isSummary();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isSummary();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PostActual */
-  public static final String COLUMNNAME_PostActual = "PostActual";
-
-  /** Set Post Actual. Actual Values can be posted */
-  public void setPostActual(boolean PostActual);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Post Actual. Actual Values can be posted */
-  public boolean isPostActual();
+  boolean isPostActual();
 
-  /** Column name PostBudget */
-  public static final String COLUMNNAME_PostBudget = "PostBudget";
-
-  /** Set Post Budget. Budget values can be posted */
-  public void setPostBudget(boolean PostBudget);
+  /** Set Post Actual. Actual Values can be posted */
+  void setPostActual(boolean PostActual);
 
   /** Get Post Budget. Budget values can be posted */
-  public boolean isPostBudget();
+  boolean isPostBudget();
 
-  /** Column name PostEncumbrance */
-  public static final String COLUMNNAME_PostEncumbrance = "PostEncumbrance";
-
-  /** Set Post Encumbrance. Post commitments to this account */
-  public void setPostEncumbrance(boolean PostEncumbrance);
+  /** Set Post Budget. Budget values can be posted */
+  void setPostBudget(boolean PostBudget);
 
   /** Get Post Encumbrance. Post commitments to this account */
-  public boolean isPostEncumbrance();
+  boolean isPostEncumbrance();
 
-  /** Column name PostStatistical */
-  public static final String COLUMNNAME_PostStatistical = "PostStatistical";
-
-  /** Set Post Statistical. Post statistical quantities to this account? */
-  public void setPostStatistical(boolean PostStatistical);
+  /** Set Post Encumbrance. Post commitments to this account */
+  void setPostEncumbrance(boolean PostEncumbrance);
 
   /** Get Post Statistical. Post statistical quantities to this account? */
-  public boolean isPostStatistical();
+  boolean isPostStatistical();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Post Statistical. Post statistical quantities to this account? */
+  void setPostStatistical(boolean PostStatistical);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValidFrom */
-  public static final String COLUMNNAME_ValidFrom = "ValidFrom";
-
-  /** Set Valid from. Valid from including this date (first day) */
-  public void setValidFrom(Timestamp ValidFrom);
+  int getUpdatedBy();
 
   /** Get Valid from. Valid from including this date (first day) */
-  public Timestamp getValidFrom();
+  Timestamp getValidFrom();
 
-  /** Column name ValidTo */
-  public static final String COLUMNNAME_ValidTo = "ValidTo";
-
-  /** Set Valid to. Valid to including this date (last day) */
-  public void setValidTo(Timestamp ValidTo);
+  /** Set Valid from. Valid from including this date (first day) */
+  void setValidFrom(Timestamp ValidFrom);
 
   /** Get Valid to. Valid to including this date (last day) */
-  public Timestamp getValidTo();
+  Timestamp getValidTo();
 
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  /** Set Valid to. Valid to including this date (last day) */
+  void setValidTo(Timestamp ValidTo);
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Element {
 
   /** TableName=C_Element */
-  public static final String Table_Name = "C_Element";
+  String Table_Name = "C_Element";
 
   /** AD_Table_ID=142 */
-  public static final int Table_ID = 142;
+  int Table_ID = 142;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,130 +26,117 @@ public interface I_C_Element {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Tree_ID */
+  String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
+  /** Column name C_Element_ID */
+  String COLUMNNAME_C_Element_ID = "C_Element_ID";
+  /** Column name C_Element_UU */
+  String COLUMNNAME_C_Element_UU = "C_Element_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name ElementType */
+  String COLUMNNAME_ElementType = "ElementType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsBalancing */
+  String COLUMNNAME_IsBalancing = "IsBalancing";
+  /** Column name IsNaturalAccount */
+  String COLUMNNAME_IsNaturalAccount = "IsNaturalAccount";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name VFormat */
+  String COLUMNNAME_VFormat = "VFormat";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Tree_ID */
-  public static final String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
-
-  /** Set Tree. Identifies a Tree */
-  public void setAD_Tree_ID(int AD_Tree_ID);
+  int getOrgId();
 
   /** Get Tree. Identifies a Tree */
-  public int getAD_Tree_ID();
+  int getAD_Tree_ID();
 
-  public I_AD_Tree getAD_Tree() throws RuntimeException;
+  /** Set Tree. Identifies a Tree */
+  void setAD_Tree_ID(int AD_Tree_ID);
 
-  /** Column name C_Element_ID */
-  public static final String COLUMNNAME_C_Element_ID = "C_Element_ID";
-
-  /** Set Element. Accounting Element */
-  public void setC_Element_ID(int C_Element_ID);
+  I_AD_Tree getAD_Tree() throws RuntimeException;
 
   /** Get Element. Accounting Element */
-  public int getC_Element_ID();
+  int getC_Element_ID();
 
-  /** Column name C_Element_UU */
-  public static final String COLUMNNAME_C_Element_UU = "C_Element_UU";
-
-  /** Set C_Element_UU */
-  public void setC_Element_UU(String C_Element_UU);
+  /** Set Element. Accounting Element */
+  void setC_Element_ID(int C_Element_ID);
 
   /** Get C_Element_UU */
-  public String getC_Element_UU();
+  String getC_Element_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_Element_UU */
+  void setC_Element_UU(String C_Element_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name ElementType */
-  public static final String COLUMNNAME_ElementType = "ElementType";
-
-  /** Set Type. Element Type (account or user defined) */
-  public void setElementType(String ElementType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Type. Element Type (account or user defined) */
-  public String getElementType();
+  String getElementType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Type. Element Type (account or user defined) */
+  void setElementType(String ElementType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsBalancing */
-  public static final String COLUMNNAME_IsBalancing = "IsBalancing";
+  boolean isActive();
 
   /** Set Balancing. All transactions within an element value must balance (e.g. cost centers) */
-  public void setIsBalancing(boolean IsBalancing);
+  void setIsBalancing(boolean IsBalancing);
 
   /** Get Balancing. All transactions within an element value must balance (e.g. cost centers) */
-  public boolean isBalancing();
-
-  /** Column name IsNaturalAccount */
-  public static final String COLUMNNAME_IsNaturalAccount = "IsNaturalAccount";
+  boolean isBalancing();
 
   /** Set Natural Account. The primary natural account */
-  public void setIsNaturalAccount(boolean IsNaturalAccount);
+  void setIsNaturalAccount(boolean IsNaturalAccount);
 
   /** Get Natural Account. The primary natural account */
-  public boolean isNaturalAccount();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isNaturalAccount();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name VFormat */
-  public static final String COLUMNNAME_VFormat = "VFormat";
-
-  /**
-   * Set Value Format. Format of the value; Can contain fixed format elements, Variables:
-   * "_lLoOaAcCa09"
-   */
-  public void setVFormat(String VFormat);
+  int getUpdatedBy();
 
   /**
    * Get Value Format. Format of the value; Can contain fixed format elements, Variables:
    * "_lLoOaAcCa09"
    */
-  public String getVFormat();
+  String getVFormat();
+
+  /**
+   * Set Value Format. Format of the value; Can contain fixed format elements, Variables:
+   * "_lLoOaAcCa09"
+   */
+  void setVFormat(String VFormat);
 }

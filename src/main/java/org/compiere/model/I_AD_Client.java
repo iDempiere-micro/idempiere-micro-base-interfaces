@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Client {
 
   /** TableName=AD_Client */
-  public static final String Table_Name = "AD_Client";
+  String Table_Name = "AD_Client";
 
   /** AD_Table_ID=112 */
-  public static final int Table_ID = 112;
+  int Table_ID = 112;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,272 +26,243 @@ public interface I_AD_Client {
   /** Load Meta Data */
 
   /** Column name AD_Client_UU */
-  public static final String COLUMNNAME_AD_Client_UU = "AD_Client_UU";
-
-  /** Set AD_Client_UU */
-  public void setADClientUU(String AD_Client_UU);
+  String COLUMNNAME_AD_Client_UU = "AD_Client_UU";
+  /** Column name AD_Language */
+  String COLUMNNAME_AD_Language = "AD_Language";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PasswordRule_ID */
+  String COLUMNNAME_AD_PasswordRule_ID = "AD_PasswordRule_ID";
+  /** Column name AD_ReplicationStrategy_ID */
+  String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
+  /** Column name AutoArchive */
+  String COLUMNNAME_AutoArchive = "AutoArchive";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocumentDir */
+  String COLUMNNAME_DocumentDir = "DocumentDir";
+  /** Column name EMailTest */
+  String COLUMNNAME_EMailTest = "EMailTest";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsMultiLingualDocument */
+  String COLUMNNAME_IsMultiLingualDocument = "IsMultiLingualDocument";
+  /** Column name IsPostImmediate */
+  String COLUMNNAME_IsPostImmediate = "IsPostImmediate";
+  /** Column name IsSecureSMTP */
+  String COLUMNNAME_IsSecureSMTP = "IsSecureSMTP";
+  /** Column name IsServerEMail */
+  String COLUMNNAME_IsServerEMail = "IsServerEMail";
+  /** Column name IsSmtpAuthorization */
+  String COLUMNNAME_IsSmtpAuthorization = "IsSmtpAuthorization";
+  /** Column name IsUseASP */
+  String COLUMNNAME_IsUseASP = "IsUseASP";
+  /** Column name IsUseBetaFunctions */
+  String COLUMNNAME_IsUseBetaFunctions = "IsUseBetaFunctions";
+  /** Column name MMPolicy */
+  String COLUMNNAME_MMPolicy = "MMPolicy";
+  /** Column name ModelValidationClasses */
+  String COLUMNNAME_ModelValidationClasses = "ModelValidationClasses";
+  /** Column name RequestEMail */
+  String COLUMNNAME_RequestEMail = "RequestEMail";
+  /** Column name RequestFolder */
+  String COLUMNNAME_RequestFolder = "RequestFolder";
+  /** Column name RequestUser */
+  String COLUMNNAME_RequestUser = "RequestUser";
+  /** Column name RequestUserPW */
+  String COLUMNNAME_RequestUserPW = "RequestUserPW";
+  /** Column name SMTPHost */
+  String COLUMNNAME_SMTPHost = "SMTPHost";
+  /** Column name SMTPPort */
+  String COLUMNNAME_SMTPPort = "SMTPPort";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Get AD_Client_UU */
-  public String getADClientUU();
+  String getADClientUU();
 
-  /** Column name AD_Language */
-  public static final String COLUMNNAME_AD_Language = "AD_Language";
-
-  /** Set Language. Language for this entity */
-  public void setADLanguage(String AD_Language);
+  /** Set AD_Client_UU */
+  void setADClientUU(String AD_Client_UU);
 
   /** Get Language. Language for this entity */
-  public String getADLanguage();
+  String getADLanguage();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Language. Language for this entity */
+  void setADLanguage(String AD_Language);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PasswordRule_ID */
-  public static final String COLUMNNAME_AD_PasswordRule_ID = "AD_PasswordRule_ID";
+  int getOrgId();
 
   /** Set Password Policies */
-  public void setAD_PasswordRule_ID(int AD_PasswordRule_ID);
+  void setAD_PasswordRule_ID(int AD_PasswordRule_ID);
 
   /** Get Password Policies */
-  public int getADPasswordRule_ID();
-
-  /** Column name AD_ReplicationStrategy_ID */
-  public static final String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
-
-  /** Set Replication Strategy. Data Replication Strategy */
-  public void setADReplicationStrategyID(int AD_ReplicationStrategy_ID);
+  int getADPasswordRule_ID();
 
   /** Get Replication Strategy. Data Replication Strategy */
-  public int getADReplicationStrategyID();
+  int getADReplicationStrategyID();
 
-  /** Column name AutoArchive */
-  public static final String COLUMNNAME_AutoArchive = "AutoArchive";
-
-  /** Set Auto Archive. Enable and level of automatic Archive of documents */
-  public void setAutoArchive(String AutoArchive);
+  /** Set Replication Strategy. Data Replication Strategy */
+  void setADReplicationStrategyID(int AD_ReplicationStrategy_ID);
 
   /** Get Auto Archive. Enable and level of automatic Archive of documents */
-  public String getAutoArchive();
+  String getAutoArchive();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Auto Archive. Enable and level of automatic Archive of documents */
+  void setAutoArchive(String AutoArchive);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocumentDir */
-  public static final String COLUMNNAME_DocumentDir = "DocumentDir";
-
-  /** Set Document Directory. Directory for documents from the application server */
-  public void setDocumentDir(String DocumentDir);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document Directory. Directory for documents from the application server */
-  public String getDocumentDir();
+  String getDocumentDir();
 
-  /** Column name EMailTest */
-  public static final String COLUMNNAME_EMailTest = "EMailTest";
-
-  /** Set EMail Test. Test EMail */
-  public void setEMailTest(String EMailTest);
+  /** Set Document Directory. Directory for documents from the application server */
+  void setDocumentDir(String DocumentDir);
 
   /** Get EMail Test. Test EMail */
-  public String getEMailTest();
+  String getEMailTest();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set EMail Test. Test EMail */
+  void setEMailTest(String EMailTest);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsMultiLingualDocument */
-  public static final String COLUMNNAME_IsMultiLingualDocument = "IsMultiLingualDocument";
+  boolean isActive();
 
   /** Set Multi Lingual Documents. Documents are Multi Lingual */
-  public void setIsMultiLingualDocument(boolean IsMultiLingualDocument);
+  void setIsMultiLingualDocument(boolean IsMultiLingualDocument);
 
   /** Get Multi Lingual Documents. Documents are Multi Lingual */
-  public boolean isMultiLingualDocument();
-
-  /** Column name IsPostImmediate */
-  public static final String COLUMNNAME_IsPostImmediate = "IsPostImmediate";
+  boolean isMultiLingualDocument();
 
   /** Set Post Immediately (Deprecated). Post the accounting immediately for testing (Deprecated) */
-  public void setIsPostImmediate(boolean IsPostImmediate);
+  void setIsPostImmediate(boolean IsPostImmediate);
 
   /** Get Post Immediately (Deprecated). Post the accounting immediately for testing (Deprecated) */
-  public boolean isPostImmediate();
-
-  /** Column name IsSecureSMTP */
-  public static final String COLUMNNAME_IsSecureSMTP = "IsSecureSMTP";
+  boolean isPostImmediate();
 
   /** Set SMTP SSL/TLS. Use SSL/TLS for SMTP */
-  public void setIsSecureSMTP(boolean IsSecureSMTP);
+  void setIsSecureSMTP(boolean IsSecureSMTP);
 
   /** Get SMTP SSL/TLS. Use SSL/TLS for SMTP */
-  public boolean isSecureSMTP();
-
-  /** Column name IsServerEMail */
-  public static final String COLUMNNAME_IsServerEMail = "IsServerEMail";
+  boolean isSecureSMTP();
 
   /** Set Server EMail. Send EMail from Server */
-  public void setIsServerEMail(boolean IsServerEMail);
+  void setIsServerEMail(boolean IsServerEMail);
 
   /** Get Server EMail. Send EMail from Server */
-  public boolean isServerEMail();
-
-  /** Column name IsSmtpAuthorization */
-  public static final String COLUMNNAME_IsSmtpAuthorization = "IsSmtpAuthorization";
+  boolean isServerEMail();
 
   /** Set SMTP Authentication. Your mail server requires Authentication */
-  public void setIsSmtpAuthorization(boolean IsSmtpAuthorization);
+  void setIsSmtpAuthorization(boolean IsSmtpAuthorization);
 
   /** Get SMTP Authentication. Your mail server requires Authentication */
-  public boolean isSmtpAuthorization();
-
-  /** Column name IsUseASP */
-  public static final String COLUMNNAME_IsUseASP = "IsUseASP";
+  boolean isSmtpAuthorization();
 
   /** Set IsUseASP */
-  public void setIsUseASP(boolean IsUseASP);
+  void setIsUseASP(boolean IsUseASP);
 
   /** Get IsUseASP */
-  public boolean isUseASP();
-
-  /** Column name IsUseBetaFunctions */
-  public static final String COLUMNNAME_IsUseBetaFunctions = "IsUseBetaFunctions";
+  boolean isUseASP();
 
   /** Set Use Beta Functions. Enable the use of Beta Functionality */
-  public void setIsUseBetaFunctions(boolean IsUseBetaFunctions);
+  void setIsUseBetaFunctions(boolean IsUseBetaFunctions);
 
   /** Get Use Beta Functions. Enable the use of Beta Functionality */
-  public boolean isUseBetaFunctions();
-
-  /** Column name MMPolicy */
-  public static final String COLUMNNAME_MMPolicy = "MMPolicy";
-
-  /** Set Material Policy. Material Movement Policy */
-  public void setMMPolicy(String MMPolicy);
+  boolean isUseBetaFunctions();
 
   /** Get Material Policy. Material Movement Policy */
-  public String getMMPolicy();
+  String getMMPolicy();
 
-  /** Column name ModelValidationClasses */
-  public static final String COLUMNNAME_ModelValidationClasses = "ModelValidationClasses";
-
-  /** Set Model Validation Classes. List of data model validation classes separated by ; */
-  public void setModelValidationClasses(String ModelValidationClasses);
+  /** Set Material Policy. Material Movement Policy */
+  void setMMPolicy(String MMPolicy);
 
   /** Get Model Validation Classes. List of data model validation classes separated by ; */
-  public String getModelValidationClasses();
+  String getModelValidationClasses();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Model Validation Classes. List of data model validation classes separated by ; */
+  void setModelValidationClasses(String ModelValidationClasses);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name RequestEMail */
-  public static final String COLUMNNAME_RequestEMail = "RequestEMail";
-
-  /**
-   * Set Request EMail. EMail address to send automated mails from or receive mails for automated
-   * processing (fully qualified)
-   */
-  public void setRequestEMail(String RequestEMail);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /**
    * Get Request EMail. EMail address to send automated mails from or receive mails for automated
    * processing (fully qualified)
    */
-  public String getRequestEMail();
+  String getRequestEMail();
 
-  /** Column name RequestFolder */
-  public static final String COLUMNNAME_RequestFolder = "RequestFolder";
-
-  /** Set Request Folder. EMail folder to process incoming emails; if empty INBOX is used */
-  public void setRequestFolder(String RequestFolder);
+  /**
+   * Set Request EMail. EMail address to send automated mails from or receive mails for automated
+   * processing (fully qualified)
+   */
+  void setRequestEMail(String RequestEMail);
 
   /** Get Request Folder. EMail folder to process incoming emails; if empty INBOX is used */
-  public String getRequestFolder();
+  String getRequestFolder();
 
-  /** Column name RequestUser */
-  public static final String COLUMNNAME_RequestUser = "RequestUser";
-
-  /** Set Request User. User Name (ID) of the email owner */
-  public void setRequestUser(String RequestUser);
+  /** Set Request Folder. EMail folder to process incoming emails; if empty INBOX is used */
+  void setRequestFolder(String RequestFolder);
 
   /** Get Request User. User Name (ID) of the email owner */
-  public String getRequestUser();
+  String getRequestUser();
 
-  /** Column name RequestUserPW */
-  public static final String COLUMNNAME_RequestUserPW = "RequestUserPW";
-
-  /** Set Request User Password. Password of the user name (ID) for mail processing */
-  public void setRequestUserPW(String RequestUserPW);
+  /** Set Request User. User Name (ID) of the email owner */
+  void setRequestUser(String RequestUser);
 
   /** Get Request User Password. Password of the user name (ID) for mail processing */
-  public String getRequestUserPW();
+  String getRequestUserPW();
 
-  /** Column name SMTPHost */
-  public static final String COLUMNNAME_SMTPHost = "SMTPHost";
-
-  /** Set Mail Host. Hostname of Mail Server for SMTP and IMAP */
-  public void setSMTPHost(String SMTPHost);
+  /** Set Request User Password. Password of the user name (ID) for mail processing */
+  void setRequestUserPW(String RequestUserPW);
 
   /** Get Mail Host. Hostname of Mail Server for SMTP and IMAP */
-  public String getSMTPHost();
+  String getSMTPHost();
 
-  /** Column name SMTPPort */
-  public static final String COLUMNNAME_SMTPPort = "SMTPPort";
-
-  /** Set SMTP Port. SMTP Port Number */
-  public void setSMTPPort(int SMTPPort);
+  /** Set Mail Host. Hostname of Mail Server for SMTP and IMAP */
+  void setSMTPHost(String SMTPHost);
 
   /** Get SMTP Port. SMTP Port Number */
-  public int getSMTPPort();
+  int getSMTPPort();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set SMTP Port. SMTP Port Number */
+  void setSMTPPort(int SMTPPort);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

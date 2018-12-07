@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_User_Roles {
 
   /** TableName=AD_User_Roles */
-  public static final String Table_Name = "AD_User_Roles";
+  String Table_Name = "AD_User_Roles";
 
   /** AD_Table_ID=157 */
-  public static final int Table_ID = 157;
+  int Table_ID = 157;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,73 +26,65 @@ public interface I_AD_User_Roles {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Role_ID */
+  String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name AD_User_Roles_UU */
+  String COLUMNNAME_AD_User_Roles_UU = "AD_User_Roles_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Role_ID */
-  public static final String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-
-  /** Set Role. Responsibility Role */
-  public void setAD_Role_ID(int AD_Role_ID);
+  int getOrgId();
 
   /** Get Role. Responsibility Role */
-  public int getAD_Role_ID();
+  int getAD_Role_ID();
 
-  public I_AD_Role getAD_Role() throws RuntimeException;
+  /** Set Role. Responsibility Role */
+  void setAD_Role_ID(int AD_Role_ID);
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  I_AD_Role getAD_Role() throws RuntimeException;
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  /** Column name AD_User_Roles_UU */
-  public static final String COLUMNNAME_AD_User_Roles_UU = "AD_User_Roles_UU";
-
-  /** Set AD_User_Roles_UU */
-  public void setAD_User_Roles_UU(String AD_User_Roles_UU);
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
   /** Get AD_User_Roles_UU */
-  public String getAD_User_Roles_UU();
+  String getAD_User_Roles_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_User_Roles_UU */
+  void setAD_User_Roles_UU(String AD_User_Roles_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isActive();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

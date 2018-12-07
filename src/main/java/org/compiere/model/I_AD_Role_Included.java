@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Role_Included {
 
   /** TableName=AD_Role_Included */
-  public static final String Table_Name = "AD_Role_Included";
+  String Table_Name = "AD_Role_Included";
 
   /** AD_Table_ID=53222 */
-  public static final int Table_ID = 53222;
+  int Table_ID = 53222;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,84 +26,75 @@ public interface I_AD_Role_Included {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Role_ID */
+  String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+  /** Column name AD_Role_Included_UU */
+  String COLUMNNAME_AD_Role_Included_UU = "AD_Role_Included_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Included_Role_ID */
+  String COLUMNNAME_Included_Role_ID = "Included_Role_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Role_ID */
-  public static final String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-
-  /** Set Role. Responsibility Role */
-  public void setAD_Role_ID(int AD_Role_ID);
+  int getOrgId();
 
   /** Get Role. Responsibility Role */
-  public int getAD_Role_ID();
+  int getAD_Role_ID();
 
-  public I_AD_Role getAD_Role() throws RuntimeException;
+  /** Set Role. Responsibility Role */
+  void setAD_Role_ID(int AD_Role_ID);
 
-  /** Column name AD_Role_Included_UU */
-  public static final String COLUMNNAME_AD_Role_Included_UU = "AD_Role_Included_UU";
-
-  /** Set AD_Role_Included_UU */
-  public void setAD_Role_Included_UU(String AD_Role_Included_UU);
+  I_AD_Role getAD_Role() throws RuntimeException;
 
   /** Get AD_Role_Included_UU */
-  public String getAD_Role_Included_UU();
+  String getAD_Role_Included_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_Role_Included_UU */
+  void setAD_Role_Included_UU(String AD_Role_Included_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Included_Role_ID */
-  public static final String COLUMNNAME_Included_Role_ID = "Included_Role_ID";
-
-  /** Set Included Role */
-  public void setIncluded_Role_ID(int Included_Role_ID);
+  int getCreatedBy();
 
   /** Get Included Role */
-  public int getIncluded_Role_ID();
+  int getIncluded_Role_ID();
 
-  public I_AD_Role getIncluded_Role() throws RuntimeException;
+  /** Set Included Role */
+  void setIncluded_Role_ID(int Included_Role_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_AD_Role getIncluded_Role() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  boolean isActive();
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Tree {
 
   /** TableName=AD_Tree */
-  public static final String Table_Name = "AD_Tree";
+  String Table_Name = "AD_Tree";
 
   /** AD_Table_ID=288 */
-  public static final int Table_ID = 288;
+  int Table_ID = 288;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,142 +26,127 @@ public interface I_AD_Tree {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name AD_Tree_ID */
+  String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
+  /** Column name AD_Tree_UU */
+  String COLUMNNAME_AD_Tree_UU = "AD_Tree_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAllNodes */
+  String COLUMNNAME_IsAllNodes = "IsAllNodes";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name IsLoadAllNodesImmediately */
+  String COLUMNNAME_IsLoadAllNodesImmediately = "IsLoadAllNodesImmediately";
+  /** Column name IsTreeDrivenByValue */
+  String COLUMNNAME_IsTreeDrivenByValue = "IsTreeDrivenByValue";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name TreeType */
+  String COLUMNNAME_TreeType = "TreeType";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name AD_Tree_ID */
-  public static final String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
-
-  /** Set Tree. Identifies a Tree */
-  public void setAD_Tree_ID(int AD_Tree_ID);
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Tree. Identifies a Tree */
-  public int getAD_Tree_ID();
+  int getAD_Tree_ID();
 
-  /** Column name AD_Tree_UU */
-  public static final String COLUMNNAME_AD_Tree_UU = "AD_Tree_UU";
-
-  /** Set AD_Tree_UU */
-  public void setAD_Tree_UU(String AD_Tree_UU);
+  /** Set Tree. Identifies a Tree */
+  void setAD_Tree_ID(int AD_Tree_ID);
 
   /** Get AD_Tree_UU */
-  public String getAD_Tree_UU();
+  String getAD_Tree_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_Tree_UU */
+  void setAD_Tree_UU(String AD_Tree_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAllNodes */
-  public static final String COLUMNNAME_IsAllNodes = "IsAllNodes";
+  boolean isActive();
 
   /** Set All Nodes. All Nodes are included (Complete Tree) */
-  public void setIsAllNodes(boolean IsAllNodes);
+  void setIsAllNodes(boolean IsAllNodes);
 
   /** Get All Nodes. All Nodes are included (Complete Tree) */
-  public boolean isAllNodes();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isAllNodes();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name IsLoadAllNodesImmediately */
-  public static final String COLUMNNAME_IsLoadAllNodesImmediately = "IsLoadAllNodesImmediately";
+  boolean isDefault();
 
   /** Set Loads directly all nodes. If checked, all nodes are loaded before tree is displayed */
-  public void setIsLoadAllNodesImmediately(boolean IsLoadAllNodesImmediately);
+  void setIsLoadAllNodesImmediately(boolean IsLoadAllNodesImmediately);
 
   /** Get Loads directly all nodes. If checked, all nodes are loaded before tree is displayed */
-  public boolean isLoadAllNodesImmediately();
-
-  /** Column name IsTreeDrivenByValue */
-  public static final String COLUMNNAME_IsTreeDrivenByValue = "IsTreeDrivenByValue";
+  boolean isLoadAllNodesImmediately();
 
   /** Set Driven by Search Key */
-  public void setIsTreeDrivenByValue(boolean IsTreeDrivenByValue);
+  void setIsTreeDrivenByValue(boolean IsTreeDrivenByValue);
 
   /** Get Driven by Search Key */
-  public boolean isTreeDrivenByValue();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isTreeDrivenByValue();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name TreeType */
-  public static final String COLUMNNAME_TreeType = "TreeType";
-
-  /** Set Type | Area. Element this tree is built on (i.e Product, Business Partner) */
-  public void setTreeType(String TreeType);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Type | Area. Element this tree is built on (i.e Product, Business Partner) */
-  public String getTreeType();
+  String getTreeType();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Type | Area. Element this tree is built on (i.e Product, Business Partner) */
+  void setTreeType(String TreeType);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

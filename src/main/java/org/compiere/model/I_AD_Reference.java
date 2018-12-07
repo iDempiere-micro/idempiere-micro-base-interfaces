@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Reference {
 
   /** TableName=AD_Reference */
-  public static final String Table_Name = "AD_Reference";
+  String Table_Name = "AD_Reference";
 
   /** AD_Table_ID=102 */
-  public static final int Table_ID = 102;
+  int Table_ID = 102;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,128 +26,115 @@ public interface I_AD_Reference {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Reference_ID */
+  String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
+  /** Column name AD_Reference_UU */
+  String COLUMNNAME_AD_Reference_UU = "AD_Reference_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsOrderByValue */
+  String COLUMNNAME_IsOrderByValue = "IsOrderByValue";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name ValidationType */
+  String COLUMNNAME_ValidationType = "ValidationType";
+  /** Column name VFormat */
+  String COLUMNNAME_VFormat = "VFormat";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Reference_ID */
-  public static final String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
-
-  /** Set Reference. System Reference and Validation */
-  public void setAD_Reference_ID(int AD_Reference_ID);
+  int getOrgId();
 
   /** Get Reference. System Reference and Validation */
-  public int getAD_Reference_ID();
+  int getAD_Reference_ID();
 
-  /** Column name AD_Reference_UU */
-  public static final String COLUMNNAME_AD_Reference_UU = "AD_Reference_UU";
-
-  /** Set AD_Reference_UU */
-  public void setAD_Reference_UU(String AD_Reference_UU);
+  /** Set Reference. System Reference and Validation */
+  void setAD_Reference_ID(int AD_Reference_ID);
 
   /** Get AD_Reference_UU */
-  public String getAD_Reference_UU();
+  String getAD_Reference_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_Reference_UU */
+  void setAD_Reference_UU(String AD_Reference_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsOrderByValue */
-  public static final String COLUMNNAME_IsOrderByValue = "IsOrderByValue";
+  boolean isActive();
 
   /** Set Order By Value. Order list using the value column instead of the name column */
-  public void setIsOrderByValue(boolean IsOrderByValue);
+  void setIsOrderByValue(boolean IsOrderByValue);
 
   /** Get Order By Value. Order list using the value column instead of the name column */
-  public boolean isOrderByValue();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isOrderByValue();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValidationType */
-  public static final String COLUMNNAME_ValidationType = "ValidationType";
-
-  /** Set Validation type. Different method of validating data */
-  public void setValidationType(String ValidationType);
+  int getUpdatedBy();
 
   /** Get Validation type. Different method of validating data */
-  public String getValidationType();
+  String getValidationType();
 
-  /** Column name VFormat */
-  public static final String COLUMNNAME_VFormat = "VFormat";
-
-  /**
-   * Set Value Format. Format of the value; Can contain fixed format elements, Variables:
-   * "_lLoOaAcCa09"
-   */
-  public void setVFormat(String VFormat);
+  /** Set Validation type. Different method of validating data */
+  void setValidationType(String ValidationType);
 
   /**
    * Get Value Format. Format of the value; Can contain fixed format elements, Variables:
    * "_lLoOaAcCa09"
    */
-  public String getVFormat();
+  String getVFormat();
+
+  /**
+   * Set Value Format. Format of the value; Can contain fixed format elements, Variables:
+   * "_lLoOaAcCa09"
+   */
+  void setVFormat(String VFormat);
 }

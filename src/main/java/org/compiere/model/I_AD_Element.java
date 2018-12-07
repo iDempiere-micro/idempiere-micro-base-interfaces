@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Element {
 
   /** TableName=AD_Element */
-  public static final String Table_Name = "AD_Element";
+  String Table_Name = "AD_Element";
 
   /** AD_Table_ID=276 */
-  public static final int Table_ID = 276;
+  int Table_ID = 276;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,155 +26,139 @@ public interface I_AD_Element {
   /** Load Meta Data */
 
   /** Column name AD_Element_ID */
-  public static final String COLUMNNAME_AD_Element_ID = "AD_Element_ID";
-
-  /**
-   * Set System Element. System Element enables the central maintenance of column description and
-   * help.
-   */
-  public void setAD_Element_ID(int AD_Element_ID);
+  String COLUMNNAME_AD_Element_ID = "AD_Element_ID";
+  /** Column name AD_Element_UU */
+  String COLUMNNAME_AD_Element_UU = "AD_Element_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name ColumnName */
+  String COLUMNNAME_ColumnName = "ColumnName";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name PO_Description */
+  String COLUMNNAME_PO_Description = "PO_Description";
+  /** Column name PO_Help */
+  String COLUMNNAME_PO_Help = "PO_Help";
+  /** Column name PO_Name */
+  String COLUMNNAME_PO_Name = "PO_Name";
+  /** Column name PO_PrintName */
+  String COLUMNNAME_PO_PrintName = "PO_PrintName";
+  /** Column name PrintName */
+  String COLUMNNAME_PrintName = "PrintName";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /**
    * Get System Element. System Element enables the central maintenance of column description and
    * help.
    */
-  public int getAD_Element_ID();
+  int getAD_Element_ID();
 
-  /** Column name AD_Element_UU */
-  public static final String COLUMNNAME_AD_Element_UU = "AD_Element_UU";
-
-  /** Set AD_Element_UU */
-  public void setAD_Element_UU(String AD_Element_UU);
+  /**
+   * Set System Element. System Element enables the central maintenance of column description and
+   * help.
+   */
+  void setAD_Element_ID(int AD_Element_ID);
 
   /** Get AD_Element_UU */
-  public String getAD_Element_UU();
+  String getAD_Element_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_Element_UU */
+  void setAD_Element_UU(String AD_Element_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name ColumnName */
-  public static final String COLUMNNAME_ColumnName = "ColumnName";
-
-  /** Set DB Column Name. Name of the column in the database */
-  public void setColumnName(String ColumnName);
+  int getOrgId();
 
   /** Get DB Column Name. Name of the column in the database */
-  public String getColumnName();
+  String getColumnName();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set DB Column Name. Name of the column in the database */
+  void setColumnName(String ColumnName);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PO_Description */
-  public static final String COLUMNNAME_PO_Description = "PO_Description";
-
-  /** Set PO Description. Description in PO Screens */
-  public void setPO_Description(String PO_Description);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get PO Description. Description in PO Screens */
-  public String getPO_Description();
+  String getPO_Description();
 
-  /** Column name PO_Help */
-  public static final String COLUMNNAME_PO_Help = "PO_Help";
-
-  /** Set PO Help. Help for PO Screens */
-  public void setPO_Help(String PO_Help);
+  /** Set PO Description. Description in PO Screens */
+  void setPO_Description(String PO_Description);
 
   /** Get PO Help. Help for PO Screens */
-  public String getPO_Help();
+  String getPO_Help();
 
-  /** Column name PO_Name */
-  public static final String COLUMNNAME_PO_Name = "PO_Name";
-
-  /** Set PO Name. Name on PO Screens */
-  public void setPO_Name(String PO_Name);
+  /** Set PO Help. Help for PO Screens */
+  void setPO_Help(String PO_Help);
 
   /** Get PO Name. Name on PO Screens */
-  public String getPO_Name();
+  String getPO_Name();
 
-  /** Column name PO_PrintName */
-  public static final String COLUMNNAME_PO_PrintName = "PO_PrintName";
-
-  /** Set PO Print name. Print name on PO Screens/Reports */
-  public void setPO_PrintName(String PO_PrintName);
+  /** Set PO Name. Name on PO Screens */
+  void setPO_Name(String PO_Name);
 
   /** Get PO Print name. Print name on PO Screens/Reports */
-  public String getPO_PrintName();
+  String getPO_PrintName();
 
-  /** Column name PrintName */
-  public static final String COLUMNNAME_PrintName = "PrintName";
-
-  /** Set Print Text. The label text to be printed on a document or correspondence. */
-  public void setPrintName(String PrintName);
+  /** Set PO Print name. Print name on PO Screens/Reports */
+  void setPO_PrintName(String PO_PrintName);
 
   /** Get Print Text. The label text to be printed on a document or correspondence. */
-  public String getPrintName();
+  String getPrintName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Print Text. The label text to be printed on a document or correspondence. */
+  void setPrintName(String PrintName);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

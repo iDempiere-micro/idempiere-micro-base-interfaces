@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_TableIndex {
 
   /** TableName=AD_TableIndex */
-  public static final String Table_Name = "AD_TableIndex";
+  String Table_Name = "AD_TableIndex";
 
   /** AD_Table_ID=200085 */
-  public static final int Table_ID = 200085;
+  int Table_ID = 200085;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,160 +26,143 @@ public interface I_AD_TableIndex {
   /** Load Meta Data */
 
   /** Column name AD_Message_ID */
-  public static final String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
-
-  /** Set Message. System Message */
-  public void setAD_Message_ID(int AD_Message_ID);
+  String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name AD_TableIndex_ID */
+  String COLUMNNAME_AD_TableIndex_ID = "AD_TableIndex_ID";
+  /** Column name AD_TableIndex_UU */
+  String COLUMNNAME_AD_TableIndex_UU = "AD_TableIndex_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsCreateConstraint */
+  String COLUMNNAME_IsCreateConstraint = "IsCreateConstraint";
+  /** Column name IsKey */
+  String COLUMNNAME_IsKey = "IsKey";
+  /** Column name IsUnique */
+  String COLUMNNAME_IsUnique = "IsUnique";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name TableIndexDrop */
+  String COLUMNNAME_TableIndexDrop = "TableIndexDrop";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Message. System Message */
-  public int getAD_Message_ID();
+  int getAD_Message_ID();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Message. System Message */
+  void setAD_Message_ID(int AD_Message_ID);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name AD_TableIndex_ID */
-  public static final String COLUMNNAME_AD_TableIndex_ID = "AD_TableIndex_ID";
-
-  /** Set Table Index */
-  public void setAD_TableIndex_ID(int AD_TableIndex_ID);
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Table Index */
-  public int getAD_TableIndex_ID();
+  int getAD_TableIndex_ID();
 
-  /** Column name AD_TableIndex_UU */
-  public static final String COLUMNNAME_AD_TableIndex_UU = "AD_TableIndex_UU";
-
-  /** Set AD_TableIndex_UU */
-  public void setAD_TableIndex_UU(String AD_TableIndex_UU);
+  /** Set Table Index */
+  void setAD_TableIndex_ID(int AD_TableIndex_ID);
 
   /** Get AD_TableIndex_UU */
-  public String getAD_TableIndex_UU();
+  String getAD_TableIndex_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_TableIndex_UU */
+  void setAD_TableIndex_UU(String AD_TableIndex_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsCreateConstraint */
-  public static final String COLUMNNAME_IsCreateConstraint = "IsCreateConstraint";
+  boolean isActive();
 
   /** Set Create Constraint */
-  public void setIsCreateConstraint(boolean IsCreateConstraint);
+  void setIsCreateConstraint(boolean IsCreateConstraint);
 
   /** Get Create Constraint */
-  public boolean isCreateConstraint();
-
-  /** Column name IsKey */
-  public static final String COLUMNNAME_IsKey = "IsKey";
+  boolean isCreateConstraint();
 
   /** Set Key column. This column is the key in this table */
-  public void setIsKey(boolean IsKey);
+  void setIsKey(boolean IsKey);
 
   /** Get Key column. This column is the key in this table */
-  public boolean isKey();
-
-  /** Column name IsUnique */
-  public static final String COLUMNNAME_IsUnique = "IsUnique";
+  boolean isKey();
 
   /** Set Unique */
-  public void setIsUnique(boolean IsUnique);
+  void setIsUnique(boolean IsUnique);
 
   /** Get Unique */
-  public boolean isUnique();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isUnique();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name TableIndexDrop */
-  public static final String COLUMNNAME_TableIndexDrop = "TableIndexDrop";
-
-  /** Set Drop table index */
-  public void setTableIndexDrop(String TableIndexDrop);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Drop table index */
-  public String getTableIndexDrop();
+  String getTableIndexDrop();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Drop table index */
+  void setTableIndexDrop(String TableIndexDrop);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

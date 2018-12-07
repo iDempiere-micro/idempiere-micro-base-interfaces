@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Sequence_No {
 
   /** TableName=AD_Sequence_No */
-  public static final String Table_Name = "AD_Sequence_No";
+  String Table_Name = "AD_Sequence_No";
 
   /** AD_Table_ID=122 */
-  public static final int Table_ID = 122;
+  int Table_ID = 122;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,82 +26,73 @@ public interface I_AD_Sequence_No {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Sequence_ID */
+  String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
+  /** Column name AD_Sequence_No_UU */
+  String COLUMNNAME_AD_Sequence_No_UU = "AD_Sequence_No_UU";
+  /** Column name CalendarYearMonth */
+  String COLUMNNAME_CalendarYearMonth = "CalendarYearMonth";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CurrentNext */
+  String COLUMNNAME_CurrentNext = "CurrentNext";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Sequence_ID */
-  public static final String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
-
-  /** Set Sequence. Document Sequence */
-  public void setAD_Sequence_ID(int AD_Sequence_ID);
+  int getOrgId();
 
   /** Get Sequence. Document Sequence */
-  public int getAD_Sequence_ID();
+  int getAD_Sequence_ID();
 
-  public I_AD_Sequence getAD_Sequence() throws RuntimeException;
+  /** Set Sequence. Document Sequence */
+  void setAD_Sequence_ID(int AD_Sequence_ID);
 
-  /** Column name AD_Sequence_No_UU */
-  public static final String COLUMNNAME_AD_Sequence_No_UU = "AD_Sequence_No_UU";
-
-  /** Set AD_Sequence_No_UU */
-  public void setAD_Sequence_No_UU(String AD_Sequence_No_UU);
+  I_AD_Sequence getAD_Sequence() throws RuntimeException;
 
   /** Get AD_Sequence_No_UU */
-  public String getAD_Sequence_No_UU();
+  String getAD_Sequence_No_UU();
 
-  /** Column name CalendarYearMonth */
-  public static final String COLUMNNAME_CalendarYearMonth = "CalendarYearMonth";
-
-  /** Set YearMonth. YYYYMM */
-  public void setCalendarYearMonth(String CalendarYearMonth);
+  /** Set AD_Sequence_No_UU */
+  void setAD_Sequence_No_UU(String AD_Sequence_No_UU);
 
   /** Get YearMonth. YYYYMM */
-  public String getCalendarYearMonth();
+  String getCalendarYearMonth();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set YearMonth. YYYYMM */
+  void setCalendarYearMonth(String CalendarYearMonth);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CurrentNext */
-  public static final String COLUMNNAME_CurrentNext = "CurrentNext";
-
-  /** Set Current Next. The next number to be used */
-  public void setCurrentNext(int CurrentNext);
+  int getCreatedBy();
 
   /** Get Current Next. The next number to be used */
-  public int getCurrentNext();
+  int getCurrentNext();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Current Next. The next number to be used */
+  void setCurrentNext(int CurrentNext);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isActive();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

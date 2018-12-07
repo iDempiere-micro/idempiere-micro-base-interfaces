@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_IndexColumn {
 
   /** TableName=AD_IndexColumn */
-  public static final String Table_Name = "AD_IndexColumn";
+  String Table_Name = "AD_IndexColumn";
 
   /** AD_Table_ID=200086 */
-  public static final int Table_ID = 200086;
+  int Table_ID = 200086;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,111 +26,99 @@ public interface I_AD_IndexColumn {
   /** Load Meta Data */
 
   /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+  String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+  /** Column name AD_IndexColumn_ID */
+  String COLUMNNAME_AD_IndexColumn_ID = "AD_IndexColumn_ID";
+  /** Column name AD_IndexColumn_UU */
+  String COLUMNNAME_AD_IndexColumn_UU = "AD_IndexColumn_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_TableIndex_ID */
+  String COLUMNNAME_AD_TableIndex_ID = "AD_TableIndex_ID";
+  /** Column name ColumnSQL */
+  String COLUMNNAME_ColumnSQL = "ColumnSQL";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+  int getAD_Column_ID();
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+  /** Set Column. Column in the table */
+  void setAD_Column_ID(int AD_Column_ID);
 
-  /** Column name AD_IndexColumn_ID */
-  public static final String COLUMNNAME_AD_IndexColumn_ID = "AD_IndexColumn_ID";
-
-  /** Set Table Index Column */
-  public void setAD_IndexColumn_ID(int AD_IndexColumn_ID);
+  I_AD_Column getAD_Column() throws RuntimeException;
 
   /** Get Table Index Column */
-  public int getAD_IndexColumn_ID();
+  int getAD_IndexColumn_ID();
 
-  /** Column name AD_IndexColumn_UU */
-  public static final String COLUMNNAME_AD_IndexColumn_UU = "AD_IndexColumn_UU";
-
-  /** Set AD_IndexColumn_UU */
-  public void setAD_IndexColumn_UU(String AD_IndexColumn_UU);
+  /** Set Table Index Column */
+  void setAD_IndexColumn_ID(int AD_IndexColumn_ID);
 
   /** Get AD_IndexColumn_UU */
-  public String getAD_IndexColumn_UU();
+  String getAD_IndexColumn_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_IndexColumn_UU */
+  void setAD_IndexColumn_UU(String AD_IndexColumn_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_TableIndex_ID */
-  public static final String COLUMNNAME_AD_TableIndex_ID = "AD_TableIndex_ID";
-
-  /** Set Table Index */
-  public void setAD_TableIndex_ID(int AD_TableIndex_ID);
+  int getOrgId();
 
   /** Get Table Index */
-  public int getAD_TableIndex_ID();
+  int getAD_TableIndex_ID();
 
-  public I_AD_TableIndex getAD_TableIndex() throws RuntimeException;
+  /** Set Table Index */
+  void setAD_TableIndex_ID(int AD_TableIndex_ID);
 
-  /** Column name ColumnSQL */
-  public static final String COLUMNNAME_ColumnSQL = "ColumnSQL";
-
-  /** Set Column SQL. Virtual Column (r/o) */
-  public void setColumnSQL(String ColumnSQL);
+  I_AD_TableIndex getAD_TableIndex() throws RuntimeException;
 
   /** Get Column SQL. Virtual Column (r/o) */
-  public String getColumnSQL();
+  String getColumnSQL();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Column SQL. Virtual Column (r/o) */
+  void setColumnSQL(String ColumnSQL);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  int getCreatedBy();
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  boolean isActive();
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

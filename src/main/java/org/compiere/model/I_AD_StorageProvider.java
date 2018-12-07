@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_StorageProvider {
 
   /** TableName=AD_StorageProvider */
-  public static final String Table_Name = "AD_StorageProvider";
+  String Table_Name = "AD_StorageProvider";
 
   /** AD_Table_ID=200037 */
-  public static final int Table_ID = 200037;
+  int Table_ID = 200037;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,113 +26,101 @@ public interface I_AD_StorageProvider {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_StorageProvider_ID */
+  String COLUMNNAME_AD_StorageProvider_ID = "AD_StorageProvider_ID";
+  /** Column name AD_StorageProvider_UU */
+  String COLUMNNAME_AD_StorageProvider_UU = "AD_StorageProvider_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Folder */
+  String COLUMNNAME_Folder = "Folder";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Method */
+  String COLUMNNAME_Method = "Method";
+  /** Column name Password */
+  String COLUMNNAME_Password = "Password";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name URL */
+  String COLUMNNAME_URL = "URL";
+  /** Column name UserName */
+  String COLUMNNAME_UserName = "UserName";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_StorageProvider_ID */
-  public static final String COLUMNNAME_AD_StorageProvider_ID = "AD_StorageProvider_ID";
-
-  /** Set Storage Provider */
-  public void setAD_StorageProvider_ID(int AD_StorageProvider_ID);
+  int getOrgId();
 
   /** Get Storage Provider */
-  public int getAD_StorageProvider_ID();
+  int getAD_StorageProvider_ID();
 
-  /** Column name AD_StorageProvider_UU */
-  public static final String COLUMNNAME_AD_StorageProvider_UU = "AD_StorageProvider_UU";
-
-  /** Set AD_StorageProvider_UU */
-  public void setAD_StorageProvider_UU(String AD_StorageProvider_UU);
+  /** Set Storage Provider */
+  void setAD_StorageProvider_ID(int AD_StorageProvider_ID);
 
   /** Get AD_StorageProvider_UU */
-  public String getAD_StorageProvider_UU();
+  String getAD_StorageProvider_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_StorageProvider_UU */
+  void setAD_StorageProvider_UU(String AD_StorageProvider_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Folder */
-  public static final String COLUMNNAME_Folder = "Folder";
-
-  /** Set Folder. A folder on a local or remote system to store data into */
-  public void setFolder(String Folder);
+  int getCreatedBy();
 
   /** Get Folder. A folder on a local or remote system to store data into */
-  public String getFolder();
+  String getFolder();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Folder. A folder on a local or remote system to store data into */
+  void setFolder(String Folder);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Method */
-  public static final String COLUMNNAME_Method = "Method";
-
-  /** Set Method */
-  public void setMethod(String Method);
+  boolean isActive();
 
   /** Get Method */
-  public String getMethod();
+  String getMethod();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Method */
+  void setMethod(String Method);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Password */
-  public static final String COLUMNNAME_Password = "Password";
-
-  /** Set Password. Password of any length (case sensitive) */
-  public void setPassword(String Password);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Password. Password of any length (case sensitive) */
-  public String getPassword();
+  String getPassword();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Password. Password of any length (case sensitive) */
+  void setPassword(String Password);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name URL */
-  public static final String COLUMNNAME_URL = "URL";
-
-  /** Set URL. Full URL address - e.g. http://www.idempiere.org */
-  public void setURL(String URL);
+  int getUpdatedBy();
 
   /** Get URL. Full URL address - e.g. http://www.idempiere.org */
-  public String getURL();
+  String getURL();
 
-  /** Column name UserName */
-  public static final String COLUMNNAME_UserName = "UserName";
-
-  /** Set User Name */
-  public void setUserName(String UserName);
+  /** Set URL. Full URL address - e.g. http://www.idempiere.org */
+  void setURL(String URL);
 
   /** Get User Name */
-  public String getUserName();
+  String getUserName();
+
+  /** Set User Name */
+  void setUserName(String UserName);
 }
