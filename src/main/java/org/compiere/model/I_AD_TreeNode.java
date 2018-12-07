@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,105 +13,159 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_TreeNode {
 
-  /** TableName=AD_TreeNode */
-  String Table_Name = "AD_TreeNode";
+    /**
+     * TableName=AD_TreeNode
+     */
+    String Table_Name = "AD_TreeNode";
 
-  /** AD_Table_ID=289 */
-  int Table_ID = 289;
+    /**
+     * AD_Table_ID=289
+     */
+    int Table_ID = 289;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Tree_ID
+     */
+    String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
+    /**
+     * Column name AD_TreeNode_UU
+     */
+    String COLUMNNAME_AD_TreeNode_UU = "AD_TreeNode_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Node_ID
+     */
+    String COLUMNNAME_Node_ID = "Node_ID";
+    /**
+     * Column name Parent_ID
+     */
+    String COLUMNNAME_Parent_ID = "Parent_ID";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Tree_ID */
-  String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
+    /**
+     * Get Tree. Identifies a Tree
+     */
+    int getAD_Tree_ID();
 
-  /** Set Tree. Identifies a Tree */
-  void setAD_Tree_ID(int AD_Tree_ID);
+    /**
+     * Set Tree. Identifies a Tree
+     */
+    void setAD_Tree_ID(int AD_Tree_ID);
 
-  /** Get Tree. Identifies a Tree */
-  int getAD_Tree_ID();
+    I_AD_Tree getAD_Tree() throws RuntimeException;
 
-  I_AD_Tree getAD_Tree() throws RuntimeException;
+    /**
+     * Get AD_TreeNode_UU
+     */
+    String getAD_TreeNode_UU();
 
-  /** Column name AD_TreeNode_UU */
-  String COLUMNNAME_AD_TreeNode_UU = "AD_TreeNode_UU";
+    /**
+     * Set AD_TreeNode_UU
+     */
+    void setAD_TreeNode_UU(String AD_TreeNode_UU);
 
-  /** Set AD_TreeNode_UU */
-  void setAD_TreeNode_UU(String AD_TreeNode_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get AD_TreeNode_UU */
-  String getAD_TreeNode_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Node
+     */
+    int getNode_ID();
 
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
+    /**
+     * Set Node
+     */
+    void setNode_ID(int Node_ID);
 
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Parent. Parent of Entity
+     */
+    int getParent_ID();
 
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
+    /**
+     * Set Parent. Parent of Entity
+     */
+    void setParent_ID(int Parent_ID);
 
-  /** Get Active. The record is active in the system */
-  boolean isActive();
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Column name Node_ID */
-  String COLUMNNAME_Node_ID = "Node_ID";
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Set Node */
-  void setNode_ID(int Node_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Node */
-  int getNode_ID();
-
-  /** Column name Parent_ID */
-  String COLUMNNAME_Parent_ID = "Parent_ID";
-
-  /** Set Parent. Parent of Entity */
-  void setParent_ID(int Parent_ID);
-
-  /** Get Parent. Parent of Entity */
-  int getParent_ID();
-
-  /** Column name SeqNo */
-  String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  int getSeqNo();
-
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

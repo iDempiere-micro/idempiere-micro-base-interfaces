@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,145 +13,223 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_EntityType {
 
-  /** TableName=AD_EntityType */
-  String Table_Name = "AD_EntityType";
+    /**
+     * TableName=AD_EntityType
+     */
+    String Table_Name = "AD_EntityType";
 
-  /** AD_Table_ID=882 */
-  int Table_ID = 882;
+    /**
+     * AD_Table_ID=882
+     */
+    int Table_ID = 882;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_EntityType_ID */
-  String COLUMNNAME_AD_EntityType_ID = "AD_EntityType_ID";
+    /**
+     * Column name AD_EntityType_ID
+     */
+    String COLUMNNAME_AD_EntityType_ID = "AD_EntityType_ID";
+    /**
+     * Column name AD_EntityType_UU
+     */
+    String COLUMNNAME_AD_EntityType_UU = "AD_EntityType_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Classpath
+     */
+    String COLUMNNAME_Classpath = "Classpath";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name ModelPackage
+     */
+    String COLUMNNAME_ModelPackage = "ModelPackage";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Version
+     */
+    String COLUMNNAME_Version = "Version";
 
-  /** Set Entity Type. System Entity Type */
-  void setAD_EntityType_ID(int AD_EntityType_ID);
+    /**
+     * Get Entity Type. System Entity Type
+     */
+    int getAD_EntityType_ID();
 
-  /** Get Entity Type. System Entity Type */
-  int getAD_EntityType_ID();
+    /**
+     * Set Entity Type. System Entity Type
+     */
+    void setAD_EntityType_ID(int AD_EntityType_ID);
 
-  /** Column name AD_EntityType_UU */
-  String COLUMNNAME_AD_EntityType_UU = "AD_EntityType_UU";
+    /**
+     * Get AD_EntityType_UU
+     */
+    String getAD_EntityType_UU();
 
-  /** Set AD_EntityType_UU */
-  void setAD_EntityType_UU(String AD_EntityType_UU);
+    /**
+     * Set AD_EntityType_UU
+     */
+    void setAD_EntityType_UU(String AD_EntityType_UU);
 
-  /** Get AD_EntityType_UU */
-  String getAD_EntityType_UU();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Classpath. Extension Classpath
+     */
+    String getClasspath();
 
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
+    /**
+     * Set Classpath. Extension Classpath
+     */
+    void setClasspath(String Classpath);
 
-  /** Column name Classpath */
-  String COLUMNNAME_Classpath = "Classpath";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Classpath. Extension Classpath */
-  void setClasspath(String Classpath);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Classpath. Extension Classpath */
-  String getClasspath();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name Description */
-  String COLUMNNAME_Description = "Description";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Set Description. Optional short description of the record */
-  void setDescription(String Description);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Description. Optional short description of the record */
-  String getDescription();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name EntityType */
-  String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Get ModelPackage. Java Package of the model classes
+     */
+    String getModelPackage();
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  void setEntityType(String EntityType);
+    /**
+     * Set ModelPackage. Java Package of the model classes
+     */
+    void setModelPackage(String ModelPackage);
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  String getEntityType();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name Help */
-  String COLUMNNAME_Help = "Help";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Comment/Help. Comment or Hint */
-  void setHelp(String Help);
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Get Comment/Help. Comment or Hint */
-  String getHelp();
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Get Active. The record is active in the system */
-  boolean isActive();
+    /**
+     * Get Version. Version of the table definition
+     */
+    String getVersion();
 
-  /** Column name ModelPackage */
-  String COLUMNNAME_ModelPackage = "ModelPackage";
-
-  /** Set ModelPackage. Java Package of the model classes */
-  void setModelPackage(String ModelPackage);
-
-  /** Get ModelPackage. Java Package of the model classes */
-  String getModelPackage();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  String getName();
-
-  /** Column name Processing */
-  String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  boolean isProcessing();
-
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
-
-  /** Column name Version */
-  String COLUMNNAME_Version = "Version";
-
-  /** Set Version. Version of the table definition */
-  void setVersion(String Version);
-
-  /** Get Version. Version of the table definition */
-  String getVersion();
+    /**
+     * Set Version. Version of the table definition
+     */
+    void setVersion(String Version);
 }

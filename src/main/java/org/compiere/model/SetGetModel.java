@@ -8,17 +8,19 @@ import java.util.Properties;
  * @author Teo Sarca, SC ARHIPAC SERVICE SRL
  */
 public interface SetGetModel {
-  Properties getCtx();
+    Properties getCtx();
 
-  String get_TrxName();
-  //
-  int get_Table_ID();
+    String get_TrxName();
 
-  String get_TableName();
-  //
-  boolean set_AttrValue(String name, Object value);
+    //
+    int get_Table_ID();
 
-  Object get_AttrValue(String name);
+    String get_TableName();
 
-  boolean is_AttrValueChanged(String ColumnName);
+    //
+    boolean set_AttrValue(String name, Object value);
+
+    Object get_AttrValue(String name);
+
+    boolean is_AttrValueChanged(String ColumnName);
 }

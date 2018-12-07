@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,174 +13,267 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_TableIndex {
 
-  /** TableName=AD_TableIndex */
-  String Table_Name = "AD_TableIndex";
+    /**
+     * TableName=AD_TableIndex
+     */
+    String Table_Name = "AD_TableIndex";
 
-  /** AD_Table_ID=200085 */
-  int Table_ID = 200085;
+    /**
+     * AD_Table_ID=200085
+     */
+    int Table_ID = 200085;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Message_ID */
-  String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
+    /**
+     * Column name AD_Message_ID
+     */
+    String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name AD_TableIndex_ID
+     */
+    String COLUMNNAME_AD_TableIndex_ID = "AD_TableIndex_ID";
+    /**
+     * Column name AD_TableIndex_UU
+     */
+    String COLUMNNAME_AD_TableIndex_UU = "AD_TableIndex_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsCreateConstraint
+     */
+    String COLUMNNAME_IsCreateConstraint = "IsCreateConstraint";
+    /**
+     * Column name IsKey
+     */
+    String COLUMNNAME_IsKey = "IsKey";
+    /**
+     * Column name IsUnique
+     */
+    String COLUMNNAME_IsUnique = "IsUnique";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name TableIndexDrop
+     */
+    String COLUMNNAME_TableIndexDrop = "TableIndexDrop";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Message. System Message */
-  void setAD_Message_ID(int AD_Message_ID);
+    /**
+     * Get Message. System Message
+     */
+    int getAD_Message_ID();
 
-  /** Get Message. System Message */
-  int getAD_Message_ID();
+    /**
+     * Set Message. System Message
+     */
+    void setAD_Message_ID(int AD_Message_ID);
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Column name AD_Table_ID */
-  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Set Table. Database Table information */
-  void setAD_Table_ID(int AD_Table_ID);
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  /** Get Table. Database Table information */
-  int getAD_Table_ID();
+    /**
+     * Get Table Index
+     */
+    int getAD_TableIndex_ID();
 
-  I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Set Table Index
+     */
+    void setAD_TableIndex_ID(int AD_TableIndex_ID);
 
-  /** Column name AD_TableIndex_ID */
-  String COLUMNNAME_AD_TableIndex_ID = "AD_TableIndex_ID";
+    /**
+     * Get AD_TableIndex_UU
+     */
+    String getAD_TableIndex_UU();
 
-  /** Set Table Index */
-  void setAD_TableIndex_ID(int AD_TableIndex_ID);
+    /**
+     * Set AD_TableIndex_UU
+     */
+    void setAD_TableIndex_UU(String AD_TableIndex_UU);
 
-  /** Get Table Index */
-  int getAD_TableIndex_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AD_TableIndex_UU */
-  String COLUMNNAME_AD_TableIndex_UU = "AD_TableIndex_UU";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set AD_TableIndex_UU */
-  void setAD_TableIndex_UU(String AD_TableIndex_UU);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get AD_TableIndex_UU */
-  String getAD_TableIndex_UU();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name Description */
-  String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  String getDescription();
+    /**
+     * Set Create Constraint
+     */
+    void setIsCreateConstraint(boolean IsCreateConstraint);
 
-  /** Column name EntityType */
-  String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Get Create Constraint
+     */
+    boolean isCreateConstraint();
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  void setEntityType(String EntityType);
+    /**
+     * Set Key column. This column is the key in this table
+     */
+    void setIsKey(boolean IsKey);
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  String getEntityType();
+    /**
+     * Get Key column. This column is the key in this table
+     */
+    boolean isKey();
 
-  /** Column name Help */
-  String COLUMNNAME_Help = "Help";
+    /**
+     * Set Unique
+     */
+    void setIsUnique(boolean IsUnique);
 
-  /** Set Comment/Help. Comment or Hint */
-  void setHelp(String Help);
+    /**
+     * Get Unique
+     */
+    boolean isUnique();
 
-  /** Get Comment/Help. Comment or Hint */
-  String getHelp();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Get Active. The record is active in the system */
-  boolean isActive();
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Column name IsCreateConstraint */
-  String COLUMNNAME_IsCreateConstraint = "IsCreateConstraint";
+    /**
+     * Get Drop table index
+     */
+    String getTableIndexDrop();
 
-  /** Set Create Constraint */
-  void setIsCreateConstraint(boolean IsCreateConstraint);
+    /**
+     * Set Drop table index
+     */
+    void setTableIndexDrop(String TableIndexDrop);
 
-  /** Get Create Constraint */
-  boolean isCreateConstraint();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsKey */
-  String COLUMNNAME_IsKey = "IsKey";
-
-  /** Set Key column. This column is the key in this table */
-  void setIsKey(boolean IsKey);
-
-  /** Get Key column. This column is the key in this table */
-  boolean isKey();
-
-  /** Column name IsUnique */
-  String COLUMNNAME_IsUnique = "IsUnique";
-
-  /** Set Unique */
-  void setIsUnique(boolean IsUnique);
-
-  /** Get Unique */
-  boolean isUnique();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  String getName();
-
-  /** Column name Processing */
-  String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  boolean isProcessing();
-
-  /** Column name TableIndexDrop */
-  String COLUMNNAME_TableIndexDrop = "TableIndexDrop";
-
-  /** Set Drop table index */
-  void setTableIndexDrop(String TableIndexDrop);
-
-  /** Get Drop table index */
-  String getTableIndexDrop();
-
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }
