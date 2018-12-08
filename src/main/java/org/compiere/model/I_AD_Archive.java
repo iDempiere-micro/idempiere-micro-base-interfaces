@@ -73,17 +73,17 @@ public interface I_AD_Archive {
   /** Column name IsActive */
   String COLUMNNAME_IsActive = "IsActive";
 
-  /** Set Archive. Document and Report Archive */
-  void setAD_Archive_ID(int AD_Archive_ID);
-
   /** Get Archive. Document and Report Archive */
   int getAD_Archive_ID();
 
-  /** Set AD_Archive_UU */
-  void setAD_Archive_UU(String AD_Archive_UU);
+  /** Set Archive. Document and Report Archive */
+  void setAD_Archive_ID(int AD_Archive_ID);
 
   /** Get AD_Archive_UU */
   String getAD_Archive_UU();
+
+  /** Set AD_Archive_UU */
+  void setAD_Archive_UU(String AD_Archive_UU);
 
   /** Set Organization. Organizational entity within client */
   void setAD_Org_ID(int AD_Org_ID);
@@ -91,31 +91,31 @@ public interface I_AD_Archive {
   /** Get Organization. Organizational entity within client */
   int getOrgId();
 
-  /** Set Process. Process or Report */
-  void setAD_Process_ID(int AD_Process_ID);
-
   /** Get Process. Process or Report */
   int getAD_Process_ID();
 
-  /** Set Table. Database Table information */
-  void setAD_Table_ID(int AD_Table_ID);
+  /** Set Process. Process or Report */
+  void setAD_Process_ID(int AD_Process_ID);
 
   /** Get Table. Database Table information */
   int getAD_Table_ID();
 
-  I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Set Binary Data. Binary Data */
-  void setBinaryData(byte[] BinaryData);
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Binary Data. Binary Data */
   byte[] getBinaryData();
 
-  /** Set Business Partner . Identifies a Business Partner */
-  void setC_BPartner_ID(int C_BPartner_ID);
+  /** Set Binary Data. Binary Data */
+  void setBinaryData(byte[] BinaryData);
 
   /** Get Business Partner . Identifies a Business Partner */
   int getC_BPartner_ID();
+
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
   /** Get Created. Date this record was created */
   Timestamp getCreated();
@@ -123,17 +123,17 @@ public interface I_AD_Archive {
   /** Get Created By. User who created this records */
   int getCreatedBy();
 
-  /** Set Description. Optional short description of the record */
-  void setDescription(String Description);
-
   /** Get Description. Optional short description of the record */
   String getDescription();
 
-  /** Set Comment/Help. Comment or Hint */
-  void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
   String getHelp();
+
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
   void setIsActive(boolean IsActive);
@@ -147,17 +147,17 @@ public interface I_AD_Archive {
   /** Get Report. Indicates a Report record */
   boolean isReport();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  void setName(String Name);
-
   /** Get Name. Alphanumeric identifier of the entity */
   String getName();
 
-  /** Set Record ID. Direct internal record ID */
-  void setRecord_ID(int Record_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Record ID. Direct internal record ID */
   int getRecord_ID();
+
+  /** Set Record ID. Direct internal record ID */
+  void setRecord_ID(int Record_ID);
 
   /** Get Updated. Date this record was updated */
   Timestamp getUpdated();
@@ -167,9 +167,9 @@ public interface I_AD_Archive {
 
   byte[] getByteData();
 
-  int get_ID();
-
   void setByteData(byte[] bytes);
+
+  int get_ID();
 
   boolean save();
 
