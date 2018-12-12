@@ -13,7 +13,7 @@ public interface SetGetModel {
   String get_TrxName();
 
   //
-  int get_Table_ID();
+  int getTableId();
 
   String get_TableName();
 
