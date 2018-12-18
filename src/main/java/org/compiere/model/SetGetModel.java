@@ -10,7 +10,7 @@ import java.util.Properties;
 public interface SetGetModel {
   Properties getCtx();
 
-  String get_TrxName();
+
 
   //
   int getTableId();
