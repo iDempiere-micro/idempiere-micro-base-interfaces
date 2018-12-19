@@ -14,5 +14,5 @@ interface IPO : IBasePO {
 
     fun get_Value(columnName: String): Any
 
-    fun get_Value(index: Int): Any
+    fun get_Value(index: Int): Any?
 }
