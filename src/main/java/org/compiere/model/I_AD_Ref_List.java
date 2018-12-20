@@ -61,7 +61,7 @@ public interface I_AD_Ref_List {
   int getOrgId();
 
   /** Get Reference. System Reference and Validation */
-  int getAD_Reference_ID();
+  int getReferenceId();
 
   /** Set Reference. System Reference and Validation */
   void setAD_Reference_ID(int AD_Reference_ID);
