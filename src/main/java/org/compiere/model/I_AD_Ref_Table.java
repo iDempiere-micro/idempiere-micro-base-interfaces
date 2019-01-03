@@ -1,8 +1,9 @@
 package org.compiere.model;
 
+import org.idempiere.common.util.KeyNamePair;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for AD_Ref_Table
