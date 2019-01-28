@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for AD_Role_Included
@@ -12,33 +10,53 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Role_Included {
 
-  /** TableName=AD_Role_Included */
-  String Table_Name = "AD_Role_Included";
+    /**
+     * TableName=AD_Role_Included
+     */
+    String Table_Name = "AD_Role_Included";
 
-  /** AD_Table_ID=53222 */
-  int Table_ID = 53222;
+    /**
+     * AD_Table_ID=53222
+     */
+    int Table_ID = 53222;
 
-    /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name AD_Role_ID */
-  String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-  /** Column name AD_Role_Included_UU */
-  String COLUMNNAME_AD_Role_Included_UU = "AD_Role_Included_UU";
-    /** Column name Included_Role_ID */
-  String COLUMNNAME_Included_Role_ID = "Included_Role_ID";
-    /** Column name SeqNo */
-  String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name AD_Role_ID
+     */
+    String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+    /**
+     * Column name AD_Role_Included_UU
+     */
+    String COLUMNNAME_AD_Role_Included_UU = "AD_Role_Included_UU";
+    /**
+     * Column name Included_Role_ID
+     */
+    String COLUMNNAME_Included_Role_ID = "Included_Role_ID";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
 
-    /** Get Role. Responsibility Role */
-  int getAD_Role_ID();
+    /**
+     * Get Role. Responsibility Role
+     */
+    int getAD_Role_ID();
 
-    /** Get Included Role */
-  int getIncluded_Role_ID();
+    /**
+     * Get Included Role
+     */
+    int getIncluded_Role_ID();
 
-    /** Get Sequence. Method of ordering records; lowest number comes first */
-  int getSeqNo();
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
 }
