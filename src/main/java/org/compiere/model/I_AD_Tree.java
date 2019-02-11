@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for AD_Tree
@@ -12,66 +10,112 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Tree {
 
-  /** TableName=AD_Tree */
-  String Table_Name = "AD_Tree";
+    /**
+     * TableName=AD_Tree
+     */
+    String Table_Name = "AD_Tree";
 
-  /** AD_Table_ID=288 */
-  int Table_ID = 288;
+    /**
+     * AD_Table_ID=288
+     */
+    int Table_ID = 288;
 
-    /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name AD_Table_ID */
-  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-  /** Column name AD_Tree_ID */
-  String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
-  /** Column name AD_Tree_UU */
-  String COLUMNNAME_AD_Tree_UU = "AD_Tree_UU";
-    /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-    /** Column name IsAllNodes */
-  String COLUMNNAME_IsAllNodes = "IsAllNodes";
-  /** Column name IsDefault */
-  String COLUMNNAME_IsDefault = "IsDefault";
-  /** Column name IsLoadAllNodesImmediately */
-  String COLUMNNAME_IsLoadAllNodesImmediately = "IsLoadAllNodesImmediately";
-  /** Column name IsTreeDrivenByValue */
-  String COLUMNNAME_IsTreeDrivenByValue = "IsTreeDrivenByValue";
-  /** Column name Processing */
-  String COLUMNNAME_Processing = "Processing";
-  /** Column name TreeType */
-  String COLUMNNAME_TreeType = "TreeType";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name AD_Tree_ID
+     */
+    String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
+    /**
+     * Column name AD_Tree_UU
+     */
+    String COLUMNNAME_AD_Tree_UU = "AD_Tree_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsAllNodes
+     */
+    String COLUMNNAME_IsAllNodes = "IsAllNodes";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name IsLoadAllNodesImmediately
+     */
+    String COLUMNNAME_IsLoadAllNodesImmediately = "IsLoadAllNodesImmediately";
+    /**
+     * Column name IsTreeDrivenByValue
+     */
+    String COLUMNNAME_IsTreeDrivenByValue = "IsTreeDrivenByValue";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name TreeType
+     */
+    String COLUMNNAME_TreeType = "TreeType";
 
-    /** Get Table. Database Table information */
-  int getAD_Table_ID();
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-    /** Get Tree. Identifies a Tree */
-  int getAD_Tree_ID();
+    /**
+     * Get Tree. Identifies a Tree
+     */
+    int getAD_Tree_ID();
 
-    /** Get Description. Optional short description of the record */
-  String getDescription();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-    /** Set All Nodes. All Nodes are included (Complete Tree) */
-  void setIsAllNodes(boolean IsAllNodes);
+    /**
+     * Set All Nodes. All Nodes are included (Complete Tree)
+     */
+    void setIsAllNodes(boolean IsAllNodes);
 
-  /** Get All Nodes. All Nodes are included (Complete Tree) */
-  boolean isAllNodes();
+    /**
+     * Get All Nodes. All Nodes are included (Complete Tree)
+     */
+    boolean isAllNodes();
 
-  /** Set Default. Default value */
-  void setIsDefault(boolean IsDefault);
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-    /** Set Driven by Search Key */
-  void setIsTreeDrivenByValue(boolean IsTreeDrivenByValue);
+    /**
+     * Set Driven by Search Key
+     */
+    void setIsTreeDrivenByValue(boolean IsTreeDrivenByValue);
 
-  /** Get Driven by Search Key */
-  boolean isTreeDrivenByValue();
+    /**
+     * Get Driven by Search Key
+     */
+    boolean isTreeDrivenByValue();
 
-    /** Get Type | Area. Element this tree is built on (i.e Product, Business Partner) */
-  String getTreeType();
+    /**
+     * Get Type | Area. Element this tree is built on (i.e Product, Business Partner)
+     */
+    String getTreeType();
 
-  /** Set Type | Area. Element this tree is built on (i.e Product, Business Partner) */
-  void setTreeType(String TreeType);
+    /**
+     * Set Type | Area. Element this tree is built on (i.e Product, Business Partner)
+     */
+    void setTreeType(String TreeType);
 
 }
