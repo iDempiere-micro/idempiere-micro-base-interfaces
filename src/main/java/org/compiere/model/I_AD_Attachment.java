@@ -1,6 +1,7 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 /**
  * Generated Interface for AD_Attachment
@@ -55,10 +56,24 @@ public interface I_AD_Attachment {
      * Column name Title
      */
     String COLUMNNAME_Title = "Title";
+    
+    String ZIP = "zip";
 
     /**
      * Get Text Message. Text Message
      */
     String getTextMsg();
 
+    ArrayList<I_AD_AttachmentEntry> getItems();
+    void setItems(ArrayList<I_AD_AttachmentEntry> items);
+
+    byte[] getBinaryData();
+
+    String getTitle();
+
+    void setBinaryData(byte[] BinaryData);
+
+    I_AD_AttachmentEntry getEntry(int i);
+
+    void setTitle(String zip);
 }
