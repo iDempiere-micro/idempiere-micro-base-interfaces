@@ -1,6 +1,8 @@
 package org.idempiere.icommon.model
 
-// to be used instead of PO
+/**
+ * The ORM properties to identify a persistent object.
+ */
 interface IBasePO : software.hsharp.core.models.IBasePO {
     val id: Int
 

@@ -1,6 +1,8 @@
 package org.idempiere.icommon.model
 
-// to be used instead of PO
+/**
+ * All the most important persistent object attributes. Allows this interface to be used instead of PO.
+ */
 interface IPO : IBasePO {
     val _KeyColumns: Array<String>
 
