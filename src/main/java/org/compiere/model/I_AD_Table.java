@@ -187,6 +187,6 @@ public interface I_AD_Table {
     /**
      * Get DB Table Name. Name of the table in the database
      */
-    String getTableName();
+    String getDbTableName();
 
 }
