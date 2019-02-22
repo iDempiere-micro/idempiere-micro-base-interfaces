@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Client {
+public interface I_AD_Client extends IPO {
 
     /**
      * TableName=AD_Client
@@ -205,5 +207,5 @@ public interface I_AD_Client {
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    void setValue(String Value);
+    void setSearchKey(String Value);
 }
