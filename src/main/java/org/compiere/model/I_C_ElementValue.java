@@ -36,10 +36,6 @@ public interface I_C_ElementValue {
      */
     String COLUMNNAME_AccountType = "AccountType";
     /**
-     * Column name BPartnerType
-     */
-    String COLUMNNAME_BPartnerType = "BPartnerType";
-    /**
      * Column name C_BankAccount_ID
      */
     String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
@@ -56,10 +52,6 @@ public interface I_C_ElementValue {
      */
     String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
     /**
-     * Column name C_ElementValue_UU
-     */
-    String COLUMNNAME_C_ElementValue_UU = "C_ElementValue_UU";
-    /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
@@ -67,14 +59,6 @@ public interface I_C_ElementValue {
      * Column name IsBankAccount
      */
     String COLUMNNAME_IsBankAccount = "IsBankAccount";
-    /**
-     * Column name IsDetailBPartner
-     */
-    String COLUMNNAME_IsDetailBPartner = "IsDetailBPartner";
-    /**
-     * Column name IsDetailProduct
-     */
-    String COLUMNNAME_IsDetailProduct = "IsDetailProduct";
     /**
      * Column name IsDocControlled
      */
@@ -104,14 +88,6 @@ public interface I_C_ElementValue {
      */
     String COLUMNNAME_PostStatistical = "PostStatistical";
     /**
-     * Column name ValidFrom
-     */
-    String COLUMNNAME_ValidFrom = "ValidFrom";
-    /**
-     * Column name ValidTo
-     */
-    String COLUMNNAME_ValidTo = "ValidTo";
-    /**
      * Column name Value
      */
     String COLUMNNAME_Value = "Value";
@@ -130,16 +106,6 @@ public interface I_C_ElementValue {
      * Set Account Type. Indicates the type of account
      */
     void setAccountType(String AccountType);
-
-    /**
-     * Get Bank Account. Account at the Bank
-     */
-    int getC_BankAccount_ID();
-
-    /**
-     * Get Currency. The Currency for this record
-     */
-    int getC_Currency_ID();
 
     /**
      * Get Element. Accounting Element

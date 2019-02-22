@@ -28,21 +28,9 @@ public interface I_AD_SysConfig {
     /** Load Meta Data */
 
     /**
-     * Column name AD_SysConfig_ID
-     */
-    String COLUMNNAME_AD_SysConfig_ID = "AD_SysConfig_ID";
-    /**
-     * Column name AD_SysConfig_UU
-     */
-    String COLUMNNAME_AD_SysConfig_UU = "AD_SysConfig_UU";
-    /**
      * Column name ConfigurationLevel
      */
     String COLUMNNAME_ConfigurationLevel = "ConfigurationLevel";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name EntityType
      */

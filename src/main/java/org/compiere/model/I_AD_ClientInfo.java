@@ -28,10 +28,6 @@ public interface I_AD_ClientInfo {
     /** Load Meta Data */
 
     /**
-     * Column name AD_ClientInfo_UU
-     */
-    String COLUMNNAME_AD_ClientInfo_UU = "AD_ClientInfo_UU";
-    /**
      * Column name AD_StorageProvider_ID
      */
     String COLUMNNAME_AD_StorageProvider_ID = "AD_StorageProvider_ID";
@@ -88,49 +84,13 @@ public interface I_AD_ClientInfo {
      */
     String COLUMNNAME_C_UOM_Length_ID = "C_UOM_Length_ID";
     /**
-     * Column name C_UOM_Time_ID
-     */
-    String COLUMNNAME_C_UOM_Time_ID = "C_UOM_Time_ID";
-    /**
-     * Column name C_UOM_Volume_ID
-     */
-    String COLUMNNAME_C_UOM_Volume_ID = "C_UOM_Volume_ID";
-    /**
      * Column name C_UOM_Weight_ID
      */
     String COLUMNNAME_C_UOM_Weight_ID = "C_UOM_Weight_ID";
     /**
-     * Column name FY_StartDate
-     */
-    String COLUMNNAME_FY_StartDate = "FY_StartDate";
-    /**
-     * Column name IsConfirmOnDocClose
-     */
-    String COLUMNNAME_IsConfirmOnDocClose = "IsConfirmOnDocClose";
-    /**
-     * Column name IsConfirmOnDocVoid
-     */
-    String COLUMNNAME_IsConfirmOnDocVoid = "IsConfirmOnDocVoid";
-    /**
      * Column name IsDiscountLineAmt
      */
     String COLUMNNAME_IsDiscountLineAmt = "IsDiscountLineAmt";
-    /**
-     * Column name KeepLogDays
-     */
-    String COLUMNNAME_KeepLogDays = "KeepLogDays";
-    /**
-     * Column name Logo_ID
-     */
-    String COLUMNNAME_Logo_ID = "Logo_ID";
-    /**
-     * Column name LogoReport_ID
-     */
-    String COLUMNNAME_LogoReport_ID = "LogoReport_ID";
-    /**
-     * Column name LogoWeb_ID
-     */
-    String COLUMNNAME_LogoWeb_ID = "LogoWeb_ID";
     /**
      * Column name M_ProductFreight_ID
      */
@@ -146,19 +106,9 @@ public interface I_AD_ClientInfo {
     int getAD_StorageProvider_ID();
 
     /**
-     * Get Activity Tree. Trees are used for (financial) reporting
-     */
-    int getAD_Tree_Activity_ID();
-
-    /**
      * Set Activity Tree. Trees are used for (financial) reporting
      */
     void setAD_Tree_Activity_ID(int AD_Tree_Activity_ID);
-
-    /**
-     * Get BPartner Tree. Trees are used for (financial) reporting
-     */
-    int getAD_Tree_BPartner_ID();
 
     /**
      * Set BPartner Tree. Trees are used for (financial) reporting
@@ -166,19 +116,9 @@ public interface I_AD_ClientInfo {
     void setAD_Tree_BPartner_ID(int AD_Tree_BPartner_ID);
 
     /**
-     * Get Campaign Tree. Trees are used for (financial) reporting
-     */
-    int getAD_Tree_Campaign_ID();
-
-    /**
      * Set Campaign Tree. Trees are used for (financial) reporting
      */
     void setAD_Tree_Campaign_ID(int AD_Tree_Campaign_ID);
-
-    /**
-     * Get Menu Tree. Tree of the menu
-     */
-    int getAD_Tree_Menu_ID();
 
     /**
      * Set Menu Tree. Tree of the menu
@@ -196,29 +136,14 @@ public interface I_AD_ClientInfo {
     void setAD_Tree_Org_ID(int AD_Tree_Org_ID);
 
     /**
-     * Get Product Tree. Trees are used for (financial) reporting
-     */
-    int getAD_Tree_Product_ID();
-
-    /**
      * Set Product Tree. Trees are used for (financial) reporting
      */
     void setAD_Tree_Product_ID(int AD_Tree_Product_ID);
 
     /**
-     * Get Project Tree. Trees are used for (financial) reporting
-     */
-    int getAD_Tree_Project_ID();
-
-    /**
      * Set Project Tree. Trees are used for (financial) reporting
      */
     void setAD_Tree_Project_ID(int AD_Tree_Project_ID);
-
-    /**
-     * Get Sales Region Tree. Trees are used for (financial) reporting
-     */
-    int getAD_Tree_SalesRegion_ID();
 
     /**
      * Set Sales Region Tree. Trees are used for (financial) reporting
@@ -265,10 +190,5 @@ public interface I_AD_ClientInfo {
      * Get Product for Freight
      */
     int getM_ProductFreight_ID();
-
-    /**
-     * Get Archive Store
-     */
-    int getStorageArchive_ID();
 
 }

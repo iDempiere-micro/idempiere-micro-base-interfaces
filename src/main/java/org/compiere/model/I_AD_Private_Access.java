@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_Private_Access {
 
     /**
-     * TableName=AD_Private_Access
-     */
-    String Table_Name = "AD_Private_Access";
-
-    /**
      * AD_Table_ID=627
      */
     int Table_ID = 627;
@@ -28,10 +23,6 @@ public interface I_AD_Private_Access {
     /** Load Meta Data */
 
     /**
-     * Column name AD_Private_Access_UU
-     */
-    String COLUMNNAME_AD_Private_Access_UU = "AD_Private_Access_UU";
-    /**
      * Column name AD_Table_ID
      */
     String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
@@ -43,11 +34,6 @@ public interface I_AD_Private_Access {
      * Column name Record_ID
      */
     String COLUMNNAME_Record_ID = "Record_ID";
-
-    /**
-     * Get Table. Database Table information
-     */
-    int getAD_Table_ID();
 
     /**
      * Set Table. Database Table information

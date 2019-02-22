@@ -29,17 +29,9 @@ public interface I_AD_Column {
     /** Load Meta Data */
 
     /**
-     * Column name AD_Chart_ID
-     */
-    String COLUMNNAME_AD_Chart_ID = "AD_Chart_ID";
-    /**
      * Column name AD_Column_ID
      */
     String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-    /**
-     * Column name AD_Column_UU
-     */
-    String COLUMNNAME_AD_Column_UU = "AD_Column_UU";
     /**
      * Column name AD_Element_ID
      */
@@ -65,10 +57,6 @@ public interface I_AD_Column {
      */
     String COLUMNNAME_AD_Val_Rule_ID = "AD_Val_Rule_ID";
     /**
-     * Column name Callout
-     */
-    String COLUMNNAME_Callout = "Callout";
-    /**
      * Column name ColumnName
      */
     String COLUMNNAME_ColumnName = "ColumnName";
@@ -93,14 +81,6 @@ public interface I_AD_Column {
      */
     String COLUMNNAME_FieldLength = "FieldLength";
     /**
-     * Column name FKConstraintName
-     */
-    String COLUMNNAME_FKConstraintName = "FKConstraintName";
-    /**
-     * Column name FKConstraintType
-     */
-    String COLUMNNAME_FKConstraintType = "FKConstraintType";
-    /**
      * Column name FormatPattern
      */
     String COLUMNNAME_FormatPattern = "FormatPattern";
@@ -113,17 +93,9 @@ public interface I_AD_Column {
      */
     String COLUMNNAME_IsAllowCopy = "IsAllowCopy";
     /**
-     * Column name IsAllowLogging
-     */
-    String COLUMNNAME_IsAllowLogging = "IsAllowLogging";
-    /**
      * Column name IsAlwaysUpdateable
      */
     String COLUMNNAME_IsAlwaysUpdateable = "IsAlwaysUpdateable";
-    /**
-     * Column name IsAutocomplete
-     */
-    String COLUMNNAME_IsAutocomplete = "IsAutocomplete";
     /**
      * Column name IsEncrypted
      */
@@ -153,10 +125,6 @@ public interface I_AD_Column {
      */
     String COLUMNNAME_IsSelectionColumn = "IsSelectionColumn";
     /**
-     * Column name IsSyncDatabase
-     */
-    String COLUMNNAME_IsSyncDatabase = "IsSyncDatabase";
-    /**
      * Column name IsToolbarButton
      */
     String COLUMNNAME_IsToolbarButton = "IsToolbarButton";
@@ -169,25 +137,9 @@ public interface I_AD_Column {
      */
     String COLUMNNAME_IsUpdateable = "IsUpdateable";
     /**
-     * Column name MandatoryLogic
-     */
-    String COLUMNNAME_MandatoryLogic = "MandatoryLogic";
-    /**
-     * Column name PA_DashboardContent_ID
-     */
-    String COLUMNNAME_PA_DashboardContent_ID = "PA_DashboardContent_ID";
-    /**
-     * Column name ReadOnlyLogic
-     */
-    String COLUMNNAME_ReadOnlyLogic = "ReadOnlyLogic";
-    /**
      * Column name SeqNo
      */
     String COLUMNNAME_SeqNo = "SeqNo";
-    /**
-     * Column name SeqNoSelection
-     */
-    String COLUMNNAME_SeqNoSelection = "SeqNoSelection";
     /**
      * Column name ValueMax
      */
@@ -200,10 +152,6 @@ public interface I_AD_Column {
      * Column name Version
      */
     String COLUMNNAME_Version = "Version";
-    /**
-     * Column name VFormat
-     */
-    String COLUMNNAME_VFormat = "VFormat";
 
     /**
      * Get Column. Column in the table
@@ -255,11 +203,6 @@ public interface I_AD_Column {
     void setAD_Table_ID(int AD_Table_ID);
 
     I_AD_Table getAD_Table() throws RuntimeException;
-
-    /**
-     * Get Dynamic Validation. Dynamic Validation Rule
-     */
-    int getValRule_ID();
 
     /**
      * Get DB Column Name. Name of the column in the database

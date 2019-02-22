@@ -28,10 +28,6 @@ public interface I_C_DocType {
     /** Load Meta Data */
 
     /**
-     * Column name AD_PrintFormat_ID
-     */
-    String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
-    /**
      * Column name C_DocTypeDifference_ID
      */
     String COLUMNNAME_C_DocTypeDifference_ID = "C_DocTypeDifference_ID";
@@ -52,17 +48,9 @@ public interface I_C_DocType {
      */
     String COLUMNNAME_C_DocTypeShipment_ID = "C_DocTypeShipment_ID";
     /**
-     * Column name C_DocType_UU
-     */
-    String COLUMNNAME_C_DocType_UU = "C_DocType_UU";
-    /**
      * Column name DefiniteSequence_ID
      */
     String COLUMNNAME_DefiniteSequence_ID = "DefiniteSequence_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name DocBaseType
      */
@@ -84,10 +72,6 @@ public interface I_C_DocType {
      */
     String COLUMNNAME_DocumentCopies = "DocumentCopies";
     /**
-     * Column name DocumentNote
-     */
-    String COLUMNNAME_DocumentNote = "DocumentNote";
-    /**
      * Column name GL_Category_ID
      */
     String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
@@ -95,10 +79,6 @@ public interface I_C_DocType {
      * Column name HasCharges
      */
     String COLUMNNAME_HasCharges = "HasCharges";
-    /**
-     * Column name HasProforma
-     */
-    String COLUMNNAME_HasProforma = "HasProforma";
     /**
      * Column name IsChargeOrProductMandatory
      */
@@ -181,12 +161,6 @@ public interface I_C_DocType {
      * document
      */
     void setC_DocTypeInvoice_ID(int C_DocTypeInvoice_ID);
-
-    /**
-     * Get Document Type for ProForma. Document type used for pro forma invoices generated from this
-     * sales document
-     */
-    int getC_DocTypeProforma_ID();
 
     /**
      * Get Document Type for Shipment. Document type used for shipments generated from this sales

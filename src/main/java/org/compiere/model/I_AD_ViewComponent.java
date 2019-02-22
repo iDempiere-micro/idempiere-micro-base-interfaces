@@ -36,14 +36,6 @@ public interface I_AD_ViewComponent {
      */
     String COLUMNNAME_AD_ViewComponent_ID = "AD_ViewComponent_ID";
     /**
-     * Column name AD_ViewComponent_UU
-     */
-    String COLUMNNAME_AD_ViewComponent_UU = "AD_ViewComponent_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name EntityType
      */
     String COLUMNNAME_EntityType = "EntityType";
@@ -51,10 +43,6 @@ public interface I_AD_ViewComponent {
      * Column name FromClause
      */
     String COLUMNNAME_FromClause = "FromClause";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
     /**
      * Column name OtherClause
      */
@@ -71,11 +59,6 @@ public interface I_AD_ViewComponent {
      * Column name WhereClause
      */
     String COLUMNNAME_WhereClause = "WhereClause";
-
-    /**
-     * Get Table. Database Table information
-     */
-    int getAD_Table_ID();
 
     /**
      * Set Table. Database Table information
@@ -98,28 +81,8 @@ public interface I_AD_ViewComponent {
     void setEntityType(String EntityType);
 
     /**
-     * Get Sql FROM. SQL FROM clause
-     */
-    String getFromClause();
-
-    /**
      * Get Name. Alphanumeric identifier of the entity
      */
     String getName();
-
-    /**
-     * Get Other SQL Clause. Other SQL Clause
-     */
-    String getOtherClause();
-
-    /**
-     * Get Referenced Table
-     */
-    int getReferenced_Table_ID();
-
-    /**
-     * Get Sql WHERE. Fully qualified SQL WHERE clause
-     */
-    String getWhereClause();
 
 }

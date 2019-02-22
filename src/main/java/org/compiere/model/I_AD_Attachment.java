@@ -33,10 +33,6 @@ public interface I_AD_Attachment {
      */
     String COLUMNNAME_AD_Attachment_ID = "AD_Attachment_ID";
     /**
-     * Column name AD_Attachment_UU
-     */
-    String COLUMNNAME_AD_Attachment_UU = "AD_Attachment_UU";
-    /**
      * Column name AD_Table_ID
      */
     String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
@@ -58,11 +54,6 @@ public interface I_AD_Attachment {
     String COLUMNNAME_Title = "Title";
     
     String ZIP = "zip";
-
-    /**
-     * Get Text Message. Text Message
-     */
-    String getTextMsg();
 
     ArrayList<I_AD_AttachmentEntry> getItems();
     void setItems(ArrayList<I_AD_AttachmentEntry> items);

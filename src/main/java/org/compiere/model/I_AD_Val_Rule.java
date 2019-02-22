@@ -13,11 +13,6 @@ public interface I_AD_Val_Rule {
      */
     String Table_Name = "AD_Val_Rule";
 
-    /**
-     * AD_Table_ID=108
-     */
-    int Table_ID = 108;
-
     /** Load Meta Data */
 
 }

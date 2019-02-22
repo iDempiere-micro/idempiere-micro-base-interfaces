@@ -28,37 +28,13 @@ public interface I_AD_Client {
     /** Load Meta Data */
 
     /**
-     * Column name AD_Client_UU
-     */
-    String COLUMNNAME_AD_Client_UU = "AD_Client_UU";
-    /**
      * Column name AD_Language
      */
     String COLUMNNAME_AD_Language = "AD_Language";
     /**
-     * Column name AD_PasswordRule_ID
-     */
-    String COLUMNNAME_AD_PasswordRule_ID = "AD_PasswordRule_ID";
-    /**
-     * Column name AD_ReplicationStrategy_ID
-     */
-    String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
-    /**
      * Column name AutoArchive
      */
     String COLUMNNAME_AutoArchive = "AutoArchive";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name DocumentDir
-     */
-    String COLUMNNAME_DocumentDir = "DocumentDir";
-    /**
-     * Column name EMailTest
-     */
-    String COLUMNNAME_EMailTest = "EMailTest";
     /**
      * Column name IsMultiLingualDocument
      */
@@ -100,10 +76,6 @@ public interface I_AD_Client {
      */
     String COLUMNNAME_RequestEMail = "RequestEMail";
     /**
-     * Column name RequestFolder
-     */
-    String COLUMNNAME_RequestFolder = "RequestFolder";
-    /**
      * Column name RequestUser
      */
     String COLUMNNAME_RequestUser = "RequestUser";
@@ -133,11 +105,6 @@ public interface I_AD_Client {
      * Set Language. Language for this entity
      */
     void setADLanguage(String AD_Language);
-
-    /**
-     * Get Auto Archive. Enable and level of automatic Archive of documents
-     */
-    String getAutoArchive();
 
     /**
      * Set Auto Archive. Enable and level of automatic Archive of documents

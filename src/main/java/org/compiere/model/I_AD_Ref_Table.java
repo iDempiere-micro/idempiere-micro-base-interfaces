@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_Ref_Table {
 
     /**
-     * TableName=AD_Ref_Table
-     */
-    String Table_Name = "AD_Ref_Table";
-
-    /**
      * AD_Table_ID=103
      */
     int Table_ID = 103;
@@ -32,10 +27,6 @@ public interface I_AD_Ref_Table {
      */
     String COLUMNNAME_AD_Display = "AD_Display";
     /**
-     * Column name AD_InfoWindow_ID
-     */
-    String COLUMNNAME_AD_InfoWindow_ID = "AD_InfoWindow_ID";
-    /**
      * Column name AD_Key
      */
     String COLUMNNAME_AD_Key = "AD_Key";
@@ -44,17 +35,9 @@ public interface I_AD_Ref_Table {
      */
     String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
     /**
-     * Column name AD_Ref_Table_UU
-     */
-    String COLUMNNAME_AD_Ref_Table_UU = "AD_Ref_Table_UU";
-    /**
      * Column name AD_Table_ID
      */
     String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-    /**
-     * Column name AD_Window_ID
-     */
-    String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
     /**
      * Column name EntityType
      */
@@ -63,29 +46,6 @@ public interface I_AD_Ref_Table {
      * Column name IsValueDisplayed
      */
     String COLUMNNAME_IsValueDisplayed = "IsValueDisplayed";
-    /**
-     * Column name OrderByClause
-     */
-    String COLUMNNAME_OrderByClause = "OrderByClause";
-    /**
-     * Column name WhereClause
-     */
-    String COLUMNNAME_WhereClause = "WhereClause";
-
-    /**
-     * Get Display column. Column that will display
-     */
-    int getAD_Display();
-
-    /**
-     * Get Key column. Unique identifier of a record
-     */
-    int getAD_Key();
-
-    /**
-     * Get Reference. System Reference and Validation
-     */
-    int getReferenceId();
 
     /**
      * Get Table. Database Table information

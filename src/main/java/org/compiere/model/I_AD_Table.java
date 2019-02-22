@@ -37,29 +37,9 @@ public interface I_AD_Table {
      */
     String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
     /**
-     * Column name AD_Table_UU
-     */
-    String COLUMNNAME_AD_Table_UU = "AD_Table_UU";
-    /**
      * Column name AD_Val_Rule_ID
      */
     String COLUMNNAME_AD_Val_Rule_ID = "AD_Val_Rule_ID";
-    /**
-     * Column name AD_Window_ID
-     */
-    String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
-    /**
-     * Column name CopyColumnsFromTable
-     */
-    String COLUMNNAME_CopyColumnsFromTable = "CopyColumnsFromTable";
-    /**
-     * Column name CopyComponentsFromView
-     */
-    String COLUMNNAME_CopyComponentsFromView = "CopyComponentsFromView";
-    /**
-     * Column name DatabaseViewDrop
-     */
-    String COLUMNNAME_DatabaseViewDrop = "DatabaseViewDrop";
     /**
      * Column name Description
      */
@@ -72,14 +52,6 @@ public interface I_AD_Table {
      * Column name Help
      */
     String COLUMNNAME_Help = "Help";
-    /**
-     * Column name ImportTable
-     */
-    String COLUMNNAME_ImportTable = "ImportTable";
-    /**
-     * Column name IsCentrallyMaintained
-     */
-    String COLUMNNAME_IsCentrallyMaintained = "IsCentrallyMaintained";
     /**
      * Column name IsChangeLog
      */
@@ -102,18 +74,6 @@ public interface I_AD_Table {
      * Column name IsView
      */
     String COLUMNNAME_IsView = "IsView";
-    /**
-     * Column name LoadSeq
-     */
-    String COLUMNNAME_LoadSeq = "LoadSeq";
-    /**
-     * Column name PO_Window_ID
-     */
-    String COLUMNNAME_PO_Window_ID = "PO_Window_ID";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name ReplicationType
      */

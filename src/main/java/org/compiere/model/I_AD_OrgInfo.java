@@ -28,10 +28,6 @@ public interface I_AD_OrgInfo {
     /** Load Meta Data */
 
     /**
-     * Column name AD_OrgInfo_UU
-     */
-    String COLUMNNAME_AD_OrgInfo_UU = "AD_OrgInfo_UU";
-    /**
      * Column name AD_OrgType_ID
      */
     String COLUMNNAME_AD_OrgType_ID = "AD_OrgType_ID";
@@ -60,10 +56,6 @@ public interface I_AD_OrgInfo {
      */
     String COLUMNNAME_Fax = "Fax";
     /**
-     * Column name Logo_ID
-     */
-    String COLUMNNAME_Logo_ID = "Logo_ID";
-    /**
      * Column name M_Warehouse_ID
      */
     String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
@@ -80,10 +72,6 @@ public interface I_AD_OrgInfo {
      */
     String COLUMNNAME_Phone2 = "Phone2";
     /**
-     * Column name ReceiptFooterMsg
-     */
-    String COLUMNNAME_ReceiptFooterMsg = "ReceiptFooterMsg";
-    /**
      * Column name Supervisor_ID
      */
     String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
@@ -91,14 +79,6 @@ public interface I_AD_OrgInfo {
      * Column name TaxID
      */
     String COLUMNNAME_TaxID = "TaxID";
-    /**
-     * Column name TransferBank_ID
-     */
-    String COLUMNNAME_TransferBank_ID = "TransferBank_ID";
-    /**
-     * Column name TransferCashBook_ID
-     */
-    String COLUMNNAME_TransferCashBook_ID = "TransferCashBook_ID";
 
     /**
      * Set Organization Type. Organization Type

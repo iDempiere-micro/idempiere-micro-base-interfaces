@@ -36,10 +36,6 @@ public interface I_AD_Tree {
      */
     String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
     /**
-     * Column name AD_Tree_UU
-     */
-    String COLUMNNAME_AD_Tree_UU = "AD_Tree_UU";
-    /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
@@ -52,17 +48,9 @@ public interface I_AD_Tree {
      */
     String COLUMNNAME_IsDefault = "IsDefault";
     /**
-     * Column name IsLoadAllNodesImmediately
-     */
-    String COLUMNNAME_IsLoadAllNodesImmediately = "IsLoadAllNodesImmediately";
-    /**
      * Column name IsTreeDrivenByValue
      */
     String COLUMNNAME_IsTreeDrivenByValue = "IsTreeDrivenByValue";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name TreeType
      */
