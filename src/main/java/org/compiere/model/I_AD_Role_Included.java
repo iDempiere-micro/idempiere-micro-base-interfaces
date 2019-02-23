@@ -32,10 +32,6 @@ public interface I_AD_Role_Included {
      */
     String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
     /**
-     * Column name AD_Role_Included_UU
-     */
-    String COLUMNNAME_AD_Role_Included_UU = "AD_Role_Included_UU";
-    /**
      * Column name Included_Role_ID
      */
     String COLUMNNAME_Included_Role_ID = "Included_Role_ID";
@@ -43,11 +39,6 @@ public interface I_AD_Role_Included {
      * Column name SeqNo
      */
     String COLUMNNAME_SeqNo = "SeqNo";
-
-    /**
-     * Get Role. Responsibility Role
-     */
-    int getAD_Role_ID();
 
     /**
      * Get Included Role

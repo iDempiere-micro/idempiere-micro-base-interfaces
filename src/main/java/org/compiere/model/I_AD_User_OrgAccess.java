@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_User_OrgAccess {
 
     /**
-     * TableName=AD_User_OrgAccess
-     */
-    String Table_Name = "AD_User_OrgAccess";
-
-    /**
      * AD_Table_ID=769
      */
     int Table_ID = 769;
@@ -31,10 +26,6 @@ public interface I_AD_User_OrgAccess {
      * Column name AD_User_ID
      */
     String COLUMNNAME_AD_User_ID = "AD_User_ID";
-    /**
-     * Column name AD_User_OrgAccess_UU
-     */
-    String COLUMNNAME_AD_User_OrgAccess_UU = "AD_User_OrgAccess_UU";
     /**
      * Column name IsReadOnly
      */

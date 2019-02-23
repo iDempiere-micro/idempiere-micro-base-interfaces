@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_Sequence {
 
     /**
-     * TableName=AD_Sequence
-     */
-    String Table_Name = "AD_Sequence";
-
-    /**
      * AD_Table_ID=115
      */
     int Table_ID = 115;
@@ -35,10 +30,6 @@ public interface I_AD_Sequence {
      * Column name AD_Sequence_ID
      */
     String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
-    /**
-     * Column name AD_Sequence_UU
-     */
-    String COLUMNNAME_AD_Sequence_UU = "AD_Sequence_UU";
     /**
      * Column name CurrentNext
      */
@@ -103,10 +94,6 @@ public interface I_AD_Sequence {
      * Column name Suffix
      */
     String COLUMNNAME_Suffix = "Suffix";
-    /**
-     * Column name VFormat
-     */
-    String COLUMNNAME_VFormat = "VFormat";
 
     /**
      * Get Sequence. Document Sequence

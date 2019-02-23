@@ -1,18 +1,23 @@
 package org.idempiere.icommon.model
 
-// to be used instead of PO
+/**
+ * All the most important persistent object attributes. Allows this interface to be used instead of PO.
+ */
 interface IPO : IBasePO {
-    val _KeyColumns: Array<String>
+    val keyColumns: Array<String>
 
-    val _TableName: String
+    val tableName: String
 
-    val is_new: Boolean
+    val isNew: Boolean
 
-    fun get_ValueOfColumn(ad_column_id: Int): Any
+    fun getValueOfColumn(columnId: Int): Any
 
-    fun get_ColumnIndex(token: String): Int
+    fun getColumnIndex(token: String): Int
 
-    fun get_Value(columnName: String): Any
+    /** Get Search Key.
+     * @return Search key for the record in the format required - must be unique
+     */
+    fun getValue(columnName: String): Any
 
-    fun get_Value(index: Int): Any?
+    fun getValue(index: Int): Any?
 }

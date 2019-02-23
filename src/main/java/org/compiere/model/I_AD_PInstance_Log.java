@@ -28,45 +28,8 @@ public interface I_AD_PInstance_Log {
     /** Load Meta Data */
 
     /**
-     * Column name AD_PInstance_ID
-     */
-    String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
-    /**
-     * Column name AD_PInstance_Log_UU
-     */
-    String COLUMNNAME_AD_PInstance_Log_UU = "AD_PInstance_Log_UU";
-    /**
      * Column name AD_Table_ID
      */
     String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-    /**
-     * Column name Log_ID
-     */
-    String COLUMNNAME_Log_ID = "Log_ID";
-    /**
-     * Column name P_Date
-     */
-    String COLUMNNAME_P_Date = "P_Date";
-    /**
-     * Column name P_ID
-     */
-    String COLUMNNAME_P_ID = "P_ID";
-    /**
-     * Column name P_Msg
-     */
-    String COLUMNNAME_P_Msg = "P_Msg";
-    /**
-     * Column name P_Number
-     */
-    String COLUMNNAME_P_Number = "P_Number";
-    /**
-     * Column name Record_ID
-     */
-    String COLUMNNAME_Record_ID = "Record_ID";
-
-    /**
-     * Get Table. Database Table information
-     */
-    int getAD_Table_ID();
 
 }

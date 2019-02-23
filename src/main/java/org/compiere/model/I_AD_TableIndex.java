@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_TableIndex {
 
     /**
-     * TableName=AD_TableIndex
-     */
-    String Table_Name = "AD_TableIndex";
-
-    /**
      * AD_Table_ID=200085
      */
     int Table_ID = 200085;
@@ -28,10 +23,6 @@ public interface I_AD_TableIndex {
     /** Load Meta Data */
 
     /**
-     * Column name AD_Message_ID
-     */
-    String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
-    /**
      * Column name AD_Table_ID
      */
     String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
@@ -40,21 +31,9 @@ public interface I_AD_TableIndex {
      */
     String COLUMNNAME_AD_TableIndex_ID = "AD_TableIndex_ID";
     /**
-     * Column name AD_TableIndex_UU
-     */
-    String COLUMNNAME_AD_TableIndex_UU = "AD_TableIndex_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name EntityType
      */
     String COLUMNNAME_EntityType = "EntityType";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
     /**
      * Column name IsCreateConstraint
      */
@@ -67,26 +46,11 @@ public interface I_AD_TableIndex {
      * Column name IsUnique
      */
     String COLUMNNAME_IsUnique = "IsUnique";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
-     * Column name TableIndexDrop
-     */
-    String COLUMNNAME_TableIndexDrop = "TableIndexDrop";
 
     /**
      * Get Table. Database Table information
      */
     int getAD_Table_ID();
-
-    /**
-     * Set Table. Database Table information
-     */
-    void setAD_Table_ID(int AD_Table_ID);
-
-    I_AD_Table getAD_Table() throws RuntimeException;
 
     /**
      * Get Table Index

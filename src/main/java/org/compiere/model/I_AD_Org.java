@@ -28,14 +28,6 @@ public interface I_AD_Org {
     /** Load Meta Data */
 
     /**
-     * Column name AD_Org_UU
-     */
-    String COLUMNNAME_AD_Org_UU = "AD_Org_UU";
-    /**
-     * Column name AD_ReplicationStrategy_ID
-     */
-    String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
-    /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";

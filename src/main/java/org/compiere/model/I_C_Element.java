@@ -36,14 +36,6 @@ public interface I_C_Element {
      */
     String COLUMNNAME_C_Element_ID = "C_Element_ID";
     /**
-     * Column name C_Element_UU
-     */
-    String COLUMNNAME_C_Element_UU = "C_Element_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name ElementType
      */
     String COLUMNNAME_ElementType = "ElementType";
@@ -55,10 +47,6 @@ public interface I_C_Element {
      * Column name IsNaturalAccount
      */
     String COLUMNNAME_IsNaturalAccount = "IsNaturalAccount";
-    /**
-     * Column name VFormat
-     */
-    String COLUMNNAME_VFormat = "VFormat";
 
     /**
      * Get Tree. Identifies a Tree

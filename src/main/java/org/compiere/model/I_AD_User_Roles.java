@@ -35,10 +35,6 @@ public interface I_AD_User_Roles {
      * Column name AD_User_ID
      */
     String COLUMNNAME_AD_User_ID = "AD_User_ID";
-    /**
-     * Column name AD_User_Roles_UU
-     */
-    String COLUMNNAME_AD_User_Roles_UU = "AD_User_Roles_UU";
 
     /**
      * Get Role. Responsibility Role

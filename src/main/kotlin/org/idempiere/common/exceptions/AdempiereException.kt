@@ -28,7 +28,6 @@ open class AdempiereException : RuntimeException {
     }
 
     companion object {
-        /**  */
         private const val serialVersionUID = 2340179640558569534L
     }
 }

@@ -28,37 +28,9 @@ public interface I_AD_Reference {
     /** Load Meta Data */
 
     /**
-     * Column name AD_Reference_ID
-     */
-    String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
-    /**
-     * Column name AD_Reference_UU
-     */
-    String COLUMNNAME_AD_Reference_UU = "AD_Reference_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name EntityType
-     */
-    String COLUMNNAME_EntityType = "EntityType";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
-    /**
-     * Column name IsOrderByValue
-     */
-    String COLUMNNAME_IsOrderByValue = "IsOrderByValue";
-    /**
      * Column name ValidationType
      */
     String COLUMNNAME_ValidationType = "ValidationType";
-    /**
-     * Column name VFormat
-     */
-    String COLUMNNAME_VFormat = "VFormat";
 
     /**
      * Get Name. Alphanumeric identifier of the entity

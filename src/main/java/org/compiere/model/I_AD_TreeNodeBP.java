@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_TreeNodeBP {
 
     /**
-     * TableName=AD_TreeNodeBP
-     */
-    String Table_Name = "AD_TreeNodeBP";
-
-    /**
      * AD_Table_ID=451
      */
     int Table_ID = 451;
@@ -32,10 +27,6 @@ public interface I_AD_TreeNodeBP {
      */
     String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
     /**
-     * Column name AD_TreeNodeBP_UU
-     */
-    String COLUMNNAME_AD_TreeNodeBP_UU = "AD_TreeNodeBP_UU";
-    /**
      * Column name Node_ID
      */
     String COLUMNNAME_Node_ID = "Node_ID";
@@ -47,11 +38,6 @@ public interface I_AD_TreeNodeBP {
      * Column name SeqNo
      */
     String COLUMNNAME_SeqNo = "SeqNo";
-
-    /**
-     * Get Tree. Identifies a Tree
-     */
-    int getAD_Tree_ID();
 
     /**
      * Set Tree. Identifies a Tree
