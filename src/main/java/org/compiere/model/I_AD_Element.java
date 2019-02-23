@@ -25,7 +25,7 @@ public interface I_AD_Element {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Element_ID
@@ -56,7 +56,7 @@ public interface I_AD_Element {
      * Get System Element. System Element enables the central maintenance of column description and
      * help.
      */
-    int getAD_Element_ID();
+    int getElementId();
 
     /**
      * Get DB Column Name. Name of the column in the database

@@ -25,7 +25,7 @@ public interface I_AD_Tree {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID

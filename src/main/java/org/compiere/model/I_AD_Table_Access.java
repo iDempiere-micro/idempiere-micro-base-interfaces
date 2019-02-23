@@ -20,7 +20,7 @@ public interface I_AD_Table_Access {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccessTypeRule

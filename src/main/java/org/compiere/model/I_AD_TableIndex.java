@@ -20,7 +20,7 @@ public interface I_AD_TableIndex {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID

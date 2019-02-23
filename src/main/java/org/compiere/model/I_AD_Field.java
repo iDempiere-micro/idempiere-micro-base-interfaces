@@ -13,6 +13,6 @@ public interface I_AD_Field {
      */
     int Table_ID = 107;
 
-    /** Load Meta Data */
+    /* Load Meta Data */
 
 }

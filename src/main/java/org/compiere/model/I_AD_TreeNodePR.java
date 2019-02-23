@@ -20,7 +20,7 @@ public interface I_AD_TreeNodePR {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Tree_ID

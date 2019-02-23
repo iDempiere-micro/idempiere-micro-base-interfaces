@@ -25,7 +25,7 @@ public interface I_AD_ViewColumn {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_ViewComponent_ID

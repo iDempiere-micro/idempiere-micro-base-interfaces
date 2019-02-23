@@ -25,7 +25,7 @@ public interface I_C_ElementValue {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccountSign

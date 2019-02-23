@@ -20,7 +20,7 @@ public interface I_AD_Role_OrgAccess {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID

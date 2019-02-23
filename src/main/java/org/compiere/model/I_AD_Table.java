@@ -26,7 +26,7 @@ public interface I_AD_Table {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccessLevel

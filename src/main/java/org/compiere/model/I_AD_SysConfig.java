@@ -25,7 +25,7 @@ public interface I_AD_SysConfig {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name ConfigurationLevel

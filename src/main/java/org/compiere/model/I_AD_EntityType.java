@@ -25,7 +25,7 @@ public interface I_AD_EntityType {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_EntityType_ID
@@ -39,7 +39,7 @@ public interface I_AD_EntityType {
     /**
      * Get Entity Type. System Entity Type
      */
-    int getAD_EntityType_ID();
+    int getEntityTypeId();
 
     /**
      * Get ModelPackage. Java Package of the model classes

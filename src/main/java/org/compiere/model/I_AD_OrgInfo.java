@@ -25,7 +25,7 @@ public interface I_AD_OrgInfo {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+    /* Load Meta Data */
 
     /**
      * Column name AD_OrgType_ID
@@ -83,28 +83,28 @@ public interface I_AD_OrgInfo {
     /**
      * Set Organization Type. Organization Type
      */
-    void setAD_OrgType_ID(int AD_OrgType_ID);
+    void setOrgTypeId(int AD_OrgType_ID);
 
     /**
      * Get Calendar. Accounting Calendar Name
      */
-    int getC_Calendar_ID();
+    int getCalendarId();
 
     /**
      * Get Address. Location or Address
      */
-    int getC_Location_ID();
+    int getLocationId();
 
     /**
      * Set Address. Location or Address
      */
-    void setC_Location_ID(int C_Location_ID);
+    void setLocationId(int C_Location_ID);
 
     /**
      * Get Drop Ship Warehouse. The (logical) warehouse to use for recording drop ship receipts and
      * shipments.
      */
-    int getDropShip_Warehouse_ID();
+    int getDropShipWarehouseId();
 
     /**
      * Set D-U-N-S. Dun & Bradstreet Number
@@ -124,17 +124,17 @@ public interface I_AD_OrgInfo {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    void setM_Warehouse_ID(int M_Warehouse_ID);
+    void setWarehouseId(int M_Warehouse_ID);
 
     /**
      * Get Parent Organization. Parent (superior) Organization
      */
-    int getParent_Org_ID();
+    int getParentOrgId();
 
     /**
      * Set Phone. Identifies a telephone number
@@ -149,7 +149,7 @@ public interface I_AD_OrgInfo {
     /**
      * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
-    int getSupervisor_ID();
+    int getSupervisorId();
 
     /**
      * Set Tax ID. Tax Identification
