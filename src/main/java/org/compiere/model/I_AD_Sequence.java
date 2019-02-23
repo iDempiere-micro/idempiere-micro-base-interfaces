@@ -20,7 +20,7 @@ public interface I_AD_Sequence {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Org_ID
@@ -98,7 +98,7 @@ public interface I_AD_Sequence {
     /**
      * Get Sequence. Document Sequence
      */
-    int getAD_Sequence_ID();
+    int getSequenceId();
 
     /**
      * Get Current Next. The next number to be used

@@ -25,7 +25,7 @@ public interface I_AD_Role {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID
@@ -131,12 +131,12 @@ public interface I_AD_Role {
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
+    int getRoleId();
 
     /**
      * Get Organization Tree. Trees are used for (financial) reporting and security access (via role)
      */
-    int getAD_Tree_Org_ID();
+    int getTreeOrgId();
 
     /**
      * Get Approval Amount. The approval amount limit for this role
@@ -152,7 +152,7 @@ public interface I_AD_Role {
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Confirm Query Records. Require Confirmation if more records will be returned by the query

@@ -26,7 +26,7 @@ public interface I_AD_Attachment {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Attachment_ID

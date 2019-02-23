@@ -25,7 +25,7 @@ public interface I_AD_ViewComponent {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
@@ -63,12 +63,12 @@ public interface I_AD_ViewComponent {
     /**
      * Set Table. Database Table information
      */
-    void setAD_Table_ID(int AD_Table_ID);
+    void setViewTableId(int AD_Table_ID);
 
     /**
      * Get Database View Component
      */
-    int getAD_ViewComponent_ID();
+    int getViewComponentId();
 
     /**
      * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization

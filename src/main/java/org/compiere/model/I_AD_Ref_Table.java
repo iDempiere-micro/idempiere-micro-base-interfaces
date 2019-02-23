@@ -20,7 +20,7 @@ public interface I_AD_Ref_Table {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Display
@@ -50,9 +50,9 @@ public interface I_AD_Ref_Table {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getRefTableId();
 
-    I_AD_Table getAD_Table() throws RuntimeException;
+    I_AD_Table getTable() throws RuntimeException;
 
     /**
      * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization

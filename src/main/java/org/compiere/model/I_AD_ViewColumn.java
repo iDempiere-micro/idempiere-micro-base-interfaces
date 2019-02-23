@@ -25,7 +25,7 @@ public interface I_AD_ViewColumn {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_ViewComponent_ID
@@ -51,7 +51,7 @@ public interface I_AD_ViewColumn {
     /**
      * Set Database View Component
      */
-    void setAD_ViewComponent_ID(int AD_ViewComponent_ID);
+    void setViewComponentId(int AD_ViewComponent_ID);
 
     /**
      * Get DB Column Name. Name of the column in the database

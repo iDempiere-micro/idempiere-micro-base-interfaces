@@ -20,7 +20,7 @@ public interface I_AD_Role_OrgAccess {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID
@@ -34,12 +34,12 @@ public interface I_AD_Role_OrgAccess {
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
+    int getRoleId();
 
     /**
      * Set Role. Responsibility Role
      */
-    void setAD_Role_ID(int AD_Role_ID);
+    void setRoleId(int AD_Role_ID);
 
     /**
      * Set Read Only. Field is read only

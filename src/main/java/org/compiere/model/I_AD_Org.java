@@ -25,7 +25,7 @@ public interface I_AD_Org {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Description

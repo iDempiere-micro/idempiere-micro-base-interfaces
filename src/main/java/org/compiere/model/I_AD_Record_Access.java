@@ -20,7 +20,7 @@ public interface I_AD_Record_Access {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID
@@ -50,12 +50,12 @@ public interface I_AD_Record_Access {
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
+    int getRoleId();
 
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getRecordTableId();
 
     /**
      * Set Dependent Entities. Also check access in dependent entities
@@ -90,6 +90,6 @@ public interface I_AD_Record_Access {
     /**
      * Get Record ID. Direct internal record ID
      */
-    int getRecord_ID();
+    int getRecordId();
 
 }

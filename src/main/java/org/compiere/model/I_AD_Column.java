@@ -26,7 +26,7 @@ public interface I_AD_Column {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Column_ID
@@ -162,18 +162,18 @@ public interface I_AD_Column {
      * Get System Element. System Element enables the central maintenance of column description and
      * help.
      */
-    int getAD_Element_ID();
+    int getElementId();
 
     /**
      * Set System Element. System Element enables the central maintenance of column description and
      * help.
      */
-    void setAD_Element_ID(int AD_Element_ID);
+    void setElementId(int AD_Element_ID);
 
     /**
      * Get Process. Process or Report
      */
-    int getAD_Process_ID();
+    int getProcessId();
 
     /**
      * Get Reference. System Reference and Validation
@@ -190,19 +190,19 @@ public interface I_AD_Column {
     /**
      * Get Reference Key. Required to specify, if data type is Table or List
      */
-    int getAD_Reference_Value_ID();
+    int getReferenceValueId();
 
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getColumnTableId();
 
     /**
      * Set Table. Database Table information
      */
-    void setAD_Table_ID(int AD_Table_ID);
+    void setColumnTableId(int AD_Table_ID);
 
-    I_AD_Table getAD_Table() throws RuntimeException;
+    I_AD_Table getColumnTable() throws RuntimeException;
 
     /**
      * Get DB Column Name. Name of the column in the database

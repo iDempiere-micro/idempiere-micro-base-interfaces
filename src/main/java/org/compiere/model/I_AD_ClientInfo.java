@@ -25,7 +25,7 @@ public interface I_AD_ClientInfo {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_StorageProvider_ID
@@ -103,82 +103,82 @@ public interface I_AD_ClientInfo {
     /**
      * Get Storage Provider
      */
-    int getAD_StorageProvider_ID();
+    int getStorageProviderId();
 
     /**
      * Set Activity Tree. Trees are used for (financial) reporting
      */
-    void setAD_Tree_Activity_ID(int AD_Tree_Activity_ID);
+    void setTreeActivityId(int AD_Tree_Activity_ID);
 
     /**
      * Set BPartner Tree. Trees are used for (financial) reporting
      */
-    void setAD_Tree_BPartner_ID(int AD_Tree_BPartner_ID);
+    void setTreeBPartnerId(int AD_Tree_BPartner_ID);
 
     /**
      * Set Campaign Tree. Trees are used for (financial) reporting
      */
-    void setAD_Tree_Campaign_ID(int AD_Tree_Campaign_ID);
+    void setTreeCampaignId(int AD_Tree_Campaign_ID);
 
     /**
      * Set Menu Tree. Tree of the menu
      */
-    void setAD_Tree_Menu_ID(int AD_Tree_Menu_ID);
+    void setTreeMenuId(int AD_Tree_Menu_ID);
 
     /**
      * Get Organization Tree. Trees are used for (financial) reporting and security access (via role)
      */
-    int getAD_Tree_Org_ID();
+    int getTreeOrgId();
 
     /**
      * Set Organization Tree. Trees are used for (financial) reporting and security access (via role)
      */
-    void setAD_Tree_Org_ID(int AD_Tree_Org_ID);
+    void setTreeOrgId(int AD_Tree_Org_ID);
 
     /**
      * Set Product Tree. Trees are used for (financial) reporting
      */
-    void setAD_Tree_Product_ID(int AD_Tree_Product_ID);
+    void setTreeProductId(int AD_Tree_Product_ID);
 
     /**
      * Set Project Tree. Trees are used for (financial) reporting
      */
-    void setAD_Tree_Project_ID(int AD_Tree_Project_ID);
+    void setTreeProjectId(int AD_Tree_Project_ID);
 
     /**
      * Set Sales Region Tree. Trees are used for (financial) reporting
      */
-    void setAD_Tree_SalesRegion_ID(int AD_Tree_SalesRegion_ID);
+    void setTreeSalesRegionId(int AD_Tree_SalesRegion_ID);
 
     /**
      * Get Primary Accounting Schema. Primary rules for accounting
      */
-    int getC_AcctSchema1_ID();
+    int getAcctSchema1Id();
 
     /**
      * Get Template B.Partner. Business Partner used for creating new Business Partners on the fly
      */
-    int getC_BPartnerCashTrx_ID();
+    int getBPartnerCashTrxId();
 
     /**
      * Get Calendar. Accounting Calendar Name
      */
-    int getC_Calendar_ID();
+    int getCalendarId();
 
     /**
      * Get Charge for Freight
      */
-    int getC_ChargeFreight_ID();
+    int getChargeFreightId();
 
     /**
      * Get UOM for Length. Standard Unit of Measure for Length
      */
-    int getC_UOM_Length_ID();
+    int getUOMLengthId();
 
     /**
      * Get UOM for Weight. Standard Unit of Measure for Weight
      */
-    int getC_UOM_Weight_ID();
+    int getUOMWeightId();
 
     /**
      * Set Discount calculated from Line Amounts. Payment Discount calculation does not include Taxes
@@ -189,6 +189,6 @@ public interface I_AD_ClientInfo {
     /**
      * Get Product for Freight
      */
-    int getM_ProductFreight_ID();
+    int getProductFreightId();
 
 }

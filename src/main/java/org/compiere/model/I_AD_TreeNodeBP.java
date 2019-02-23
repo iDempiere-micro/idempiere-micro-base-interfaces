@@ -20,7 +20,7 @@ public interface I_AD_TreeNodeBP {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Tree_ID
@@ -42,17 +42,17 @@ public interface I_AD_TreeNodeBP {
     /**
      * Set Tree. Identifies a Tree
      */
-    void setAD_Tree_ID(int AD_Tree_ID);
+    void setTreeId(int AD_Tree_ID);
 
     /**
      * Set Node
      */
-    void setNode_ID(int Node_ID);
+    void setNodeId(int Node_ID);
 
     /**
      * Set Parent. Parent of Entity
      */
-    void setParent_ID(int Parent_ID);
+    void setParentId(int Parent_ID);
 
     /**
      * Set Sequence. Method of ordering records; lowest number comes first

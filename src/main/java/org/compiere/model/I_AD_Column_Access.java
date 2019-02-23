@@ -20,7 +20,7 @@ public interface I_AD_Column_Access {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Column_ID
@@ -46,17 +46,17 @@ public interface I_AD_Column_Access {
     /**
      * Get Column. Column in the table
      */
-    int getAD_Column_ID();
+    int getColumnId();
 
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
+    int getRoleId();
 
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getColumnTableId();
 
     /**
      * Set Exclude. Exclude access to the data - if not selected Include access to the data

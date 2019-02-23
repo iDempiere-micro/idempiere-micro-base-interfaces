@@ -25,7 +25,7 @@ public interface I_AD_Ref_List {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Reference_ID

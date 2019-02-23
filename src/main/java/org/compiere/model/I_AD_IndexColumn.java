@@ -25,7 +25,7 @@ public interface I_AD_IndexColumn {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Column_ID
@@ -47,17 +47,17 @@ public interface I_AD_IndexColumn {
     /**
      * Get Column. Column in the table
      */
-    int getAD_Column_ID();
+    int getColumnId();
 
     /**
      * Set Column. Column in the table
      */
-    void setAD_Column_ID(int AD_Column_ID);
+    void setColumnId(int AD_Column_ID);
 
     /**
      * Set Table Index
      */
-    void setAD_TableIndex_ID(int AD_TableIndex_ID);
+    void setTableIndexId(int AD_TableIndex_ID);
 
     /**
      * Get Column SQL. Virtual Column (r/o)

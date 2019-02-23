@@ -25,7 +25,7 @@ public interface I_AD_Tree {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
@@ -59,12 +59,12 @@ public interface I_AD_Tree {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getTreeTableId();
 
     /**
      * Get Tree. Identifies a Tree
      */
-    int getAD_Tree_ID();
+    int getTreeId();
 
     /**
      * Get Description. Optional short description of the record

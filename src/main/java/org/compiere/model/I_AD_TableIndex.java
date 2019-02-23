@@ -20,7 +20,7 @@ public interface I_AD_TableIndex {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
@@ -50,12 +50,12 @@ public interface I_AD_TableIndex {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getIndexTableId();
 
     /**
      * Get Table Index
      */
-    int getAD_TableIndex_ID();
+    int getTableIndexId();
 
     /**
      * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization

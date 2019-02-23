@@ -25,7 +25,7 @@ public interface I_AD_PInstance_Log {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
