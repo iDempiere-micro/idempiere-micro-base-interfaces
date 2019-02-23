@@ -1,5 +1,8 @@
 package software.hsharp.core.models
 
+/**
+ * Can be searched by a search key
+ */
 interface ISearchableByKey {
     /**
      * Get the key you can use to search for the entity directly.
