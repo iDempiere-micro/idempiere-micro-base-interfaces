@@ -38,12 +38,12 @@ public interface I_AD_Sequence_No {
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Set Sequence. Document Sequence
      */
-    void setAD_Sequence_ID(int AD_Sequence_ID);
+    void setSequenceId(int AD_Sequence_ID);
 
     /**
      * Set YearMonth. YYYYMM

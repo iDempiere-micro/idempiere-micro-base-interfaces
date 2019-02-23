@@ -110,19 +110,19 @@ public interface I_C_ElementValue {
     /**
      * Get Element. Accounting Element
      */
-    int getC_Element_ID();
+    int getElementId();
 
     /**
      * Set Element. Accounting Element
      */
-    void setC_Element_ID(int C_Element_ID);
+    void setElementId(int C_Element_ID);
 
-    I_C_Element getC_Element() throws RuntimeException;
+    I_C_Element getElement() throws RuntimeException;
 
     /**
      * Get Account Element. Account Element
      */
-    int getC_ElementValue_ID();
+    int getElementValueId();
 
     /**
      * Get Description. Optional short description of the record

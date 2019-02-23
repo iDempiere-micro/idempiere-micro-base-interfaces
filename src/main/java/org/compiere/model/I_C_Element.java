@@ -51,17 +51,17 @@ public interface I_C_Element {
     /**
      * Get Tree. Identifies a Tree
      */
-    int getAD_Tree_ID();
+    int getTreeId();
 
     /**
      * Set Tree. Identifies a Tree
      */
-    void setAD_Tree_ID(int AD_Tree_ID);
+    void setTreeId(int AD_Tree_ID);
 
     /**
      * Get Element. Accounting Element
      */
-    int getC_Element_ID();
+    int getElementId();
 
     /**
      * Get Type. Element Type (account or user defined)

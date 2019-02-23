@@ -51,12 +51,12 @@ public interface I_AD_Table_Access {
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
+    int getRoleId();
 
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getAccessTableId();
 
     /**
      * Set Exclude. Exclude access to the data - if not selected Include access to the data

@@ -43,7 +43,7 @@ public interface I_AD_Role_Included {
     /**
      * Get Included Role
      */
-    int getIncluded_Role_ID();
+    int getIncludedRoleId();
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first

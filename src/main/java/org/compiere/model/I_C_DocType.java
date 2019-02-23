@@ -143,41 +143,41 @@ public interface I_C_DocType {
     /**
      * Get Difference Document. Document type for generating in dispute Shipments
      */
-    int getC_DocTypeDifference_ID();
+    int getDocTypeDifferenceId();
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocTypeId();
 
     /**
      * Get Document Type for Invoice. Document type used for invoices generated from this sales
      * document
      */
-    int getC_DocTypeInvoice_ID();
+    int getDocTypeInvoiceId();
 
     /**
      * Set Document Type for Invoice. Document type used for invoices generated from this sales
      * document
      */
-    void setC_DocTypeInvoice_ID(int C_DocTypeInvoice_ID);
+    void setDocTypeInvoiceId(int C_DocTypeInvoice_ID);
 
     /**
      * Get Document Type for Shipment. Document type used for shipments generated from this sales
      * document
      */
-    int getC_DocTypeShipment_ID();
+    int getDocTypeShipmentId();
 
     /**
      * Set Document Type for Shipment. Document type used for shipments generated from this sales
      * document
      */
-    void setC_DocTypeShipment_ID(int C_DocTypeShipment_ID);
+    void setDocTypeShipmentId(int C_DocTypeShipment_ID);
 
     /**
      * Get Definite Sequence
      */
-    int getDefiniteSequence_ID();
+    int getDefiniteSequenceId();
 
     /**
      * Get Document BaseType. Logical type of document
@@ -192,12 +192,12 @@ public interface I_C_DocType {
     /**
      * Get Document Sequence. Document sequence determines the numbering of documents
      */
-    int getDocNoSequence_ID();
+    int getDocNoSequenceId();
 
     /**
      * Set Document Sequence. Document sequence determines the numbering of documents
      */
-    void setDocNoSequence_ID(int DocNoSequence_ID);
+    void setDocNoSequenceId(int DocNoSequence_ID);
 
     /**
      * Get Inv Sub Type. Inventory Sub Type
@@ -227,12 +227,12 @@ public interface I_C_DocType {
     /**
      * Get GL Category. General Ledger Category
      */
-    int getGL_Category_ID();
+    int getGLCategoryId();
 
     /**
      * Set GL Category. General Ledger Category
      */
-    void setGL_Category_ID(int GL_Category_ID);
+    void setGLCategoryId(int GL_Category_ID);
 
     /**
      * Set Charges. Charges can be added to the document
