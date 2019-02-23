@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_Sequence_No {
 
     /**
-     * TableName=AD_Sequence_No
-     */
-    String Table_Name = "AD_Sequence_No";
-
-    /**
      * AD_Table_ID=122
      */
     int Table_ID = 122;
@@ -25,16 +20,12 @@ public interface I_AD_Sequence_No {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Sequence_ID
      */
     String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
-    /**
-     * Column name AD_Sequence_No_UU
-     */
-    String COLUMNNAME_AD_Sequence_No_UU = "AD_Sequence_No_UU";
     /**
      * Column name CalendarYearMonth
      */
@@ -47,17 +38,12 @@ public interface I_AD_Sequence_No {
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
-
-    /**
-     * Get Sequence. Document Sequence
-     */
-    int getAD_Sequence_ID();
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Set Sequence. Document Sequence
      */
-    void setAD_Sequence_ID(int AD_Sequence_ID);
+    void setSequenceId(int AD_Sequence_ID);
 
     /**
      * Set YearMonth. YYYYMM

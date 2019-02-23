@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_User_OrgAccess {
 
     /**
-     * TableName=AD_User_OrgAccess
-     */
-    String Table_Name = "AD_User_OrgAccess";
-
-    /**
      * AD_Table_ID=769
      */
     int Table_ID = 769;
@@ -25,16 +20,12 @@ public interface I_AD_User_OrgAccess {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_User_ID
      */
     String COLUMNNAME_AD_User_ID = "AD_User_ID";
-    /**
-     * Column name AD_User_OrgAccess_UU
-     */
-    String COLUMNNAME_AD_User_OrgAccess_UU = "AD_User_OrgAccess_UU";
     /**
      * Column name IsReadOnly
      */
@@ -43,12 +34,12 @@ public interface I_AD_User_OrgAccess {
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Set Read Only. Field is read only

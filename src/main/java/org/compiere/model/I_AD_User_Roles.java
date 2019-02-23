@@ -25,7 +25,7 @@ public interface I_AD_User_Roles {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID
@@ -35,29 +35,25 @@ public interface I_AD_User_Roles {
      * Column name AD_User_ID
      */
     String COLUMNNAME_AD_User_ID = "AD_User_ID";
-    /**
-     * Column name AD_User_Roles_UU
-     */
-    String COLUMNNAME_AD_User_Roles_UU = "AD_User_Roles_UU";
 
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
+    int getRoleId();
 
     /**
      * Set Role. Responsibility Role
      */
-    void setAD_Role_ID(int AD_Role_ID);
+    void setRoleId(int AD_Role_ID);
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
 }

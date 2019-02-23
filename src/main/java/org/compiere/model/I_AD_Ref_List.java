@@ -25,41 +25,16 @@ public interface I_AD_Ref_List {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Reference_ID
      */
     String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
     /**
-     * Column name AD_Ref_List_ID
-     */
-    String COLUMNNAME_AD_Ref_List_ID = "AD_Ref_List_ID";
-    /**
-     * Column name AD_Ref_List_UU
-     */
-    String COLUMNNAME_AD_Ref_List_UU = "AD_Ref_List_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name EntityType
      */
     String COLUMNNAME_EntityType = "EntityType";
-    /**
-     * Column name ValidFrom
-     */
-    String COLUMNNAME_ValidFrom = "ValidFrom";
-    /**
-     * Column name ValidTo
-     */
-    String COLUMNNAME_ValidTo = "ValidTo";
-
-    /**
-     * Get Reference. System Reference and Validation
-     */
-    int getReferenceId();
 
     /**
      * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization

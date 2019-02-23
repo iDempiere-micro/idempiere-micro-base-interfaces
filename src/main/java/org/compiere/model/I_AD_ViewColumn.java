@@ -25,16 +25,8 @@ public interface I_AD_ViewColumn {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_ViewColumn_ID
-     */
-    String COLUMNNAME_AD_ViewColumn_ID = "AD_ViewColumn_ID";
-    /**
-     * Column name AD_ViewColumn_UU
-     */
-    String COLUMNNAME_AD_ViewColumn_UU = "AD_ViewColumn_UU";
+
     /**
      * Column name AD_ViewComponent_ID
      */
@@ -52,46 +44,19 @@ public interface I_AD_ViewColumn {
      */
     String COLUMNNAME_DBDataType = "DBDataType";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name EntityType
      */
     String COLUMNNAME_EntityType = "EntityType";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
-    /**
-     * Column name SeqNo
-     */
-    String COLUMNNAME_SeqNo = "SeqNo";
-
-    /**
-     * Get Database View Component
-     */
-    int getAD_ViewComponent_ID();
 
     /**
      * Set Database View Component
      */
-    void setAD_ViewComponent_ID(int AD_ViewComponent_ID);
+    void setViewComponentId(int AD_ViewComponent_ID);
 
     /**
      * Get DB Column Name. Name of the column in the database
      */
     String getColumnName();
-
-    /**
-     * Get Column SQL. Virtual Column (r/o)
-     */
-    String getColumnSQL();
-
-    /**
-     * Get Database Data Type
-     */
-    String getDBDataType();
 
     /**
      * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization

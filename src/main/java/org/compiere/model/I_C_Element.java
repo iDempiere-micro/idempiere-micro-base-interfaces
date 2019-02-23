@@ -25,7 +25,7 @@ public interface I_C_Element {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Tree_ID
@@ -35,14 +35,6 @@ public interface I_C_Element {
      * Column name C_Element_ID
      */
     String COLUMNNAME_C_Element_ID = "C_Element_ID";
-    /**
-     * Column name C_Element_UU
-     */
-    String COLUMNNAME_C_Element_UU = "C_Element_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name ElementType
      */
@@ -55,25 +47,21 @@ public interface I_C_Element {
      * Column name IsNaturalAccount
      */
     String COLUMNNAME_IsNaturalAccount = "IsNaturalAccount";
-    /**
-     * Column name VFormat
-     */
-    String COLUMNNAME_VFormat = "VFormat";
 
     /**
      * Get Tree. Identifies a Tree
      */
-    int getAD_Tree_ID();
+    int getTreeId();
 
     /**
      * Set Tree. Identifies a Tree
      */
-    void setAD_Tree_ID(int AD_Tree_ID);
+    void setTreeId(int AD_Tree_ID);
 
     /**
      * Get Element. Accounting Element
      */
-    int getC_Element_ID();
+    int getElementId();
 
     /**
      * Get Type. Element Type (account or user defined)

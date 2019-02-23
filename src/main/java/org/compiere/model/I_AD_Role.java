@@ -25,16 +25,12 @@ public interface I_AD_Role {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID
      */
     String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-    /**
-     * Column name AD_Role_UU
-     */
-    String COLUMNNAME_AD_Role_UU = "AD_Role_UU";
     /**
      * Column name AD_Tree_Menu_ID
      */
@@ -43,46 +39,6 @@ public interface I_AD_Role {
      * Column name AD_Tree_Org_ID
      */
     String COLUMNNAME_AD_Tree_Org_ID = "AD_Tree_Org_ID";
-    /**
-     * Column name Allow_Info_Account
-     */
-    String COLUMNNAME_Allow_Info_Account = "Allow_Info_Account";
-    /**
-     * Column name Allow_Info_Asset
-     */
-    String COLUMNNAME_Allow_Info_Asset = "Allow_Info_Asset";
-    /**
-     * Column name Allow_Info_BPartner
-     */
-    String COLUMNNAME_Allow_Info_BPartner = "Allow_Info_BPartner";
-    /**
-     * Column name Allow_Info_InOut
-     */
-    String COLUMNNAME_Allow_Info_InOut = "Allow_Info_InOut";
-    /**
-     * Column name Allow_Info_Invoice
-     */
-    String COLUMNNAME_Allow_Info_Invoice = "Allow_Info_Invoice";
-    /**
-     * Column name Allow_Info_Order
-     */
-    String COLUMNNAME_Allow_Info_Order = "Allow_Info_Order";
-    /**
-     * Column name Allow_Info_Payment
-     */
-    String COLUMNNAME_Allow_Info_Payment = "Allow_Info_Payment";
-    /**
-     * Column name Allow_Info_Product
-     */
-    String COLUMNNAME_Allow_Info_Product = "Allow_Info_Product";
-    /**
-     * Column name Allow_Info_Resource
-     */
-    String COLUMNNAME_Allow_Info_Resource = "Allow_Info_Resource";
-    /**
-     * Column name Allow_Info_Schedule
-     */
-    String COLUMNNAME_Allow_Info_Schedule = "Allow_Info_Schedule";
     /**
      * Column name AmtApproval
      */
@@ -103,10 +59,6 @@ public interface I_AD_Role {
      * Column name DaysApprovalAccum
      */
     String COLUMNNAME_DaysApprovalAccum = "DaysApprovalAccum";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsAccessAdvanced
      */
@@ -131,14 +83,6 @@ public interface I_AD_Role {
      * Column name IsChangeLog
      */
     String COLUMNNAME_IsChangeLog = "IsChangeLog";
-    /**
-     * Column name IsDiscountAllowedOnTotal
-     */
-    String COLUMNNAME_IsDiscountAllowedOnTotal = "IsDiscountAllowedOnTotal";
-    /**
-     * Column name IsDiscountUptoLimitPrice
-     */
-    String COLUMNNAME_IsDiscountUptoLimitPrice = "IsDiscountUptoLimitPrice";
     /**
      * Column name IsManual
      */
@@ -180,14 +124,6 @@ public interface I_AD_Role {
      */
     String COLUMNNAME_PreferenceType = "PreferenceType";
     /**
-     * Column name Supervisor_ID
-     */
-    String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
-    /**
-     * Column name UserDiscount
-     */
-    String COLUMNNAME_UserDiscount = "UserDiscount";
-    /**
      * Column name UserLevel
      */
     String COLUMNNAME_UserLevel = "UserLevel";
@@ -195,17 +131,12 @@ public interface I_AD_Role {
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
-
-    /**
-     * Get Menu Tree. Tree of the menu
-     */
-    int getAD_Tree_Menu_ID();
+    int getRoleId();
 
     /**
      * Get Organization Tree. Trees are used for (financial) reporting and security access (via role)
      */
-    int getAD_Tree_Org_ID();
+    int getTreeOrgId();
 
     /**
      * Get Approval Amount. The approval amount limit for this role
@@ -221,7 +152,7 @@ public interface I_AD_Role {
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Confirm Query Records. Require Confirmation if more records will be returned by the query
@@ -270,11 +201,6 @@ public interface I_AD_Role {
      * Set Can Export. Users with this role can export data
      */
     void setIsCanExport(boolean IsCanExport);
-
-    /**
-     * Get Can Export. Users with this role can export data
-     */
-    boolean isCanExport();
 
     /**
      * Set Can Report. Users with this role can create reports
@@ -343,12 +269,6 @@ public interface I_AD_Role {
     boolean isUseUserOrgAccess();
 
     /**
-     * Get Max Query Records. If defined, you cannot query more records as defined - the query
-     * criteria needs to be changed to query less records
-     */
-    int getMaxQueryRecords();
-
-    /**
      * Set Max Query Records. If defined, you cannot query more records as defined - the query
      * criteria needs to be changed to query less records
      */
@@ -363,11 +283,6 @@ public interface I_AD_Role {
      * Set Overwrite Price Limit. Overwrite Price Limit if the Price List enforces the Price Limit
      */
     void setOverwritePriceLimit(boolean OverwritePriceLimit);
-
-    /**
-     * Get Preference Level. Determines what preferences the user can set
-     */
-    String getPreferenceType();
 
     /**
      * Set Preference Level. Determines what preferences the user can set

@@ -25,7 +25,7 @@ public interface I_C_ElementValue {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccountSign
@@ -35,10 +35,6 @@ public interface I_C_ElementValue {
      * Column name AccountType
      */
     String COLUMNNAME_AccountType = "AccountType";
-    /**
-     * Column name BPartnerType
-     */
-    String COLUMNNAME_BPartnerType = "BPartnerType";
     /**
      * Column name C_BankAccount_ID
      */
@@ -56,10 +52,6 @@ public interface I_C_ElementValue {
      */
     String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
     /**
-     * Column name C_ElementValue_UU
-     */
-    String COLUMNNAME_C_ElementValue_UU = "C_ElementValue_UU";
-    /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
@@ -67,14 +59,6 @@ public interface I_C_ElementValue {
      * Column name IsBankAccount
      */
     String COLUMNNAME_IsBankAccount = "IsBankAccount";
-    /**
-     * Column name IsDetailBPartner
-     */
-    String COLUMNNAME_IsDetailBPartner = "IsDetailBPartner";
-    /**
-     * Column name IsDetailProduct
-     */
-    String COLUMNNAME_IsDetailProduct = "IsDetailProduct";
     /**
      * Column name IsDocControlled
      */
@@ -104,14 +88,6 @@ public interface I_C_ElementValue {
      */
     String COLUMNNAME_PostStatistical = "PostStatistical";
     /**
-     * Column name ValidFrom
-     */
-    String COLUMNNAME_ValidFrom = "ValidFrom";
-    /**
-     * Column name ValidTo
-     */
-    String COLUMNNAME_ValidTo = "ValidTo";
-    /**
      * Column name Value
      */
     String COLUMNNAME_Value = "Value";
@@ -132,31 +108,21 @@ public interface I_C_ElementValue {
     void setAccountType(String AccountType);
 
     /**
-     * Get Bank Account. Account at the Bank
-     */
-    int getC_BankAccount_ID();
-
-    /**
-     * Get Currency. The Currency for this record
-     */
-    int getC_Currency_ID();
-
-    /**
      * Get Element. Accounting Element
      */
-    int getC_Element_ID();
+    int getElementId();
 
     /**
      * Set Element. Accounting Element
      */
-    void setC_Element_ID(int C_Element_ID);
+    void setElementId(int C_Element_ID);
 
-    I_C_Element getC_Element() throws RuntimeException;
+    I_C_Element getElement() throws RuntimeException;
 
     /**
      * Get Account Element. Account Element
      */
-    int getC_ElementValue_ID();
+    int getElementValueId();
 
     /**
      * Get Description. Optional short description of the record

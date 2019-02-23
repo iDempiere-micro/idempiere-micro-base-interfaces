@@ -25,16 +25,12 @@ public interface I_AD_Element {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Element_ID
      */
     String COLUMNNAME_AD_Element_ID = "AD_Element_ID";
-    /**
-     * Column name AD_Element_UU
-     */
-    String COLUMNNAME_AD_Element_UU = "AD_Element_UU";
     /**
      * Column name ColumnName
      */
@@ -52,22 +48,6 @@ public interface I_AD_Element {
      */
     String COLUMNNAME_Help = "Help";
     /**
-     * Column name PO_Description
-     */
-    String COLUMNNAME_PO_Description = "PO_Description";
-    /**
-     * Column name PO_Help
-     */
-    String COLUMNNAME_PO_Help = "PO_Help";
-    /**
-     * Column name PO_Name
-     */
-    String COLUMNNAME_PO_Name = "PO_Name";
-    /**
-     * Column name PO_PrintName
-     */
-    String COLUMNNAME_PO_PrintName = "PO_PrintName";
-    /**
      * Column name PrintName
      */
     String COLUMNNAME_PrintName = "PrintName";
@@ -76,7 +56,7 @@ public interface I_AD_Element {
      * Get System Element. System Element enables the central maintenance of column description and
      * help.
      */
-    int getAD_Element_ID();
+    int getElementId();
 
     /**
      * Get DB Column Name. Name of the column in the database

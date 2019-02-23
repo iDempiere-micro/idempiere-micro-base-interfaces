@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_Role_OrgAccess {
 
     /**
-     * TableName=AD_Role_OrgAccess
-     */
-    String Table_Name = "AD_Role_OrgAccess";
-
-    /**
      * AD_Table_ID=422
      */
     int Table_ID = 422;
@@ -25,16 +20,12 @@ public interface I_AD_Role_OrgAccess {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID
      */
     String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-    /**
-     * Column name AD_Role_OrgAccess_UU
-     */
-    String COLUMNNAME_AD_Role_OrgAccess_UU = "AD_Role_OrgAccess_UU";
     /**
      * Column name IsReadOnly
      */
@@ -43,12 +34,12 @@ public interface I_AD_Role_OrgAccess {
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
+    int getRoleId();
 
     /**
      * Set Role. Responsibility Role
      */
-    void setAD_Role_ID(int AD_Role_ID);
+    void setRoleId(int AD_Role_ID);
 
     /**
      * Set Read Only. Field is read only

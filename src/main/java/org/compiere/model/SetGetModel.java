@@ -13,12 +13,12 @@ public interface SetGetModel {
     //
     int getTableId();
 
-    String get_TableName();
+    String getTableName();
 
     //
-    boolean set_AttrValue(String name, Object value);
+    boolean setAttrValue(String name, Object value);
 
-    Object get_AttrValue(String name);
+    Object getAttrValue(String name);
 
-    boolean is_AttrValueChanged(String ColumnName);
+    boolean isAttrValueChanged(String ColumnName);
 }

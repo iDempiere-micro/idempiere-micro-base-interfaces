@@ -1,5 +1,8 @@
 package software.hsharp.core.models
 
+/**
+ * Can be searched by a search key
+ */
 interface ISearchableByKey {
     /**
      * Get the key you can use to search for the entity directly.
@@ -7,5 +10,5 @@ interface ISearchableByKey {
      * Since it is a key, it needs to be unique.
      * @return the search key.
      */
-    val value: String
+    val searchKey: String
 }

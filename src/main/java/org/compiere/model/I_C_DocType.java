@@ -25,12 +25,8 @@ public interface I_C_DocType {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_PrintFormat_ID
-     */
-    String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
+
     /**
      * Column name C_DocTypeDifference_ID
      */
@@ -52,17 +48,9 @@ public interface I_C_DocType {
      */
     String COLUMNNAME_C_DocTypeShipment_ID = "C_DocTypeShipment_ID";
     /**
-     * Column name C_DocType_UU
-     */
-    String COLUMNNAME_C_DocType_UU = "C_DocType_UU";
-    /**
      * Column name DefiniteSequence_ID
      */
     String COLUMNNAME_DefiniteSequence_ID = "DefiniteSequence_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name DocBaseType
      */
@@ -84,10 +72,6 @@ public interface I_C_DocType {
      */
     String COLUMNNAME_DocumentCopies = "DocumentCopies";
     /**
-     * Column name DocumentNote
-     */
-    String COLUMNNAME_DocumentNote = "DocumentNote";
-    /**
      * Column name GL_Category_ID
      */
     String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
@@ -95,10 +79,6 @@ public interface I_C_DocType {
      * Column name HasCharges
      */
     String COLUMNNAME_HasCharges = "HasCharges";
-    /**
-     * Column name HasProforma
-     */
-    String COLUMNNAME_HasProforma = "HasProforma";
     /**
      * Column name IsChargeOrProductMandatory
      */
@@ -163,47 +143,41 @@ public interface I_C_DocType {
     /**
      * Get Difference Document. Document type for generating in dispute Shipments
      */
-    int getC_DocTypeDifference_ID();
+    int getDocTypeDifferenceId();
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocTypeId();
 
     /**
      * Get Document Type for Invoice. Document type used for invoices generated from this sales
      * document
      */
-    int getC_DocTypeInvoice_ID();
+    int getDocTypeInvoiceId();
 
     /**
      * Set Document Type for Invoice. Document type used for invoices generated from this sales
      * document
      */
-    void setC_DocTypeInvoice_ID(int C_DocTypeInvoice_ID);
-
-    /**
-     * Get Document Type for ProForma. Document type used for pro forma invoices generated from this
-     * sales document
-     */
-    int getC_DocTypeProforma_ID();
+    void setDocTypeInvoiceId(int C_DocTypeInvoice_ID);
 
     /**
      * Get Document Type for Shipment. Document type used for shipments generated from this sales
      * document
      */
-    int getC_DocTypeShipment_ID();
+    int getDocTypeShipmentId();
 
     /**
      * Set Document Type for Shipment. Document type used for shipments generated from this sales
      * document
      */
-    void setC_DocTypeShipment_ID(int C_DocTypeShipment_ID);
+    void setDocTypeShipmentId(int C_DocTypeShipment_ID);
 
     /**
      * Get Definite Sequence
      */
-    int getDefiniteSequence_ID();
+    int getDefiniteSequenceId();
 
     /**
      * Get Document BaseType. Logical type of document
@@ -218,12 +192,12 @@ public interface I_C_DocType {
     /**
      * Get Document Sequence. Document sequence determines the numbering of documents
      */
-    int getDocNoSequence_ID();
+    int getDocNoSequenceId();
 
     /**
      * Set Document Sequence. Document sequence determines the numbering of documents
      */
-    void setDocNoSequence_ID(int DocNoSequence_ID);
+    void setDocNoSequenceId(int DocNoSequence_ID);
 
     /**
      * Get Inv Sub Type. Inventory Sub Type
@@ -253,12 +227,12 @@ public interface I_C_DocType {
     /**
      * Get GL Category. General Ledger Category
      */
-    int getGL_Category_ID();
+    int getGLCategoryId();
 
     /**
      * Set GL Category. General Ledger Category
      */
-    void setGL_Category_ID(int GL_Category_ID);
+    void setGLCategoryId(int GL_Category_ID);
 
     /**
      * Set Charges. Charges can be added to the document

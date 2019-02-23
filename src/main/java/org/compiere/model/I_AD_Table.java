@@ -26,7 +26,7 @@ public interface I_AD_Table {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccessLevel
@@ -37,29 +37,9 @@ public interface I_AD_Table {
      */
     String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
     /**
-     * Column name AD_Table_UU
-     */
-    String COLUMNNAME_AD_Table_UU = "AD_Table_UU";
-    /**
      * Column name AD_Val_Rule_ID
      */
     String COLUMNNAME_AD_Val_Rule_ID = "AD_Val_Rule_ID";
-    /**
-     * Column name AD_Window_ID
-     */
-    String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
-    /**
-     * Column name CopyColumnsFromTable
-     */
-    String COLUMNNAME_CopyColumnsFromTable = "CopyColumnsFromTable";
-    /**
-     * Column name CopyComponentsFromView
-     */
-    String COLUMNNAME_CopyComponentsFromView = "CopyComponentsFromView";
-    /**
-     * Column name DatabaseViewDrop
-     */
-    String COLUMNNAME_DatabaseViewDrop = "DatabaseViewDrop";
     /**
      * Column name Description
      */
@@ -72,14 +52,6 @@ public interface I_AD_Table {
      * Column name Help
      */
     String COLUMNNAME_Help = "Help";
-    /**
-     * Column name ImportTable
-     */
-    String COLUMNNAME_ImportTable = "ImportTable";
-    /**
-     * Column name IsCentrallyMaintained
-     */
-    String COLUMNNAME_IsCentrallyMaintained = "IsCentrallyMaintained";
     /**
      * Column name IsChangeLog
      */
@@ -102,18 +74,6 @@ public interface I_AD_Table {
      * Column name IsView
      */
     String COLUMNNAME_IsView = "IsView";
-    /**
-     * Column name LoadSeq
-     */
-    String COLUMNNAME_LoadSeq = "LoadSeq";
-    /**
-     * Column name PO_Window_ID
-     */
-    String COLUMNNAME_PO_Window_ID = "PO_Window_ID";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name ReplicationType
      */
@@ -140,12 +100,12 @@ public interface I_AD_Table {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getTableTableId();
 
     /**
      * Get Dynamic Validation. Dynamic Validation Rule
      */
-    int getValRule_ID();
+    int getValRuleId();
 
     I_AD_Val_Rule getValRule() throws RuntimeException;
 
@@ -192,7 +152,7 @@ public interface I_AD_Table {
     /**
      * Get Records deletable. Indicates if records can be deleted from the database
      */
-    boolean isDeleteable();
+    boolean isDeletable();
 
     /**
      * Set High Volume. Use Search instead of Pick list
@@ -227,6 +187,6 @@ public interface I_AD_Table {
     /**
      * Get DB Table Name. Name of the table in the database
      */
-    String getTableName();
+    String getDbTableName();
 
 }

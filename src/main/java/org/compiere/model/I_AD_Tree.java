@@ -25,7 +25,7 @@ public interface I_AD_Tree {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
@@ -35,10 +35,6 @@ public interface I_AD_Tree {
      * Column name AD_Tree_ID
      */
     String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
-    /**
-     * Column name AD_Tree_UU
-     */
-    String COLUMNNAME_AD_Tree_UU = "AD_Tree_UU";
     /**
      * Column name Description
      */
@@ -52,17 +48,9 @@ public interface I_AD_Tree {
      */
     String COLUMNNAME_IsDefault = "IsDefault";
     /**
-     * Column name IsLoadAllNodesImmediately
-     */
-    String COLUMNNAME_IsLoadAllNodesImmediately = "IsLoadAllNodesImmediately";
-    /**
      * Column name IsTreeDrivenByValue
      */
     String COLUMNNAME_IsTreeDrivenByValue = "IsTreeDrivenByValue";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name TreeType
      */
@@ -71,12 +59,12 @@ public interface I_AD_Tree {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getTreeTableId();
 
     /**
      * Get Tree. Identifies a Tree
      */
-    int getAD_Tree_ID();
+    int getTreeId();
 
     /**
      * Get Description. Optional short description of the record

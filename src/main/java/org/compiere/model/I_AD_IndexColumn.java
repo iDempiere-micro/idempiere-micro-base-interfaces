@@ -25,20 +25,12 @@ public interface I_AD_IndexColumn {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Column_ID
      */
     String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-    /**
-     * Column name AD_IndexColumn_ID
-     */
-    String COLUMNNAME_AD_IndexColumn_ID = "AD_IndexColumn_ID";
-    /**
-     * Column name AD_IndexColumn_UU
-     */
-    String COLUMNNAME_AD_IndexColumn_UU = "AD_IndexColumn_UU";
     /**
      * Column name AD_TableIndex_ID
      */
@@ -48,10 +40,6 @@ public interface I_AD_IndexColumn {
      */
     String COLUMNNAME_ColumnSQL = "ColumnSQL";
     /**
-     * Column name EntityType
-     */
-    String COLUMNNAME_EntityType = "EntityType";
-    /**
      * Column name SeqNo
      */
     String COLUMNNAME_SeqNo = "SeqNo";
@@ -59,22 +47,17 @@ public interface I_AD_IndexColumn {
     /**
      * Get Column. Column in the table
      */
-    int getAD_Column_ID();
+    int getColumnId();
 
     /**
      * Set Column. Column in the table
      */
-    void setAD_Column_ID(int AD_Column_ID);
-
-    /**
-     * Get Table Index
-     */
-    int getAD_TableIndex_ID();
+    void setColumnId(int AD_Column_ID);
 
     /**
      * Set Table Index
      */
-    void setAD_TableIndex_ID(int AD_TableIndex_ID);
+    void setTableIndexId(int AD_TableIndex_ID);
 
     /**
      * Get Column SQL. Virtual Column (r/o)

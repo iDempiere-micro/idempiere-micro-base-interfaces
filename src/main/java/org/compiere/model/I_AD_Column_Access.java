@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_Column_Access {
 
     /**
-     * TableName=AD_Column_Access
-     */
-    String Table_Name = "AD_Column_Access";
-
-    /**
      * AD_Table_ID=571
      */
     int Table_ID = 571;
@@ -25,12 +20,8 @@ public interface I_AD_Column_Access {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_Column_Access_UU
-     */
-    String COLUMNNAME_AD_Column_Access_UU = "AD_Column_Access_UU";
+
     /**
      * Column name AD_Column_ID
      */
@@ -55,17 +46,17 @@ public interface I_AD_Column_Access {
     /**
      * Get Column. Column in the table
      */
-    int getAD_Column_ID();
+    int getColumnId();
 
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
+    int getRoleId();
 
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getColumnTableId();
 
     /**
      * Set Exclude. Exclude access to the data - if not selected Include access to the data
