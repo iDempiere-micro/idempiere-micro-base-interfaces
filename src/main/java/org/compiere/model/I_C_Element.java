@@ -26,7 +26,6 @@ public interface I_C_Element {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_Tree_ID
      */

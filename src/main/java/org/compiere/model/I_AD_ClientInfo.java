@@ -26,7 +26,6 @@ public interface I_AD_ClientInfo {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_StorageProvider_ID
      */

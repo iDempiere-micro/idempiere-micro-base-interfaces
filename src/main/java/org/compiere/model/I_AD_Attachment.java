@@ -27,7 +27,6 @@ public interface I_AD_Attachment {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Attachment_ID
      */
@@ -52,19 +51,20 @@ public interface I_AD_Attachment {
      * Column name Title
      */
     String COLUMNNAME_Title = "Title";
-    
+
     String ZIP = "zip";
 
     ArrayList<I_AD_AttachmentEntry> getItems();
+
     void setItems(ArrayList<I_AD_AttachmentEntry> items);
 
     byte[] getBinaryData();
 
-    String getTitle();
-
     void setBinaryData(byte[] BinaryData);
 
-    I_AD_AttachmentEntry getEntry(int i);
+    String getTitle();
 
     void setTitle(String zip);
+
+    I_AD_AttachmentEntry getEntry(int i);
 }

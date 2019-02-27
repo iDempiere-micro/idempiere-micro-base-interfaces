@@ -26,7 +26,6 @@ public interface I_AD_User_Roles {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Role_ID
      */

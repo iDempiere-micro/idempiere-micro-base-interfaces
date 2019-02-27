@@ -28,7 +28,6 @@ public interface I_AD_Client extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Language
      */

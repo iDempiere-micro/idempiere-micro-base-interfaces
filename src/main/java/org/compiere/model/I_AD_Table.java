@@ -27,7 +27,6 @@ public interface I_AD_Table {
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
 
-
     /**
      * Column name AccessLevel
      */

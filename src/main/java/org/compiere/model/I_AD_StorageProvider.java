@@ -21,7 +21,6 @@ public interface I_AD_StorageProvider {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name Method
      */

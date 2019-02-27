@@ -26,7 +26,6 @@ public interface I_C_DocType {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name C_DocTypeDifference_ID
      */

@@ -1,6 +1,6 @@
 package software.hsharp.core.models
 
-import java.util.Properties
+import java.util.*
 
 /**
  * Environment where the current execution is happening. Always have the current user, client etc.

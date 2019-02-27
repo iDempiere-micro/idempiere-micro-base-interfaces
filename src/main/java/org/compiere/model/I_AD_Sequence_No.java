@@ -21,7 +21,6 @@ public interface I_AD_Sequence_No {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Sequence_ID
      */

@@ -26,7 +26,6 @@ public interface I_AD_Org {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name Description
      */

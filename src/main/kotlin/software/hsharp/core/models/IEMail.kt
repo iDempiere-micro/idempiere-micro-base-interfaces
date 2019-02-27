@@ -19,18 +19,22 @@ interface IEMail {
      * Sender
      */
     var From: InternetAddress
+
     /**
      * Add recepient
      */
     fun addTo(newTo: String): Boolean
+
     /**
      * Add CC
      */
     fun addCc(newCc: String): Boolean
+
     /**
      * Add BCC
      */
     fun addBcc(newBcc: String): Boolean
+
     /**
      * ReplyTo
      */
@@ -43,10 +47,12 @@ interface IEMail {
      * Message content in HTML
      */
     var MessageHTML: String
+
     /**
      * Is valid to be sent?
      */
     fun isValid(): Boolean
+
     /**
      * Sent the email
      */
