@@ -202,9 +202,4 @@ public interface I_AD_Client extends IPO {
      * Get SMTP Port. SMTP Port Number
      */
     int getSMTPPort();
-
-    /**
-     * Set Search Key. Search key for the record in the format required - must be unique
-     */
-    void setSearchKey(String Value);
 }
