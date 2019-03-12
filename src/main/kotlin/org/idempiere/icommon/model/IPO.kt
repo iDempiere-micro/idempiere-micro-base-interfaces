@@ -32,7 +32,7 @@ interface IPO : IBasePO {
     /**
      * get value from the column named [columnName] in the current row.
      */
-    fun getValue(columnName: String): Any
+    fun getValue(columnName: String): Any?
 
     /**
      * get value from the [index]th column in the current row.

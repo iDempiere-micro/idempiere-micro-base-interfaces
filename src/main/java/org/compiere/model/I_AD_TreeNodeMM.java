@@ -1,7 +1,5 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-
 /**
  * Generated Interface for AD_TreeNodeMM
  *

@@ -1,6 +1,6 @@
 package software.hsharp.core.models
 
-import java.util.*
+import java.util.Properties
 
 /**
  * Basic ORM properties: [ctx] context and [clientId] client id.

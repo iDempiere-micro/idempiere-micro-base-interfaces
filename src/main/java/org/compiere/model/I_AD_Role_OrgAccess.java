@@ -6,7 +6,7 @@ package org.compiere.model;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Role_OrgAccess extends BaseOrgAccess{
+public interface I_AD_Role_OrgAccess extends BaseOrgAccess {
 
     /**
      * AD_Table_ID=422

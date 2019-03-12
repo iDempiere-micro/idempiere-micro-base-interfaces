@@ -1,6 +1,6 @@
 package software.hsharp.core.models
 
-import java.util.*
+import java.util.Properties
 
 /**
  * Environment where the current execution is happening. Always have the current user, client etc.
@@ -8,4 +8,5 @@ import java.util.*
 interface EnvironmentService {
     val clientId: Int
     val context: Properties
+    val userId: Int
 }
