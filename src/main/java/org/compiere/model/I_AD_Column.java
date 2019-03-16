@@ -136,9 +136,9 @@ public interface I_AD_Column extends IsColumn, INamedEntityWritable, IsElement {
      */
     String COLUMNNAME_IsTranslated = "IsTranslated";
     /**
-     * Column name IsUpdateable
+     * Column name isUpdatable
      */
-    String COLUMNNAME_IsUpdateable = "IsUpdateable";
+    String COLUMNNAME_isUpdatable = "isUpdatable";
     /**
      * Column name SeqNo
      */
