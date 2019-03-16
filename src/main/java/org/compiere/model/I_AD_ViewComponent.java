@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import software.hsharp.core.models.INamedEntity;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_ViewComponent {
+public interface I_AD_ViewComponent extends INamedEntity {
 
     /**
      * TableName=AD_ViewComponent
@@ -78,10 +80,5 @@ public interface I_AD_ViewComponent {
      * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
      */
     void setEntityType(String EntityType);
-
-    /**
-     * Get Name. Alphanumeric identifier of the entity
-     */
-    String getName();
 
 }

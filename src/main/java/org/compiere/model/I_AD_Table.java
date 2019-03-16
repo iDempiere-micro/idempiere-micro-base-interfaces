@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import software.hsharp.core.models.INamedEntity;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Table {
+public interface I_AD_Table extends INamedEntity {
 
     /**
      * TableName=AD_Table
@@ -172,11 +174,6 @@ public interface I_AD_Table {
      * Get View. This is a view
      */
     boolean isView();
-
-    /**
-     * Get Name. Alphanumeric identifier of the entity
-     */
-    String getName();
 
     /**
      * Set Replication Type. Type of Data Replication

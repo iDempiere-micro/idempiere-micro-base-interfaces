@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import software.hsharp.core.models.IsElement;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_ElementValue {
+public interface I_C_ElementValue extends IsElement {
 
     /**
      * TableName=C_ElementValue
@@ -105,16 +107,6 @@ public interface I_C_ElementValue {
      * Set Account Type. Indicates the type of account
      */
     void setAccountType(String AccountType);
-
-    /**
-     * Get Element. Accounting Element
-     */
-    int getElementId();
-
-    /**
-     * Set Element. Accounting Element
-     */
-    void setElementId(int C_Element_ID);
 
     I_C_Element getElement() throws RuntimeException;
 

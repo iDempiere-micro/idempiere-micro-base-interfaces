@@ -1,5 +1,9 @@
 package org.compiere.model;
 
+import software.hsharp.core.models.INamedEntityWritable;
+import software.hsharp.core.models.IsColumn;
+import software.hsharp.core.models.IsElement;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +13,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Column {
+public interface I_AD_Column extends IsColumn, INamedEntityWritable, IsElement {
 
     /**
      * TableName=AD_Column
@@ -151,23 +155,6 @@ public interface I_AD_Column {
      * Column name Version
      */
     String COLUMNNAME_Version = "Version";
-
-    /**
-     * Get Column. Column in the table
-     */
-    int getColumnId();
-
-    /**
-     * Get System Element. System Element enables the central maintenance of column description and
-     * help.
-     */
-    int getElementId();
-
-    /**
-     * Set System Element. System Element enables the central maintenance of column description and
-     * help.
-     */
-    void setElementId(int AD_Element_ID);
 
     /**
      * Get Process. Process or Report
@@ -375,22 +362,12 @@ public interface I_AD_Column {
     /**
      * Set Updatable. Determines, if the field can be updated
      */
-    void setIsUpdateable(boolean IsUpdateable);
+    void setIsUpdatable(boolean IsUpdatable);
 
     /**
      * Get Updatable. Determines, if the field can be updated
      */
-    boolean isUpdateable();
-
-    /**
-     * Get Name. Alphanumeric identifier of the entity
-     */
-    String getName();
-
-    /**
-     * Set Name. Alphanumeric identifier of the entity
-     */
-    void setName(String Name);
+    boolean isUpdatable();
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first
