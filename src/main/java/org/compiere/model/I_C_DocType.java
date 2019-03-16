@@ -1,7 +1,5 @@
 package org.compiere.model;
 
-import software.hsharp.core.models.INamedEntity;
-
 import java.math.BigDecimal;
 
 /**
@@ -10,7 +8,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_DocType extends INamedEntity {
+public interface I_C_DocType {
 
     /**
      * TableName=C_DocType
@@ -349,6 +347,11 @@ public interface I_C_DocType extends INamedEntity {
      * Get Split when Difference. Split document when there is a difference
      */
     boolean isSplitWhenDifference();
+
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
     /**
      * Get Print Text. The label text to be printed on a document or correspondence.

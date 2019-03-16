@@ -1,7 +1,5 @@
 package org.compiere.model;
 
-import software.hsharp.core.models.INamedEntity;
-
 import java.math.BigDecimal;
 
 /**
@@ -10,7 +8,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Reference extends INamedEntity {
+public interface I_AD_Reference {
 
     /**
      * TableName=AD_Reference
@@ -32,6 +30,11 @@ public interface I_AD_Reference extends INamedEntity {
      * Column name ValidationType
      */
     String COLUMNNAME_ValidationType = "ValidationType";
+
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
     /**
      * Get Validation type. Different method of validating data

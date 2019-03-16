@@ -1,7 +1,5 @@
 package org.compiere.model;
 
-import software.hsharp.core.models.IsColumn;
-
 import java.math.BigDecimal;
 
 /**
@@ -10,7 +8,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Column_Access extends IsColumn {
+public interface I_AD_Column_Access {
 
     /**
      * AD_Table_ID=571
@@ -43,6 +41,11 @@ public interface I_AD_Column_Access extends IsColumn {
      * Column name IsReadOnly
      */
     String COLUMNNAME_IsReadOnly = "IsReadOnly";
+
+    /**
+     * Get Column. Column in the table
+     */
+    int getColumnId();
 
     /**
      * Get Role. Responsibility Role

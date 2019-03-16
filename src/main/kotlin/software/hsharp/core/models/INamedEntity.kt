@@ -6,10 +6,3 @@ package software.hsharp.core.models
 interface INamedEntity {
     val name: String
 }
-
-/**
- * A named entity (writable)
- */
-interface INamedEntityWritable : INamedEntity {
-    override var name: String
-}

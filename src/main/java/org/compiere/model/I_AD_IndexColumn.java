@@ -1,7 +1,5 @@
 package org.compiere.model;
 
-import software.hsharp.core.models.IsColumn;
-
 import java.math.BigDecimal;
 
 /**
@@ -10,7 +8,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_IndexColumn extends IsColumn {
+public interface I_AD_IndexColumn {
 
     /**
      * TableName=AD_IndexColumn
@@ -44,6 +42,11 @@ public interface I_AD_IndexColumn extends IsColumn {
      * Column name SeqNo
      */
     String COLUMNNAME_SeqNo = "SeqNo";
+
+    /**
+     * Get Column. Column in the table
+     */
+    int getColumnId();
 
     /**
      * Set Column. Column in the table
