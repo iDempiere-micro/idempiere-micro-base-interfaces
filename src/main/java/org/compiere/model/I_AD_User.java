@@ -30,7 +30,6 @@ public interface I_AD_User extends INamedPO, CanSetSearchKey {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name AD_User_ID
      */
@@ -141,14 +140,14 @@ public interface I_AD_User extends INamedPO, CanSetSearchKey {
     String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
@@ -272,14 +271,15 @@ public interface I_AD_User extends INamedPO, CanSetSearchKey {
     void setPassword(String Password);
 
     /**
-     * Set Phone. Identifies a telephone number
-     */
-    void setPhone(String Phone);
-
-    /** Get Phone.
+     * Get Phone.
      * Identifies a telephone number
      */
     String getPhone();
+
+    /**
+     * Set Phone. Identifies a telephone number
+     */
+    void setPhone(String Phone);
 
     /**
      * Get Salt. Random data added to improve password hash effectiveness
@@ -294,5 +294,5 @@ public interface I_AD_User extends INamedPO, CanSetSearchKey {
     /**
      * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
-    int getSupervisor_ID();
+    int getSupervisorId();
 }
