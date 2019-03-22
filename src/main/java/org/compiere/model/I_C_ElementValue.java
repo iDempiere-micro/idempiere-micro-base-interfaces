@@ -201,4 +201,5 @@ public interface I_C_ElementValue {
      */
     void setPostStatistical(boolean PostStatistical);
 
+    boolean isActive();
 }
