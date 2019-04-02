@@ -1,4 +1,4 @@
-package software.hsharp.core.models
+package software.hsharp.core.services
 
 import org.idempiere.icommon.model.IPO
 

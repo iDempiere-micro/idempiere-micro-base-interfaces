@@ -23,7 +23,7 @@ open class AdempiereException : RuntimeException {
 
     override fun getLocalizedMessage(): String {
         val msg = super.getLocalizedMessage()
-        // msg = Msg.parseTranslation(getCtx(), msg); DAP TODO
+        // msg = Msg.parseTranslation(msg); DAP TODO
         return msg
     }
 
