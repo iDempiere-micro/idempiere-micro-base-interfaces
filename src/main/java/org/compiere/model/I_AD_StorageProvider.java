@@ -16,6 +16,11 @@ public interface I_AD_StorageProvider {
     int Table_ID = 200037;
 
     /**
+     * TableName=AD_StorageProvider
+     */
+    String Table_Name = "AD_StorageProvider";
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

@@ -16,6 +16,11 @@ public interface I_AD_TableIndex {
     int Table_ID = 200085;
 
     /**
+     * TableName=AD_TableIndex
+     */
+    String Table_Name = "AD_TableIndex";
+
+    /**
      * AccessLevel = 4 - System
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);

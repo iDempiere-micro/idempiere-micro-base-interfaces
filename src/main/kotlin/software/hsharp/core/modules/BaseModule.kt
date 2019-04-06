@@ -1,5 +1,6 @@
 package software.hsharp.core.modules
 
+import org.compiere.orm.IModelFactory
 import software.hsharp.core.services.EnvironmentService
 
 /**
@@ -10,4 +11,8 @@ interface BaseModule {
      * The environment service (client id, user id...)
      */
     val environmentService: EnvironmentService
+    /**
+     * Persistent object load
+     */
+    val modelFactory: IModelFactory
 }

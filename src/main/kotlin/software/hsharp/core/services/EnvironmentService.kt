@@ -7,25 +7,25 @@ import java.util.Properties
  */
 interface EnvironmentService {
     /**
-     * The client Id
+     * logged user client
      */
     val clientId: Int
     /**
-     * The organization id inside the client (or 0 if any organization)
+     * logged user organization
      */
     val orgId: Int
     /**
-     * The user id inside the organization (or 0 if any user)
+     * currently logged in user
      */
     val userId: Int
 
     /**
-     * Backwards compatible list of properties
+     * backwards compatible properties
      */
     val context: Properties
 
     /**
-     * Login a user in an organization in a client
+     * login the current user into the organization and the client
      */
     fun login(clientId: Int, orgId: Int, userId: Int)
 }

@@ -14,6 +14,11 @@ public interface I_AD_Role_OrgAccess extends BaseOrgAccess {
     int Table_ID = 422;
 
     /**
+     * TableName=AD_Role_OrgAccess
+     */
+    String Table_Name = "AD_Role_OrgAccess";
+
+    /**
      * Column name AD_Role_ID
      */
     String COLUMNNAME_AD_Role_ID = "AD_Role_ID";

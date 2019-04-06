@@ -16,6 +16,11 @@ public interface I_AD_Private_Access {
     int Table_ID = 627;
 
     /**
+     * TableName=AD_Private_Access
+     */
+    String Table_Name = "AD_Private_Access";
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

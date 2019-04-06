@@ -16,6 +16,12 @@ public interface I_AD_Sequence_No {
     int Table_ID = 122;
 
     /**
+     * TableName=AD_Sequence_No
+     */
+    String Table_Name = "AD_Sequence_No";
+
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

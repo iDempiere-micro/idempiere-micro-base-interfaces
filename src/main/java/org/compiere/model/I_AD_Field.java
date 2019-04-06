@@ -13,6 +13,9 @@ public interface I_AD_Field {
      */
     int Table_ID = 107;
 
-    /* Load Meta Data */
+    /**
+     * TableName=AD_Field
+     */
+    String Table_Name = "AD_Field";
 
 }

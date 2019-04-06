@@ -38,4 +38,9 @@ interface IPO : IBasePO {
      * get value from the [index]th column in the current row.
      */
     fun getValue(index: Int): Any?
+
+    /**
+     *	Is Active
+     */
+    fun isActive(): Boolean
 }

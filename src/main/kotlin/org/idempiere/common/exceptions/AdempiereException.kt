@@ -22,9 +22,8 @@ open class AdempiereException : RuntimeException {
     constructor(message: String, cause: Throwable) : super(message, cause)
 
     override fun getLocalizedMessage(): String {
-        val msg = super.getLocalizedMessage()
         // msg = Msg.parseTranslation(msg); DAP TODO
-        return msg
+        return super.getLocalizedMessage()
     }
 
     companion object {

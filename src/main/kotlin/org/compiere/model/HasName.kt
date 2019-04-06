@@ -8,7 +8,7 @@ import software.hsharp.core.models.INamedEntity
 interface HasName : INamedEntity {
     companion object {
         // Column name Name
-        val COLUMNNAME_Name = "Name"
+        const val COLUMNNAME_Name = "Name"
     }
 
     override var name: String

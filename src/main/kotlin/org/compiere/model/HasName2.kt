@@ -6,11 +6,11 @@ package org.compiere.model
 interface HasName2 {
     companion object {
         // Column name Name
-        val COLUMNNAME_Name2 = "Name2"
+        const val COLUMNNAME_Name2 = "Name2"
     }
 
     /** Name.
      * Alphanumeric identifier of the entity
      */
-    var name2: String
+    var name2: String?
 }

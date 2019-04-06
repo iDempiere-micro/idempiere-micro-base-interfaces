@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Client extends IPO {
+public interface I_AD_Client extends IPO, HasName {
 
     /**
      * TableName=AD_Client

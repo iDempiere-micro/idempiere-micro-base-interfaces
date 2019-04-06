@@ -16,6 +16,12 @@ public interface I_AD_Ref_Table {
     int Table_ID = 103;
 
     /**
+     * TableName=AD_Ref_Table
+     */
+    String Table_Name = "AD_Ref_Table";
+
+
+    /**
      * AccessLevel = 4 - System
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);

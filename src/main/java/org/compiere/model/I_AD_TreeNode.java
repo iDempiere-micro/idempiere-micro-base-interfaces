@@ -12,4 +12,10 @@ public interface I_AD_TreeNode extends BaseTreeNode {
      * AD_Table_ID=289
      */
     int Table_ID = 289;
+
+    /**
+     * TableName=AD_TreeNode
+     */
+    String Table_Name = "AD_TreeNode";
+
 }

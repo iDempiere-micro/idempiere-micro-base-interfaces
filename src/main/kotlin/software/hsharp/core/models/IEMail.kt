@@ -10,15 +10,15 @@ interface IEMail {
     /**
      * Server address
      */
-    var SmtpHost: String
+    var smtpHost: String
     /**
      * Server port
      */
-    var SmtpPort: Int
+    var smtpPort: Int
     /**
      * Sender
      */
-    var From: InternetAddress
+    var from: InternetAddress
 
     /**
      * Add recepient
@@ -36,17 +36,17 @@ interface IEMail {
     fun addBcc(newBcc: String): Boolean
 
     /**
-     * ReplyTo
+     * replyTo
      */
-    var ReplyTo: InternetAddress
+    var replyTo: InternetAddress
     /**
      * Email Subject
      */
-    var Subject: String
+    var subject: String
     /**
      * Message content in HTML
      */
-    var MessageHTML: String
+    var messageInHTML: String
 
     /**
      * Is valid to be sent?
@@ -61,9 +61,9 @@ interface IEMail {
     /**
      * Email server username
      */
-    var UserName: String
+    var userName: String
     /**
      * Email server password
      */
-    var Password: String
+    var password: String
 }

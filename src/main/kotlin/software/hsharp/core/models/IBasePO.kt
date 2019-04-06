@@ -1,7 +1,8 @@
 package software.hsharp.core.models
 
 /**
- * Basic ORM properties: [ctx] context and [clientId] client id.
+ * Basic ORM properties: [clientId] client id.
+ * Basic ORM functions: [save]
  */
 interface IBasePO {
     /**
