@@ -22,7 +22,7 @@ open class AdempiereException : RuntimeException {
     constructor(message: String, cause: Throwable) : super(message, cause)
 
     override fun getLocalizedMessage(): String {
-        // msg = Msg.parseTranslation(msg); DAP TODO
+        // msg = MsgKt.parseTranslation(msg); DAP TODO
         return super.getLocalizedMessage()
     }
 
