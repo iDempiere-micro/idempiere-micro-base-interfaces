@@ -11,4 +11,8 @@ interface BaseDataService<T : IPO> {
      * Get all [T]s for the current client
      */
     fun getAll(): List<T>
+    /**
+     * Get [T] for the current client by id
+     */
+    fun getById(id: Int): T?
 }
