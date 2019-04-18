@@ -3,6 +3,6 @@ package software.hsharp.core.models
 /**
  * A named entity
  */
-interface INamedEntity {
+interface NamedEntity {
     val name: String
 }

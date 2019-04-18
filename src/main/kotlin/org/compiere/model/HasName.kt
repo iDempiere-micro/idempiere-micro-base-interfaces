@@ -1,11 +1,11 @@
 package org.compiere.model
 
-import software.hsharp.core.models.INamedEntity
+import software.hsharp.core.models.NamedEntity
 
 /** Has Name.
  * Alphanumeric identifier of the entity
  */
-interface HasName : INamedEntity {
+interface HasName : NamedEntity {
     companion object {
         // Column name Name
         const val COLUMNNAME_Name = "Name"

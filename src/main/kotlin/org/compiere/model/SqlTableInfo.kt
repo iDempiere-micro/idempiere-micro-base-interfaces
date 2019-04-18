@@ -1,6 +1,9 @@
 package org.compiere.model
 
-interface I_TableInfo {
+/**
+ * Table info for the AccessSqlParser
+ */
+interface SqlTableInfo {
     val tableName: String
     val synonym: String
 }

@@ -3,7 +3,7 @@ package org.idempiere.icommon.model
 /**
  * All the most important persistent object attributes. Allows this interface to be used instead of PO.
  */
-interface IPO : IBasePO {
+interface PersistentObject : BasePersistentObject {
     /**
      * Names of the key columns
      */

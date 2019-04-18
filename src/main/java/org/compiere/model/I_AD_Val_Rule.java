@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 /**
  * Generated Interface for AD_Val_Rule
@@ -8,7 +8,7 @@ import org.idempiere.icommon.model.IPO;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Val_Rule extends IPO {
+public interface I_AD_Val_Rule extends PersistentObject {
 
     /**
      * TableName=AD_Val_Rule

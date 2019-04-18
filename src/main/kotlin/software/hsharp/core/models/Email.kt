@@ -5,7 +5,7 @@ import javax.mail.internet.InternetAddress
 /**
  * Email including the information about server it is sent througj.
  */
-interface IEMail {
+interface Email {
 
     /**
      * Server address

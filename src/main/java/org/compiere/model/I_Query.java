@@ -1,11 +1,11 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public interface I_Query<T extends IPO> {
+public interface I_Query<T extends PersistentObject> {
     I_Query<T> setParameters(Object... queryParameters);
 
     @NotNull

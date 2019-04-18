@@ -1,7 +1,7 @@
 package org.compiere.model;
 
 import kotliquery.Row;
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -14,7 +14,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Table extends IPO {
+public interface I_AD_Table extends PersistentObject {
 
     /**
      * TableName=AD_Table
@@ -199,15 +199,15 @@ public interface I_AD_Table extends IPO {
     int getDbColumnIndex(@NotNull String s);
 
     @Nullable
-    <T extends IPO> T getPO(int id);
+    <T extends PersistentObject> T getPO(int id);
 
     @Nullable
-    <T extends IPO> T getPO(Row row);
+    <T extends PersistentObject> T getPO(Row row);
 
     String[] getTableKeyColumns();
 
     @NotNull
     I_AD_Column[] getColumns(boolean b);
 
-    <T extends IPO> I_Query<T> createQuery(String s);
+    <T extends PersistentObject> I_Query<T> createQuery(String s);
 }

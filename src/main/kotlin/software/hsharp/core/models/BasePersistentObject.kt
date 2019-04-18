@@ -4,7 +4,7 @@ package software.hsharp.core.models
  * Basic ORM properties: [clientId] client id.
  * Basic ORM functions: [save]
  */
-interface IBasePO {
+interface BasePersistentObject {
     /**
      * Client owning this persistent object.
      */

@@ -3,7 +3,7 @@ package org.idempiere.icommon.model
 /**
  * The ORM properties to identify a persistent object.
  */
-interface IBasePO : software.hsharp.core.models.IBasePO {
+interface BasePersistentObject : software.hsharp.core.models.BasePersistentObject {
     /**
      * Primary Key
      */

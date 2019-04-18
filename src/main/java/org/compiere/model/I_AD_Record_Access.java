@@ -101,5 +101,5 @@ public interface I_AD_Record_Access {
     int getRecordId();
 
     @Nullable
-    String getKeyColumnName(@NotNull I_TableInfo[] tableInfo);
+    String getKeyColumnName(@NotNull SqlTableInfo[] tableInfo);
 }

@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.INamedPO;
+import org.idempiere.icommon.model.NamedPersistentObject;
 import software.hsharp.core.models.CanSetSearchKey;
 
 import java.math.BigDecimal;
@@ -12,7 +12,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_User extends INamedPO, CanSetSearchKey {
+public interface I_AD_User extends NamedPersistentObject, CanSetSearchKey {
 
     /**
      * TableName=AD_User

@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -14,7 +14,7 @@ import java.util.List;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Role extends IPO {
+public interface I_AD_Role extends PersistentObject {
 
     /**
      * TableName=AD_Role
@@ -317,7 +317,7 @@ public interface I_AD_Role extends IPO {
 
     void mergeAccesses(boolean reload);
 
-    List<I_OrgAccess> getOrgAccess();
+    List<OrganizationAccessSummary> getOrgAccess();
 
     List<I_AD_Table_Access> loadTableAccess(boolean reload);
 

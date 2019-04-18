@@ -1,6 +1,6 @@
 package software.hsharp.core.modules
 
-import org.compiere.orm.IModelFactory
+import org.compiere.orm.ModelFactory
 import software.hsharp.core.services.EnvironmentService
 
 /**
@@ -14,5 +14,5 @@ interface BaseModule {
     /**
      * Persistent object load
      */
-    val modelFactory: IModelFactory
+    val modelFactory: ModelFactory
 }
