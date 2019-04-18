@@ -62,4 +62,5 @@ public interface I_AD_ViewColumn {
      */
     void setEntityType(String EntityType);
 
+    boolean isActive();
 }

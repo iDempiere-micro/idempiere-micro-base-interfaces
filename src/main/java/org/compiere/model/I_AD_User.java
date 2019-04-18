@@ -295,4 +295,6 @@ public interface I_AD_User extends INamedPO, CanSetSearchKey {
      * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
     int getSupervisorId();
+
+    void saveEx();
 }

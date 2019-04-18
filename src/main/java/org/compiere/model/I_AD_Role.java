@@ -1,6 +1,12 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Generated Interface for AD_Role
@@ -8,7 +14,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Role {
+public interface I_AD_Role extends IPO {
 
     /**
      * TableName=AD_Role
@@ -297,4 +303,33 @@ public interface I_AD_Role {
      * Set User Level. System Client Organization
      */
     void setUserLevel(String UserLevel);
+
+    void setParentRole(@NotNull I_AD_Role mRole);
+
+    int getIncludedSeqNo();
+
+    void setIncludedSeqNo(int seqNo);
+
+    @NotNull
+    List<I_AD_Role> getIncludedRoles(boolean recursive);
+
+    void loadAccess(boolean reload);
+
+    void mergeAccesses(boolean reload);
+
+    List<I_OrgAccess> getOrgAccess();
+
+    List<I_AD_Table_Access> loadTableAccess(boolean reload);
+
+    @Nullable
+    List<I_AD_Column_Access> loadColumnAccess(boolean reload);
+
+    @Nullable
+    List<I_AD_Record_Access> getRecordAccessArray();
+
+    @Nullable
+    List<I_AD_Record_Access> getRecordDependentAccessArray();
+
+    @Nullable
+    HashMap<Integer, Boolean> getAccessMap(@NotNull String varname);
 }

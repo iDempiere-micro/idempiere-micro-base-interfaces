@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Column {
+public interface I_AD_Column extends IPO {
 
     /**
      * TableName=AD_Column
@@ -412,4 +414,19 @@ public interface I_AD_Column {
      */
     void setVersion(BigDecimal Version);
 
+
+    /**
+     * Is Virtual Column
+     *
+     * @return true if virtual column
+     */
+    boolean isVirtualColumn();
+
+    String getReferenceTableName();
+
+    boolean delete(boolean force);
+
+    boolean isStandardColumn();
+
+    boolean isUUIDColumn();
 }

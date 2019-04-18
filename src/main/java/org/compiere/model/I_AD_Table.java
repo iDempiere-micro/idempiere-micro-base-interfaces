@@ -1,5 +1,10 @@
 package org.compiere.model;
 
+import kotliquery.Row;
+import org.idempiere.icommon.model.IPO;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +14,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_AD_Table {
+public interface I_AD_Table extends IPO {
 
     /**
      * TableName=AD_Table
@@ -188,4 +193,21 @@ public interface I_AD_Table {
      */
     String getDbTableName();
 
+    @Nullable
+    I_AD_Column getColumn(@NotNull String columnName);
+
+    int getDbColumnIndex(@NotNull String s);
+
+    @Nullable
+    <T extends IPO> T getPO(int id);
+
+    @Nullable
+    <T extends IPO> T getPO(Row row);
+
+    String[] getTableKeyColumns();
+
+    @NotNull
+    I_AD_Column[] getColumns(boolean b);
+
+    <T extends IPO> I_Query<T> createQuery(String s);
 }

@@ -1,5 +1,8 @@
 package org.compiere.model;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import java.math.BigDecimal;
 
 /**
@@ -97,4 +100,6 @@ public interface I_AD_Record_Access {
      */
     int getRecordId();
 
+    @Nullable
+    String getKeyColumnName(@NotNull I_TableInfo[] tableInfo);
 }

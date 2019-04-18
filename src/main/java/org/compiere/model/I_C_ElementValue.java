@@ -1,5 +1,8 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+import software.hsharp.core.models.ISearchableByKey;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +11,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_ElementValue {
+public interface I_C_ElementValue extends IPO, ISearchableByKey, HasName {
 
     /**
      * TableName=C_ElementValue
