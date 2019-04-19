@@ -22,7 +22,7 @@ interface PersistentObject : BasePersistentObject {
     /**
      * get value in column that has [columnId]. Note this is NOT an index in the row.
      */
-    fun getValueOfColumn(columnId: Int): Any
+    fun <T> getValueOfColumn(columnId: Int): T?
 
     /**
      * get index of a column named [columnName] in the current row.
@@ -32,12 +32,12 @@ interface PersistentObject : BasePersistentObject {
     /**
      * get value from the column named [columnName] in the current row.
      */
-    fun getValue(columnName: String): Any?
+    fun <T> getValue(columnName: String): T?
 
     /**
      * get value from the [index]th column in the current row.
      */
-    fun getValue(index: Int): Any?
+    fun <T> getValue(index: Int): T?
 
     /**
      *	Is Active
